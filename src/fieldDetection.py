@@ -38,3 +38,19 @@ def detect_transitions(binarized_image):
             if binarized_image[y-1, x] == 0 and binarized_image[y, x] == 255 and binarized_image[y+1, x] == 255:
                 points.append((x, y))
     return points
+
+def calculate_error(line, points):
+    if len(line) < 2:
+        return 0
+    x0, y0 = line[0]
+    x1, y1 = line[-1]
+    px, py = points
+    # line equation: (y - y0) =  m * (x - xo) where m is the slope
+    # error is the perpendicular distance from the point to the line 
+    if x1 == x0:
+        return abs(px-x0)
+    else:
+        m = (y1 - y0) / (x1 - x0)
+        b = y0 - m * x0
+        error = abs(m * px - py + b ) / np.sqrt(m**2 + 1)
+        return error
