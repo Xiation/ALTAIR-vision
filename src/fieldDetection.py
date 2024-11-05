@@ -11,8 +11,30 @@ green_upper = np.array([86,255,255], dtype=np.uint8)
 white_lower = np.array([0,0,200], dtype=np.uint8)
 white_upper = np.array([180,20,255], dtype=np.uint8)
 
-def removeBackground():
-    ''''''''
+def removeBackground(image_hsv):
+    field_mask = cv2.inRange(image_hsv, green_lower, green_upper)
+    field_area = cv2.bitwise_and(image_hsv, image_hsv, field_mask)
+    return field_area
 
-def binarizing():
-    ''''''''
+def binarizing(image_hsv):
+    line_mask = cv2.inRange(image_hsv, white_lower, white_upper)
+    kernel = np.ones((3,3), np.uint8)
+    line_mask = cv2.morphologyEx(line_mask, cv2.MORPH_CLOSE, kernel)
+    return line_mask
+
+def detect_transitions(binarized_image):
+    height, width = binarized_image.shape
+    points = []
+
+    # horizontal scanning
+    for y in range(height):
+        for x in range(1, width - 1):
+            if binarized_image[y, x-1] == 0 and binarized_image[y, x] == 255 and binarized_image[y, x+1] == 255:
+                points.append((x, y))
+
+    # Vertical scanning
+    for x in range(width):
+        for y in range(1, height - 1):
+            if binarized_image[y-1, x] == 0 and binarized_image[y, x] == 255 and binarized_image[y+1, x] == 255:
+                points.append((x, y))
+    return points
