@@ -29,7 +29,7 @@ ament_target_dependencies(
 
 rosidl_generate_interfaces(
   ${PROJECT_NAME}
-  "src/ball-detector/vision_msgs/ball-detector.msg"
+  "vision_msgs/ball-detector.msg"
   DEPENDENCIES
   std_msgs
 )
