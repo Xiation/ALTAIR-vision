@@ -1,5 +1,5 @@
 import rclpy 
-from rclpy import Node
+from rclpy.node import Node
 from std_msgs.msg import Float64
 import cv2
 import numpy as np
