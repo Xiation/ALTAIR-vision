@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(ball-detector)
+project(ball_detector)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -14,13 +14,13 @@ find_package(rclpy REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
-add_executable(ball-detector src/ball-detector.cpp)
-target_include_directories(ball-detector PUBLIC
+# add_executable(ball_detector src/ball_detector.cpp)
+target_include_directories(ball_detector PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
-target_compile_features(ball-detector PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+target_compile_features(ball_detector PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 ament_target_dependencies(
-  ball-detector
+  ball_detector
   "rclpy"
   # "opencv"
   "rosidl_default_generators"
@@ -29,13 +29,13 @@ ament_target_dependencies(
 
 rosidl_generate_interfaces(
   ${PROJECT_NAME}
-  "vision_msgs/ball-detector.msg"
+  "vision_msgs/ball_detector.msg"
   DEPENDENCIES
   std_msgs
 )
 
 
-install(TARGETS ball-detector
+install(TARGETS ball_detector
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

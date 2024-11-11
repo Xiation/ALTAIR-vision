@@ -1,0 +1,19 @@
+[0.011s] Invoking command in '/home/altair/Documents/ALTAIR-vision/build/ball-detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/src/ball-detector -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/ball-detector
+[0.026s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.353s] -- Found rclpy: 7.1.2 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.353s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.356s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.405s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.439s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.441s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.477s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[0.477s]   rosidl_generate_interfaces() the passed file
+[0.477s]   'vision_msgs/ball-detector.msg' doesn't exist relative to the
+[0.477s]   CMAKE_CURRENT_SOURCE_DIR
+[0.477s]   '/home/altair/Documents/ALTAIR-vision/src/ball-detector'
+[0.477s] Call Stack (most recent call first):
+[0.477s]   CMakeLists.txt:30 (rosidl_generate_interfaces)
+[0.477s] 
+[0.477s] [0m
+[0.477s] -- Configuring incomplete, errors occurred!
+[0.482s] Invoked command in '/home/altair/Documents/ALTAIR-vision/build/ball-detector' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/src/ball-detector -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/ball-detector
