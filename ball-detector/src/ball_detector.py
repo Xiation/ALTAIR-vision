@@ -1,5 +1,5 @@
 import rclpy 
-from rclpy import Node
+from rclpy.node import Node
 from std_msgs.msg import Float64
 import cv2
 import numpy as np
@@ -110,7 +110,7 @@ def main(args=None):
 
             print(f"Detected ball distance: {distance:.2f} meters")
         else:
-            print(F'GADA BOLA NGENTOD')
+            print(f'GADA BOLA NGENTOD')
 
     cap.release()
 
