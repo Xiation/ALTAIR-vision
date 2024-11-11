@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ball_detector/msg/BallDistance.msg
+// generated code does not contain a copyright notice
+
+
+module ball_detector {
+  module msg {
+    struct BallDistance {
+      boolean ball_ada_cok;
+
+      double jaraknya_jing;
+    };
+  };
+};
