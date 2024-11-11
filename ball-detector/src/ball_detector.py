@@ -96,7 +96,7 @@ def main(args=None):
             print("Error: Could not read a frame from the camera.")
             break
 
-        print("Frame captured from the camera.")
+        
 
         mask_ball = bd.ball(frame)
         mask_field = bd.field(frame)
@@ -108,7 +108,7 @@ def main(args=None):
             msg.data = distance
             bd.ball_distance_publisher.publish(msg)
 
-            print(f"Detected ball distance: {distance:.2f} meters")
+            print(f"Ball distance: {distance:.2f} meters")
         else:
             print(f'GADA BOLA NGENTOD')
 
