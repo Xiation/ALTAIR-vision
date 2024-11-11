@@ -29,7 +29,7 @@ find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(
   ${PROJECT_NAME}
-  "vision_msgs/BallDistance.msg"
+  "msgs/BallDistance.msg"
   DEPENDENCIES
   std_msgs
 )
