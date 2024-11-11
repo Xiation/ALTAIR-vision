@@ -1,6 +1,0 @@
-{
-  "package_name": "ball-detector",
-  "non_idl_tuples": [
-    "/home/altair/Documents/ALTAIR-vision/src/ball-detector:vision_msgs/ball_detector.msg"
-  ]
-}

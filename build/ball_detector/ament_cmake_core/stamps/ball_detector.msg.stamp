@@ -1,2 +1,0 @@
-bool ball_ada_cok
-float64 jaraknya_jing
