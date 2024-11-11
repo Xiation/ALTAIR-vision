@@ -103,7 +103,7 @@ def main(args=None):
         diameter, distance = bd.detect(mask_ball, mask_field, frame)
 
         if diameter is not None and distance is not None:
-            bd.get_logger().info(f"Detected Diameter: {diameter} pixels, Distance: {distance:.2f} meters")
+            # bd.get_logger().info(f"Detected Diameter: {diameter} pixels, Distance: {distance:.2f} meters")
             msg = Float64()
             msg.data = distance
             bd.ball_distance_publisher.publish(msg)
