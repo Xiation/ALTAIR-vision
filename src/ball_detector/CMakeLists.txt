@@ -34,6 +34,8 @@ rosidl_generate_interfaces(
   std_msgs
 )
 
+ament_export_dependencies(rosidl_default_runtime)
+
 
 # install(TARGETS ball_detector
 #   DESTINATION lib/${PROJECT_NAME})
