@@ -1,0 +1,2 @@
+bool ballAdaCok
+float jaraknyaJing

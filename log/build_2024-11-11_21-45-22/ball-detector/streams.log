@@ -1,0 +1,54 @@
+[0.011s] Invoking command in '/home/altair/Documents/ALTAIR-vision/build/ball-detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/src/ball-detector -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/ball-detector
+[0.031s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.353s] -- Found rclpy: 7.1.2 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.353s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.356s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.403s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.453s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.456s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.926s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[0.926s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.926s]   ball-detector --arguments-file
+[0.926s]   /home/altair/Documents/ALTAIR-vision/build/ball-detector/rosidl_adapter__arguments__ball-detector.json
+[0.926s]   --output-dir
+[0.926s]   /home/altair/Documents/ALTAIR-vision/build/ball-detector/rosidl_adapter/ball-detector
+[0.926s]   --output-file
+[0.926s]   /home/altair/Documents/ALTAIR-vision/build/ball-detector/rosidl_adapter/ball-detector.idls)
+[0.926s]   returned error code 1:
+[0.926s] 
+[0.926s]   Error processing 'bool ballAdaCok' of 'ball-detector/ball-detector':
+[0.927s]   ''ballAdaCok' is an invalid field name.  It should have the pattern
+[0.927s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[0.927s] 
+[0.927s]   Traceback (most recent call last):
+[0.927s] 
+[0.927s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.927s]     File "<frozen runpy>", line 88, in _run_code
+[0.927s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.927s]       sys.exit(main())
+[0.927s]                ^^^^^^
+[0.927s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.927s]       abs_idl_file = convert_to_idl(
+[0.927s]                      ^^^^^^^^^^^^^^^
+[0.928s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.928s]       return convert_msg_to_idl(
+[0.928s]              ^^^^^^^^^^^^^^^^^^^
+[0.928s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.928s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.928s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.928s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[0.928s]       fields.append(Field(
+[0.928s]                     ^^^^^^
+[0.928s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 355, in __init__
+[0.928s]       raise NameError(
+[0.928s] 
+[0.928s]   NameError: 'ballAdaCok' is an invalid field name.  It should have the
+[0.928s]   pattern '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[0.928s] 
+[0.928s] Call Stack (most recent call first):
+[0.928s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[0.929s]   CMakeLists.txt:30 (rosidl_generate_interfaces)
+[0.929s] 
+[0.929s] [0m
+[0.929s] -- Configuring incomplete, errors occurred!
+[0.933s] Invoked command in '/home/altair/Documents/ALTAIR-vision/build/ball-detector' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/src/ball-detector -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/ball-detector

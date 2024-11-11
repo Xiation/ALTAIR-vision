@@ -1,2 +1,2 @@
-bool ballAdaCok
-float jaraknyaJing
+bool ball_ada_cok
+float jaraknya_jing
