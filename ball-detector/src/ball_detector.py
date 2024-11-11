@@ -108,6 +108,10 @@ def main(args=None):
             msg.data = distance
             bd.ball_distance_publisher.publish(msg)
 
+            print(f"Detected ball distance: {distance:.2f} meters")
+        else:
+            print(F'GADA BOLA NGENTOD')
+
     cap.release()
 
 if __name__ == "__main__":
