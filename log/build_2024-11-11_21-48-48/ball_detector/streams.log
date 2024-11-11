@@ -1,0 +1,39 @@
+[0.012s] Invoking command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/src/ball_detector -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/ball_detector
+[0.091s] -- The C compiler identification is GNU 13.2.0
+[0.184s] -- The CXX compiler identification is GNU 13.2.0
+[0.209s] -- Detecting C compiler ABI info
+[0.360s] -- Detecting C compiler ABI info - done
+[0.378s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.378s] -- Detecting C compile features
+[0.379s] -- Detecting C compile features - done
+[0.396s] -- Detecting CXX compiler ABI info
+[0.574s] -- Detecting CXX compiler ABI info - done
+[0.586s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.587s] -- Detecting CXX compile features
+[0.587s] -- Detecting CXX compile features - done
+[0.590s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.807s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.941s] -- Found rclpy: 7.1.2 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.943s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.948s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.004s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.053s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.056s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.094s] [31mCMake Error at CMakeLists.txt:18 (target_include_directories):
+[1.095s]   Cannot specify include directories for target "ball_detector" which is not
+[1.095s]   built by this project.
+[1.095s] 
+[1.095s] [0m
+[1.095s] [31mCMake Error at CMakeLists.txt:21 (target_compile_features):
+[1.095s]   Cannot specify compile features for target "ball_detector" which is not
+[1.096s]   built by this project.
+[1.096s] 
+[1.096s] [0m
+[1.096s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[1.096s]   ament_target_dependencies() the first argument must be a valid target name
+[1.096s] Call Stack (most recent call first):
+[1.096s]   CMakeLists.txt:22 (ament_target_dependencies)
+[1.097s] 
+[1.097s] [0m
+[1.097s] -- Configuring incomplete, errors occurred!
+[1.102s] Invoked command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/src/ball_detector -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/ball_detector
