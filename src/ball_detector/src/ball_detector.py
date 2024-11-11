@@ -4,11 +4,12 @@ from std_msgs.msg import Float64
 import cv2
 import numpy as np
 import time
+from vision_msgs.msg import BallDistance
 
 class BallDetector(Node):
     def __init__(self):
         super().__init__('ball_detector')
-        self.ball_distance_publisher = self.create_publisher(Float64, 'vision/ball_distance', 10)
+        self.ball_distance_publisher = self.create_publisher(BallDistance, 'vision/ball_distance', 10)
 
     def ball(self, frame):
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
@@ -104,8 +105,9 @@ def main(args=None):
 
         if diameter is not None and distance is not None:
             # bd.get_logger().info(f"Detected Diameter: {diameter} pixels, Distance: {distance:.2f} meters")
-            msg = Float64()
-            msg.data = distance
+            msg = BallDistance
+            msg.jaraknya_jing = distance
+            msg.ball_ada_cok = True
             bd.ball_distance_publisher.publish(msg)
 
             print(f"Ball distance: {distance:.2f} meters")
