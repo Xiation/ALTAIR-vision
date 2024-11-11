@@ -8,7 +8,11 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
-find_package(opencv REQUIRED)
+# find_package(opencv REQUIRED)
+
+# new packages
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
 
 add_executable(ball-detector src/ball-detector.cpp)
 target_include_directories(ball-detector PUBLIC
@@ -18,8 +22,18 @@ target_compile_features(ball-detector PUBLIC c_std_99 cxx_std_17)  # Require C99
 ament_target_dependencies(
   ball-detector
   "rclpy"
-  "opencv"
+  # "opencv"
+  "rosidl_default_generators"
+  "std_msgs"
 )
+
+rosidl_generate_interfaces(
+  ${PROJECT_NAME}
+  "src/ball-detector/vision_msgs/ball-detector.msg"
+  DEPENDENCIES
+  std_msgs
+)
+
 
 install(TARGETS ball-detector
   DESTINATION lib/${PROJECT_NAME})
