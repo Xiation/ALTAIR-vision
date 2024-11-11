@@ -81,15 +81,22 @@ def main(args=None):
     bd = BallDetector()
     cap = cv2.VideoCapture(0)
 
+    # Check if the camera opens successfully
     if not cap.isOpened():
         print("Error: Cannot open video.")
         exit()
 
+    print("Camera opened successfully.")
+
     while rclpy.ok():
         ret, frame = cap.read()
+
+        # Verify if a frame is captured
         if not ret:
-            print("No frames left, terminating.")
+            print("Error: Could not read a frame from the camera.")
             break
+
+        print("Frame captured from the camera.")
 
         mask_ball = bd.ball(frame)
         mask_field = bd.field(frame)
