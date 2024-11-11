@@ -1,2 +1,0 @@
-bool ball_ada_cok
-float jaraknya_jing

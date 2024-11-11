@@ -1,0 +1,56 @@
+[0.012s] Invoking command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/src/ball_detector -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/ball_detector
+[0.025s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.339s] -- Found rclpy: 7.1.2 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.339s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.342s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.382s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.416s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.418s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.833s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[0.834s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.834s]   ball_detector --arguments-file
+[0.834s]   /home/altair/Documents/ALTAIR-vision/build/ball_detector/rosidl_adapter__arguments__ball_detector.json
+[0.834s]   --output-dir
+[0.834s]   /home/altair/Documents/ALTAIR-vision/build/ball_detector/rosidl_adapter/ball_detector
+[0.834s]   --output-file
+[0.835s]   /home/altair/Documents/ALTAIR-vision/build/ball_detector/rosidl_adapter/ball_detector.idls)
+[0.835s]   returned error code 1:
+[0.835s] 
+[0.835s]   Error processing 'float jaraknya_jing' of 'ball_detector/ball_detector':
+[0.835s]   ''float' is an invalid message name.  It should have the pattern
+[0.835s]   '^[A-Z][A-Za-z0-9]*$''
+[0.835s] 
+[0.836s]   Traceback (most recent call last):
+[0.836s] 
+[0.836s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.836s]     File "<frozen runpy>", line 88, in _run_code
+[0.836s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.836s]       sys.exit(main())
+[0.836s]                ^^^^^^
+[0.837s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.837s]       abs_idl_file = convert_to_idl(
+[0.837s]                      ^^^^^^^^^^^^^^^
+[0.837s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.837s]       return convert_msg_to_idl(
+[0.837s]              ^^^^^^^^^^^^^^^^^^^
+[0.838s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.838s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.838s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.838s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 521, in parse_message_string
+[0.838s]       Type(type_string, context_package_name=pkg_name),
+[0.838s]       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.838s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 278, in __init__
+[0.839s]       super(Type, self).__init__(
+[0.839s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[0.839s]       raise InvalidResourceName(
+[0.839s] 
+[0.839s]   rosidl_adapter.parser.InvalidResourceName: 'float' is an invalid message
+[0.840s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.840s] 
+[0.840s] Call Stack (most recent call first):
+[0.840s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[0.840s]   CMakeLists.txt:30 (rosidl_generate_interfaces)
+[0.840s] 
+[0.840s] [0m
+[0.840s] -- Configuring incomplete, errors occurred!
+[0.841s] Invoked command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/src/ball_detector -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/ball_detector

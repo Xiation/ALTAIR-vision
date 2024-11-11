@@ -19,24 +19,24 @@ find_package(std_msgs REQUIRED)
 #   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 #   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
 # target_compile_features(ball_detector PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
-ament_target_dependencies(
-  ball_detector
-  "rclpy"
-  # "opencv"
-  "rosidl_default_generators"
-  "std_msgs"
-)
+# ament_target_dependencies(
+#   ball_detector
+#   "rclpy"
+#   "opencv"
+#   "rosidl_default_generators"
+#   "std_msgs"
+# )
 
 rosidl_generate_interfaces(
   ${PROJECT_NAME}
-  "vision_msgs/ball_detector.msg"
+  "vision_msgs/BallDistance.msg"
   DEPENDENCIES
   std_msgs
 )
 
 
-install(TARGETS ball_detector
-  DESTINATION lib/${PROJECT_NAME})
+# install(TARGETS ball_detector
+#   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

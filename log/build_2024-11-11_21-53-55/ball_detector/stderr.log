@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:38 (install):
+  install TARGETS given target "ball_detector" which is not an executable,
+  library, or module.
+
+[0m

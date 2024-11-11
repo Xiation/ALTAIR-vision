@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ball_detector/msg/BallDistance",
+      "fields": [
+        {
+          "name": "ball_ada_cok",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "jaraknya_jing",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ball_detector/msg/BallDistance",
+      "hash_string": "RIHS01_ab242d70a31d13dfe11be16a5ce3fa6f4d659bad69b8067914d7df553679b09b"
+    }
+  ]
+}

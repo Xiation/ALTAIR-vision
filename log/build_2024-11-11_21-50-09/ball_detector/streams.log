@@ -1,0 +1,9 @@
+[0.012s] Invoking command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/src/ball_detector -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/ball_detector
+[0.024s] [31mCMake Error at CMakeLists.txt:24:
+[0.024s]   Parse error.  Expected "(", got newline with text "
+[0.024s] 
+[0.024s]   ".
+[0.024s] 
+[0.024s] [0m
+[0.024s] -- Configuring incomplete, errors occurred!
+[0.026s] Invoked command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/src/ball_detector -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/ball_detector
