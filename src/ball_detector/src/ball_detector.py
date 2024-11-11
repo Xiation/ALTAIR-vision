@@ -4,7 +4,8 @@ from std_msgs.msg import Float64
 import cv2
 import numpy as np
 import time
-from vision_msgs.msg import BallDistance
+from ball_detector.vision_msgs import BallDistance
+
 
 class BallDetector(Node):
     def __init__(self):
