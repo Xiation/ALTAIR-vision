@@ -1,5 +1,5 @@
 import rclpy 
-from rclpy.node import Node
+from rclpy import Node
 from std_msgs.msg import Float64
 import cv2
 import numpy as np
@@ -72,14 +72,9 @@ class BallDetector(Node):
                     focal_length = 700
                     distance = (actual_diameter * focal_length) / total_pixel
 
-                    # Draw circle and text on the frame for visualization
-                    cv2.circle(frame, (x, y), r, (0, 255, 0), 2)
-                    cv2.putText(frame, f"Diameter: {total_pixel} pixels", (x - r, y + r + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
-                    cv2.putText(frame, f"Distance: {distance:.2f} meters", (x - r, y + r + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+                    return total_pixel, distance
 
-                    return frame, distance
-
-        return frame, None
+        return None, None
 
 def main(args=None):
     rclpy.init(args=args)
@@ -90,33 +85,23 @@ def main(args=None):
         print("Error: Cannot open video.")
         exit()
 
-    print("Camera opened successfully.")
-
     while rclpy.ok():
         ret, frame = cap.read()
-
         if not ret:
-            print("Error: Could not read a frame from the camera.")
+            print("No frames left, terminating.")
             break
 
         mask_ball = bd.ball(frame)
         mask_field = bd.field(frame)
-        processed_frame, distance = bd.detect(mask_ball, mask_field, frame)
+        diameter, distance = bd.detect(mask_ball, mask_field, frame)
 
-        if distance is not None:
+        if diameter is not None and distance is not None:
+            bd.get_logger().info(f"Detected Diameter: {diameter} pixels, Distance: {distance:.2f} meters")
             msg = Float64()
             msg.data = distance
             bd.ball_distance_publisher.publish(msg)
 
-        # Display the frame in a window
-        cv2.imshow("Ball Detection", processed_frame)
-
-        # Exit on 'q' key press
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-
     cap.release()
-    cv2.destroyAllWindows()
 
 if __name__ == "__main__":
     main()
