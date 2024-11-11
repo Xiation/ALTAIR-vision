@@ -6,7 +6,7 @@
     "/home/altair/Documents/ALTAIR-vision/build/ball_detector/rosidl_adapter/ball_detector:msg/BallDistance.idl"
   ],
   "ros_interface_files": [
-    "/home/altair/Documents/ALTAIR-vision/src/ball_detector/vision_msgs/BallDistance.msg"
+    "/home/altair/Documents/ALTAIR-vision/src/ball_detector/msgs/BallDistance.msg"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",

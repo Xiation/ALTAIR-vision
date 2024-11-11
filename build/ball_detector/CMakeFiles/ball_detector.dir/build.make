@@ -66,7 +66,7 @@ include CMakeFiles/ball_detector.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/ball_detector.dir/progress.make
 
-CMakeFiles/ball_detector: /home/altair/Documents/ALTAIR-vision/src/ball_detector/vision_msgs/BallDistance.msg
+CMakeFiles/ball_detector: /home/altair/Documents/ALTAIR-vision/src/ball_detector/msgs/BallDistance.msg
 CMakeFiles/ball_detector: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 CMakeFiles/ball_detector: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 CMakeFiles/ball_detector: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl

@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "ball_detector/msg/detail/ball_distance__type_support.h"
 #include "ball_detector/msg/detail/ball_distance__functions.h"
+#include "ball_detector/msg/detail/ball_distance__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "ball_detector/msg/detail/ball_distance__struct.h"
 
 #ifdef __cplusplus

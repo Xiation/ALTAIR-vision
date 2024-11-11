@@ -367,7 +367,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ball_detector/vision_msgs" TYPE FILE FILES "/home/altair/Documents/ALTAIR-vision/src/ball_detector/vision_msgs/BallDistance.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ball_detector/msgs" TYPE FILE FILES "/home/altair/Documents/ALTAIR-vision/src/ball_detector/msgs/BallDistance.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

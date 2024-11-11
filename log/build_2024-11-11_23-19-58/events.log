@@ -1,0 +1,284 @@
+[0.000000] (-) TimerEvent: {}
+[0.000883] (ball_detector) JobQueued: {'identifier': 'ball_detector', 'dependencies': OrderedDict()}
+[0.001011] (ball_detector) JobStarted: {'identifier': 'ball_detector'}
+[0.010929] (ball_detector) JobProgress: {'identifier': 'ball_detector', 'progress': 'cmake'}
+[0.013934] (ball_detector) JobProgress: {'identifier': 'ball_detector', 'progress': 'build'}
+[0.014014] (ball_detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/altair/Documents/ALTAIR-vision/build/ball_detector', '--', '-j16', '-l16'], 'cwd': '/home/altair/Documents/ALTAIR-vision/build/ball_detector', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'altair', 'GIO_MODULE_DIR': '/home/altair/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/175/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/altair', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/altair/Documents', 'TERM_PROGRAM_VERSION': '1.95.2', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/175/usr/lib/x86_64-linux-gnu/gtk-3.0', 'GTK_IM_MODULE_FILE': '/home/altair/snap/code/common/.cache/immodules/immodules.cache', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/175/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'PS1': '\\[\x1b]633;A\x07\\]\\[\x1b]633;A\x07\\]\\[\x1b]633;A\x07\\]\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/175/usr/share/code/code', 'SYSTEMD_EXEC_PID': '3094', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'CONDA_ALLOW_SOFTLINKS': 'false', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/altair/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'altair', 'CONDA_ROOT': '/home/altair/anaconda3', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'altair', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/altair/anaconda3/condabin:/home/altair/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/ros/jazzy/bin:/home/altair/anaconda3/bin:/home/altair/anaconda3/condabin:/home/altair/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/ros/jazzy/bin:/home/altair/anaconda3/condabin:/home/altair/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/altair-asus-tuf:@/tmp/.ICE-unix/2877,unix/altair-asus-tuf:/tmp/.ICE-unix/2877', 'GTK_EXE_PREFIX': '/snap/code/175/usr', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f3dc40cf_70a3_49ea_a23f_ca7387c37267', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LOCPATH': '/snap/code/175/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/altair/snap/code/175/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-311d378629.sock', 'GNOME_TERMINAL_SERVICE': ':1.107', 'CONDA_PREFIX_2': '/home/altair/anaconda3/envs/YOLO8', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/altair/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/altair/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/altair/Documents/ALTAIR-vision/build/ball_detector', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/altair/anaconda3/bin/conda', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/home/altair/snap/code/175/.local/share:/home/altair/snap/code/175:/snap/code/175/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'NVM_RC_VERSION': '', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.059940] (ball_detector) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099786] (-) TimerEvent: {}
+[0.105479] (ball_detector) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.200056] (-) TimerEvent: {}
+[0.222877] (ball_detector) StdoutLine: {'line': b'-- Found rclpy: 7.1.2 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[0.223305] (ball_detector) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.226720] (ball_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.276975] (ball_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300234] (-) TimerEvent: {}
+[0.314710] (ball_detector) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.317256] (ball_detector) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.400373] (-) TimerEvent: {}
+[0.500869] (-) TimerEvent: {}
+[0.601306] (-) TimerEvent: {}
+[0.701812] (-) TimerEvent: {}
+[0.764346] (ball_detector) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[0.801974] (-) TimerEvent: {}
+[0.902327] (-) TimerEvent: {}
+[0.978329] (ball_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.002589] (-) TimerEvent: {}
+[1.103112] (-) TimerEvent: {}
+[1.203569] (-) TimerEvent: {}
+[1.243737] (ball_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.245479] (ball_detector) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[1.303810] (-) TimerEvent: {}
+[1.404278] (-) TimerEvent: {}
+[1.504731] (-) TimerEvent: {}
+[1.605205] (-) TimerEvent: {}
+[1.662811] (ball_detector) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[1.701407] (ball_detector) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.705327] (-) TimerEvent: {}
+[1.715637] (ball_detector) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.716253] (ball_detector) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[1.716666] (ball_detector) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.717004] (ball_detector) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.718734] (ball_detector) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.721741] (ball_detector) StdoutLine: {'line': b'-- Configuring done (1.7s)\n'}
+[1.779672] (ball_detector) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.784372] (ball_detector) StdoutLine: {'line': b'-- Build files have been written to: /home/altair/Documents/ALTAIR-vision/build/ball_detector\n'}
+[1.805509] (-) TimerEvent: {}
+[1.842957] (ball_detector) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[1.859453] (ball_detector) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_ball_detector\n'}
+[1.905661] (-) TimerEvent: {}
+[2.006179] (-) TimerEvent: {}
+[2.106703] (-) TimerEvent: {}
+[2.194706] (ball_detector) StdoutLine: {'line': b'[  2%] Built target ball_detector__rosidl_generator_type_description\n'}
+[2.206856] (-) TimerEvent: {}
+[2.214823] (ball_detector) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.233955] (ball_detector) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.234750] (ball_detector) StdoutLine: {'line': b'running egg_info\n'}
+[2.268365] (ball_detector) StdoutLine: {'line': b'writing ball_detector.egg-info/PKG-INFO\n'}
+[2.268786] (ball_detector) StdoutLine: {'line': b'writing dependency_links to ball_detector.egg-info/dependency_links.txt\n'}
+[2.268921] (ball_detector) StdoutLine: {'line': b'writing top-level names to ball_detector.egg-info/top_level.txt\n'}
+[2.306965] (-) TimerEvent: {}
+[2.363396] (ball_detector) StdoutLine: {'line': b"reading manifest file 'ball_detector.egg-info/SOURCES.txt'\n"}
+[2.364439] (ball_detector) StdoutLine: {'line': b"writing manifest file 'ball_detector.egg-info/SOURCES.txt'\n"}
+[2.407208] (-) TimerEvent: {}
+[2.414528] (ball_detector) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_ball_detector_egg\n'}
+[2.507408] (-) TimerEvent: {}
+[2.607818] (-) TimerEvent: {}
+[2.642803] (ball_detector) StdoutLine: {'line': b'[  8%] Built target ball_detector__cpp\n'}
+[2.682909] (ball_detector) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/ball_detector__rosidl_generator_c.dir/rosidl_generator_c/ball_detector/msg/detail/ball_distance__functions.c.o\x1b[0m\n'}
+[2.686835] (ball_detector) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/ball_detector__rosidl_generator_c.dir/rosidl_generator_c/ball_detector/msg/detail/ball_distance__description.c.o\x1b[0m\n'}
+[2.687891] (ball_detector) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/ball_detector__rosidl_generator_c.dir/rosidl_generator_c/ball_detector/msg/detail/ball_distance__type_support.c.o\x1b[0m\n'}
+[2.708096] (-) TimerEvent: {}
+[2.808640] (-) TimerEvent: {}
+[2.846712] (ball_detector) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libball_detector__rosidl_generator_c.so\x1b[0m\n'}
+[2.908784] (-) TimerEvent: {}
+[2.915935] (ball_detector) StdoutLine: {'line': b'[ 20%] Built target ball_detector__rosidl_generator_c\n'}
+[2.933823] (ball_detector) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.934712] (ball_detector) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.935248] (ball_detector) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.935808] (ball_detector) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.936412] (ball_detector) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.939801] (ball_detector) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.009060] (-) TimerEvent: {}
+[3.109692] (-) TimerEvent: {}
+[3.210309] (-) TimerEvent: {}
+[3.310827] (-) TimerEvent: {}
+[3.391661] (ball_detector) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/ball_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ball_detector/msg/ball_distance__type_support.cpp.o\x1b[0m\n'}
+[3.399347] (ball_detector) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/ball_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/ball_detector/msg/ball_distance__type_support.cpp.o\x1b[0m\n'}
+[3.411017] (-) TimerEvent: {}
+[3.415017] (ball_detector) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/ball_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ball_detector/msg/detail/ball_distance__type_support.cpp.o\x1b[0m\n'}
+[3.415863] (ball_detector) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/ball_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ball_detector/msg/detail/ball_distance__type_support.c.o\x1b[0m\n'}
+[3.447934] (ball_detector) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/ball_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ball_detector/msg/detail/dds_fastrtps/ball_distance__type_support.cpp.o\x1b[0m\n'}
+[3.458094] (ball_detector) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/ball_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ball_detector/msg/detail/ball_distance__type_support_c.cpp.o\x1b[0m\n'}
+[3.499929] (ball_detector) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libball_detector__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.511219] (-) TimerEvent: {}
+[3.546831] (ball_detector) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libball_detector__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.569446] (ball_detector) StdoutLine: {'line': b'[ 61%] Built target ball_detector__rosidl_typesupport_introspection_c\n'}
+[3.611481] (-) TimerEvent: {}
+[3.637405] (ball_detector) StdoutLine: {'line': b'[ 61%] Built target ball_detector__rosidl_typesupport_c\n'}
+[3.711775] (-) TimerEvent: {}
+[3.812570] (-) TimerEvent: {}
+[3.913102] (-) TimerEvent: {}
+[4.013598] (-) TimerEvent: {}
+[4.049825] (ball_detector) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libball_detector__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.070058] (ball_detector) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libball_detector__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.113832] (-) TimerEvent: {}
+[4.131247] (ball_detector) StdoutLine: {'line': b'[ 67%] Built target ball_detector__rosidl_typesupport_cpp\n'}
+[4.158013] (ball_detector) StdoutLine: {'line': b'[ 67%] Built target ball_detector__rosidl_typesupport_introspection_cpp\n'}
+[4.214120] (-) TimerEvent: {}
+[4.314699] (-) TimerEvent: {}
+[4.353175] (ball_detector) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libball_detector__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.380122] (ball_detector) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libball_detector__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.414879] (-) TimerEvent: {}
+[4.439395] (ball_detector) StdoutLine: {'line': b'[ 73%] Built target ball_detector__rosidl_typesupport_fastrtps_c\n'}
+[4.470291] (ball_detector) StdoutLine: {'line': b'[ 73%] Built target ball_detector__rosidl_typesupport_fastrtps_cpp\n'}
+[4.505850] (ball_detector) StdoutLine: {'line': b'[ 73%] Built target ball_detector\n'}
+[4.515125] (-) TimerEvent: {}
+[4.538440] (ball_detector) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.615362] (-) TimerEvent: {}
+[4.715790] (-) TimerEvent: {}
+[4.816236] (-) TimerEvent: {}
+[4.912360] (ball_detector) StdoutLine: {'line': b'[ 76%] Built target ball_detector__py\n'}
+[4.916398] (-) TimerEvent: {}
+[4.960376] (ball_detector) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/ball_detector__rosidl_generator_py.dir/rosidl_generator_py/ball_detector/msg/_ball_distance_s.c.o\x1b[0m\n'}
+[5.016525] (-) TimerEvent: {}
+[5.116966] (-) TimerEvent: {}
+[5.212525] (ball_detector) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libball_detector__rosidl_generator_py.so\x1b[0m\n'}
+[5.217182] (-) TimerEvent: {}
+[5.281618] (ball_detector) StdoutLine: {'line': b'[ 82%] Built target ball_detector__rosidl_generator_py\n'}
+[5.317334] (-) TimerEvent: {}
+[5.322247] (ball_detector) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/ball_detector_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ball_detector/_ball_detector_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.323856] (ball_detector) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/ball_detector_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ball_detector/_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.329688] (ball_detector) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/ball_detector_s__rosidl_typesupport_c.dir/rosidl_generator_py/ball_detector/_ball_detector_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.417558] (-) TimerEvent: {}
+[5.512989] (ball_detector) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ball_detector/ball_detector_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.515450] (ball_detector) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ball_detector/ball_detector_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.517687] (-) TimerEvent: {}
+[5.519422] (ball_detector) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ball_detector/ball_detector_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.570620] (ball_detector) StdoutLine: {'line': b'[100%] Built target ball_detector_s__rosidl_typesupport_introspection_c\n'}
+[5.571200] (ball_detector) StdoutLine: {'line': b'[100%] Built target ball_detector_s__rosidl_typesupport_fastrtps_c\n'}
+[5.575629] (ball_detector) StdoutLine: {'line': b'[100%] Built target ball_detector_s__rosidl_typesupport_c\n'}
+[5.593691] (ball_detector) CommandEnded: {'returncode': 0}
+[5.617874] (-) TimerEvent: {}
+[5.706557] (ball_detector) JobProgress: {'identifier': 'ball_detector', 'progress': 'install'}
+[5.717922] (ball_detector) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/altair/Documents/ALTAIR-vision/build/ball_detector'], 'cwd': '/home/altair/Documents/ALTAIR-vision/build/ball_detector', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'altair', 'GIO_MODULE_DIR': '/home/altair/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/175/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/altair', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/altair/Documents', 'TERM_PROGRAM_VERSION': '1.95.2', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/175/usr/lib/x86_64-linux-gnu/gtk-3.0', 'GTK_IM_MODULE_FILE': '/home/altair/snap/code/common/.cache/immodules/immodules.cache', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/175/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'PS1': '\\[\x1b]633;A\x07\\]\\[\x1b]633;A\x07\\]\\[\x1b]633;A\x07\\]\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]\\[\x1b]633;B\x07\\]', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/175/usr/share/code/code', 'SYSTEMD_EXEC_PID': '3094', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'CONDA_ALLOW_SOFTLINKS': 'false', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/altair/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'altair', 'CONDA_ROOT': '/home/altair/anaconda3', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'altair', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/altair/anaconda3/condabin:/home/altair/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/ros/jazzy/bin:/home/altair/anaconda3/bin:/home/altair/anaconda3/condabin:/home/altair/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/ros/jazzy/bin:/home/altair/anaconda3/condabin:/home/altair/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/altair-asus-tuf:@/tmp/.ICE-unix/2877,unix/altair-asus-tuf:/tmp/.ICE-unix/2877', 'GTK_EXE_PREFIX': '/snap/code/175/usr', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f3dc40cf_70a3_49ea_a23f_ca7387c37267', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LOCPATH': '/snap/code/175/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/altair/snap/code/175/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-311d378629.sock', 'GNOME_TERMINAL_SERVICE': ':1.107', 'CONDA_PREFIX_2': '/home/altair/anaconda3/envs/YOLO8', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/altair/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/altair/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/altair/Documents/ALTAIR-vision/build/ball_detector', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/altair/anaconda3/bin/conda', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/home/altair/snap/code/175/.local/share:/home/altair/snap/code/175:/snap/code/175/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'NVM_RC_VERSION': '', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.718779] (-) TimerEvent: {}
+[5.733811] (ball_detector) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.734137] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/rosidl_interfaces/ball_detector\n'}
+[5.734491] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/msg/BallDistance.json\n'}
+[5.735106] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector\n'}
+[5.735745] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg\n'}
+[5.735884] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail\n'}
+[5.735987] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__description.c\n'}
+[5.736103] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__type_support.h\n'}
+[5.736384] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__functions.c\n'}
+[5.736620] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__type_support.c\n'}
+[5.736731] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__struct.h\n'}
+[5.736846] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__functions.h\n'}
+[5.736951] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.737056] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/ball_distance.h\n'}
+[5.737179] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/library_path.sh\n'}
+[5.737277] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/library_path.dsv\n'}
+[5.737372] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_generator_c.so\n'}
+[5.737666] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_generator_c.so" to ""\n'}
+[5.737900] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector\n'}
+[5.738019] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg\n'}
+[5.738269] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail\n'}
+[5.738408] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__rosidl_typesupport_fastrtps_c.h\n'}
+[5.738521] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.738691] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_fastrtps_c.so\n'}
+[5.738791] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.738899] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector\n'}
+[5.739015] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg\n'}
+[5.739142] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail\n'}
+[5.739255] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__rosidl_typesupport_introspection_c.h\n'}
+[5.739474] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__type_support.c\n'}
+[5.739622] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.739730] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_introspection_c.so\n'}
+[5.739833] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.740037] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_c.so\n'}
+[5.740390] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_c.so" to ""\n'}
+[5.740675] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector\n'}
+[5.740813] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg\n'}
+[5.741036] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail\n'}
+[5.741287] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__traits.hpp\n'}
+[5.741413] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__type_support.hpp\n'}
+[5.741521] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__builder.hpp\n'}
+[5.741707] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__struct.hpp\n'}
+[5.741958] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/ball_distance.hpp\n'}
+[5.742450] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.742794] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector\n'}
+[5.743104] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg\n'}
+[5.743396] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail\n'}
+[5.743772] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.743929] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/dds_fastrtps\n'}
+[5.744041] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.744178] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.744303] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.744411] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector\n'}
+[5.744579] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg\n'}
+[5.744741] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail\n'}
+[5.744848] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__type_support.cpp\n'}
+[5.744952] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.745058] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_introspection_cpp.so\n'}
+[5.745236] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.745403] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_cpp.so\n'}
+[5.745617] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_cpp.so" to ""\n'}
+[5.745939] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/pythonpath.sh\n'}
+[5.746078] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/pythonpath.dsv\n'}
+[5.746205] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info\n'}
+[5.746408] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[5.746593] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[5.746704] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[5.746883] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[5.747001] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector\n'}
+[5.747117] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_introspection_c.so\n'}
+[5.747285] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.747444] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.747682] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/_ball_detector_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.747966] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_c.so\n'}
+[5.748130] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg\n'}
+[5.748342] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg/_ball_distance.py\n'}
+[5.748725] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg/_ball_distance_s.c\n'}
+[5.749040] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg/__init__.py\n'}
+[5.749334] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/_ball_detector_s.ep.rosidl_typesupport_c.c\n'}
+[5.749588] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/__init__.py\n'}
+[5.817009] (ball_detector) StdoutLine: {'line': b"Listing '/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector'...\n"}
+[5.817362] (ball_detector) StdoutLine: {'line': b"Compiling '/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/__init__.py'...\n"}
+[5.817580] (ball_detector) StdoutLine: {'line': b"Listing '/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg'...\n"}
+[5.817783] (ball_detector) StdoutLine: {'line': b"Compiling '/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg/__init__.py'...\n"}
+[5.817982] (ball_detector) StdoutLine: {'line': b"Compiling '/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg/_ball_distance.py'...\n"}
+[5.818896] (-) TimerEvent: {}
+[5.826485] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.826901] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.827338] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_introspection_c.so\n'}
+[5.827779] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.828218] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_c.so\n'}
+[5.828569] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_c.so" to ""\n'}
+[5.828807] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_generator_py.so\n'}
+[5.829100] (ball_detector) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_generator_py.so" to ""\n'}
+[5.829385] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/msg/BallDistance.idl\n'}
+[5.829618] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/msgs/BallDistance.msg\n'}
+[5.830058] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/package_run_dependencies/ball_detector\n'}
+[5.830285] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/parent_prefix_path/ball_detector\n'}
+[5.830466] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/ament_prefix_path.sh\n'}
+[5.830655] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/ament_prefix_path.dsv\n'}
+[5.830973] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/path.sh\n'}
+[5.831286] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/path.dsv\n'}
+[5.831409] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/local_setup.bash\n'}
+[5.831704] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/local_setup.sh\n'}
+[5.832006] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/local_setup.zsh\n'}
+[5.832452] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/local_setup.dsv\n'}
+[5.832616] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/package.dsv\n'}
+[5.832734] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/packages/ball_detector\n'}
+[5.832926] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_generator_cExport.cmake\n'}
+[5.833116] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.833236] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.833349] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.833460] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.833566] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.833669] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_cExport.cmake\n'}
+[5.833771] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.833873] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_generator_cppExport.cmake\n'}
+[5.833971] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.834088] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.834197] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.834301] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.834404] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_cppExport.cmake\n'}
+[5.834506] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.834607] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_generator_pyExport.cmake\n'}
+[5.834706] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.834840] (ball_detector) StdoutLine: {'line': b'-- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/rosidl_cmake-extras.cmake\n'}
+[5.834940] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.835043] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.835177] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.835279] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.835374] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.835466] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.835566] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detectorConfig.cmake\n'}
+[5.835665] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detectorConfig-version.cmake\n'}
+[5.835821] (ball_detector) StdoutLine: {'line': b'-- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/package.xml\n'}
+[5.836786] (ball_detector) CommandEnded: {'returncode': 0}
+[5.919116] (-) TimerEvent: {}
+[5.984177] (ball_detector) JobEnded: {'identifier': 'ball_detector', 'rc': 0}
+[5.985421] (-) EventReactorShutdown: {}
