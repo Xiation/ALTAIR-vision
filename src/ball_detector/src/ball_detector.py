@@ -19,7 +19,7 @@ class BallDetector(Node):
         # for subscribing as image 
         self.publishers = self.create_publisher(Image, 'vision/camera_feed', 10)
         self.bridge = CvBridge()
-        self
+        
 
     def ball(self, frame):
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
