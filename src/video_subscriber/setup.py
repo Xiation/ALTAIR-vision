@@ -15,11 +15,12 @@ setup(
     zip_safe=True,
     maintainer='altair',
     maintainer_email='abyanraditya.rakapasha@gmail.com',
-    description='TODO: Package description',
+    description='GUI subscriber for displaying video and detection results',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+        'gui_subscriber = video_subscriber.gui_subscriber:main'
         ],
     },
 )
