@@ -21,6 +21,9 @@ class BallDetector(Node):
         self.bridge = CvBridge()
         # unfinished
 
+    def publish_frame(self, frame):
+        ''''''
+
     def ball(self, frame):
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
         lower_orange = np.array([1, 120, 110])
