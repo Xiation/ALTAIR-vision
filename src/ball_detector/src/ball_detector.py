@@ -6,6 +6,9 @@ import numpy as np
 import time
 from ball_detector.msg import BallDistance
 
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+
 
 class BallDetector(Node):
     def __init__(self):
