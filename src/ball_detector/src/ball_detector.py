@@ -6,6 +6,7 @@ import numpy as np
 import time
 from ball_detector.msg import BallDistance
 
+# module packages for image subscribing
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 
@@ -14,6 +15,11 @@ class BallDetector(Node):
     def __init__(self):
         super().__init__('ball_detector')
         self.ball_distance_publisher = self.create_publisher(BallDistance, 'vision/ball_distance', 10)
+
+        # for subscribing as image 
+        self.publishers = self.create_publisher(Image, 'vision/camera_feed', 10)
+        self.bridge = CvBridge()
+        self
 
     def ball(self, frame):
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
