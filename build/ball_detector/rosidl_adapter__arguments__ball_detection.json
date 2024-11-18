@@ -1,0 +1,6 @@
+{
+  "package_name": "ball_detection",
+  "non_idl_tuples": [
+    "/home/altair/Documents/ALTAIR-vision/src/ball_detector:msg/BallDistance.msg"
+  ]
+}
