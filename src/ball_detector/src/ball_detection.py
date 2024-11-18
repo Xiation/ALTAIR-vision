@@ -6,6 +6,8 @@ import numpy as np
 import time
 from ball_detector.msg import BallDistance
 
+# for any tweaking neccessities
+
 # module packages for image subscribing
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
