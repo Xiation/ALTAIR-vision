@@ -96,13 +96,14 @@ def main(args=None):
             print("Error: Could not read a frame from the camera.")
             break
 
-        print("Frame captured from the camera.")
-
         mask_ball = bd.ball(frame)
         mask_field = bd.field(frame)
         diameter, distance = bd.detect(mask_ball, mask_field, frame)
 
-        if diameter is not None and distance is not None:
+        if diameter is None and distance is None:
+            print('No ball is detected')
+
+        elif diameter is not None and distance is not None:
             bd.get_logger().info(f"Detected Diameter: {diameter} pixels, Distance: {distance:.2f} meters")
             msg = Float64()
             msg.data = distance
