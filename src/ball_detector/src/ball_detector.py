@@ -103,7 +103,8 @@ def main(args=None):
         if diameter is None and distance is None:
             print(f'No ball is detected')
 
-        elif diameter is not None and distance is not None:
+        # elif diameter is not None and distance is not None:
+        else:
             bd.get_logger().info(f"Detected Diameter: {diameter} pixels, Distance: {distance:.2f} meters")
             msg = Float64()
             msg.data = distance
