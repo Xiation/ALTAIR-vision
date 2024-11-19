@@ -4,7 +4,7 @@ from std_msgs.msg import Float64
 import cv2
 import numpy as np
 import time
-from ball_detector.msg import BallDistance
+# from ball_detector.msg import BallDistance
 
 # for any tweaking neccessities
 
@@ -16,7 +16,7 @@ from cv_bridge import CvBridge
 class BallDetector(Node):
     def __init__(self):
         super().__init__('ball_detector')
-        self.ball_distance_publisher = self.create_publisher(BallDistance, 'vision/ball_distance', 10)
+        self.ball_distance_publisher = self.create_publisher(Float64, 'vision/ball_distance', 10)
 
         # for subscribing as image 
         self.publishers = self.create_publisher(Image, 'vision/camera_feed', 10)
