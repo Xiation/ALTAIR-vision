@@ -120,9 +120,12 @@ def main(args=None):
 
         if diameter is not None and distance is not None:
             bd.get_logger().info(f"Detected Diameter: {diameter} pixels, Distance: {distance:.2f} meters")
-            msg = BallDistance
-            msg.jaraknya_jing = distance
-            msg.ball_ada_cok = True
+            # msg = BallDistance
+            # msg.jaraknya_jing = distance
+            # msg.ball_ada_cok = True
+
+            msg = Float64()
+            msg.data = distance
             bd.ball_distance_publisher.publish(msg)
 
             print(f"Ball distance: {distance:.2f} meters")
