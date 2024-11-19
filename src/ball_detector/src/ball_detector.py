@@ -1,28 +1,14 @@
 import rclpy 
-from rclpy.node import Node
+from rclpy import Node
 from std_msgs.msg import Float64
 import cv2
 import numpy as np
 import time
-from ball_detector.msg import BallDistance
-
-# module packages for image subscribing
-from sensor_msgs.msg import Image
-from cv_bridge import CvBridge
-
 
 class BallDetector(Node):
     def __init__(self):
         super().__init__('ball_detector')
-        self.ball_distance_publisher = self.create_publisher(BallDistance, 'vision/ball_distance', 10)
-
-        # for subscribing as image 
-        self.publishers = self.create_publisher(Image, 'vision/camera_feed', 10)
-        self.bridge = CvBridge()
-        # unfinished
-
-    def publish_frame(self, frame):
-        ''''''
+        self.ball_distance_publisher = self.create_publisher(Float64, 'vision/ball_distance', 10)
 
     def ball(self, frame):
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
@@ -110,22 +96,17 @@ def main(args=None):
             print("Error: Could not read a frame from the camera.")
             break
 
-        
+        print("Frame captured from the camera.")
 
         mask_ball = bd.ball(frame)
         mask_field = bd.field(frame)
         diameter, distance = bd.detect(mask_ball, mask_field, frame)
 
         if diameter is not None and distance is not None:
-            # bd.get_logger().info(f"Detected Diameter: {diameter} pixels, Distance: {distance:.2f} meters")
-            msg = BallDistance
-            msg.jaraknya_jing = distance
-            msg.ball_ada_cok = True
+            bd.get_logger().info(f"Detected Diameter: {diameter} pixels, Distance: {distance:.2f} meters")
+            msg = Float64()
+            msg.data = distance
             bd.ball_distance_publisher.publish(msg)
-
-            print(f"Ball distance: {distance:.2f} meters")
-        else:
-            print(f'GADA BOLA NGENTOD')
 
     cap.release()
 
