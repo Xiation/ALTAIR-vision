@@ -1,6 +1,7 @@
 import rclpy 
 from rclpy.node import Node
 from std_msgs.msg import Float64
+from std_msgs.msg import String
 import cv2
 import numpy as np
 import time
@@ -91,6 +92,25 @@ class BallDetector(Node):
                     return total_pixel, distance
 
         return None, None
+    
+    def publish_data(self, frame):
+        masked_ball = self.ball(frame)
+        masked_field = self.field(frame)
+        diameter, distance = self.detect(masked_ball, masked_field, frame)
+
+        if diameter is not None and distance is not None:
+            self.get_logger().info(f"Detected Diameter: {diameter} pixels, Distance: {distance:.2f} meters")
+
+            msg = Float64()
+            msg.data = distance
+            self.ball_distance_publisher.publish(msg)
+
+            print(f"Ball distance: {distance:.2f} meters")
+
+        else:
+            self.get_logger().info(f"No ball is detected")
+
+    
 
 def main(args=None):
     rclpy.init(args=args)
@@ -130,7 +150,9 @@ def main(args=None):
 
             print(f"Ball distance: {distance:.2f} meters")
         else:
-            print(f'GADA BOLA NGENTOD')
+            # print(f'GADA BOLA NGENTOD')
+            msg = String()
+            msg.data
 
     cap.release()
 
