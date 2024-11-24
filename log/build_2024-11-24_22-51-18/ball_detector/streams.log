@@ -1,0 +1,171 @@
+[0.013s] Invoking command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/altair/Documents/ALTAIR-vision/install/video_subscriber:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/altair/Documents/ALTAIR-vision/build/ball_detector -- -j16 -l16
+[0.050s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.091s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.226s] -- Found rclpy: 7.1.2 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.226s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.230s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.277s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.310s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.313s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.769s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.955s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.193s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.194s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[1.561s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[1.590s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.603s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.603s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.604s] -- Added test 'lint_cmake' to check CMake code style
+[1.604s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.606s] -- Added test 'xmllint' to check XML markup files
+[1.609s] -- Configuring done (1.6s)
+[1.648s] -- Generating done (0.0s)
+[1.651s] -- Build files have been written to: /home/altair/Documents/ALTAIR-vision/build/ball_detector
+[1.697s] [  2%] Built target ball_detector__rosidl_generator_type_description
+[1.714s] [  2%] Built target ament_cmake_python_copy_ball_detector
+[1.737s] [  5%] Built target ball_detector__cpp
+[1.741s] [ 20%] Built target ball_detector__rosidl_generator_c
+[1.785s] [ 29%] Built target ball_detector__rosidl_typesupport_introspection_c
+[1.789s] [ 38%] Built target ball_detector__rosidl_typesupport_c
+[1.791s] [ 47%] Built target ball_detector__rosidl_typesupport_fastrtps_c
+[1.792s] [ 55%] Built target ball_detector__rosidl_typesupport_introspection_cpp
+[1.795s] [ 64%] Built target ball_detector__rosidl_typesupport_cpp
+[1.797s] [ 73%] Built target ball_detector__rosidl_typesupport_fastrtps_cpp
+[1.824s] [ 73%] Built target ball_detector
+[1.848s] [ 76%] Built target ball_detector__py
+[1.877s] [ 82%] Built target ball_detector__rosidl_generator_py
+[1.903s] [ 88%] Built target ball_detector_s__rosidl_typesupport_fastrtps_c
+[1.904s] [ 94%] Built target ball_detector_s__rosidl_typesupport_introspection_c
+[1.904s] [100%] Built target ball_detector_s__rosidl_typesupport_c
+[1.992s] running egg_info
+[2.012s] writing ball_detector.egg-info/PKG-INFO
+[2.012s] writing dependency_links to ball_detector.egg-info/dependency_links.txt
+[2.012s] writing top-level names to ball_detector.egg-info/top_level.txt
+[2.070s] reading manifest file 'ball_detector.egg-info/SOURCES.txt'
+[2.070s] writing manifest file 'ball_detector.egg-info/SOURCES.txt'
+[2.103s] [100%] Built target ament_cmake_python_build_ball_detector_egg
+[2.119s] Invoked command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/altair/Documents/ALTAIR-vision/install/video_subscriber:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/altair/Documents/ALTAIR-vision/build/ball_detector -- -j16 -l16
+[2.251s] Invoking command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/altair/Documents/ALTAIR-vision/install/video_subscriber:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/altair/Documents/ALTAIR-vision/build/ball_detector
+[2.265s] -- Install configuration: ""
+[2.265s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/rosidl_interfaces/ball_detector
+[2.265s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/msg/BallDistance.json
+[2.265s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector
+[2.266s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg
+[2.266s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail
+[2.266s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__description.c
+[2.266s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__type_support.h
+[2.266s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__functions.c
+[2.266s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__type_support.c
+[2.266s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__struct.h
+[2.266s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__functions.h
+[2.266s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/rosidl_generator_c__visibility_control.h
+[2.267s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/ball_distance.h
+[2.267s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/library_path.sh
+[2.267s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/library_path.dsv
+[2.267s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_generator_c.so
+[2.267s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector
+[2.267s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg
+[2.267s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail
+[2.267s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__rosidl_typesupport_fastrtps_c.h
+[2.267s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.267s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_fastrtps_c.so
+[2.268s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector
+[2.268s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg
+[2.268s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail
+[2.268s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__rosidl_typesupport_introspection_c.h
+[2.268s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__type_support.c
+[2.268s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.268s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_introspection_c.so
+[2.268s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_c.so
+[2.268s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector
+[2.269s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg
+[2.269s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail
+[2.269s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__traits.hpp
+[2.269s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__type_support.hpp
+[2.269s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__builder.hpp
+[2.269s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__struct.hpp
+[2.269s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/ball_distance.hpp
+[2.269s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.269s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector
+[2.269s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg
+[2.270s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail
+[2.270s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__rosidl_typesupport_fastrtps_cpp.hpp
+[2.270s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/dds_fastrtps
+[2.270s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.270s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_fastrtps_cpp.so
+[2.270s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector
+[2.270s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg
+[2.270s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail
+[2.270s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__type_support.cpp
+[2.271s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/include/ball_detector/ball_detector/msg/detail/ball_distance__rosidl_typesupport_introspection_cpp.hpp
+[2.271s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_introspection_cpp.so
+[2.271s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_typesupport_cpp.so
+[2.271s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/pythonpath.sh
+[2.271s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/pythonpath.dsv
+[2.271s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info
+[2.271s] -- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info/SOURCES.txt
+[2.271s] -- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info/PKG-INFO
+[2.271s] -- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info/top_level.txt
+[2.271s] -- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info/dependency_links.txt
+[2.272s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector
+[2.272s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_introspection_c.so
+[2.272s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.272s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_fastrtps_c.so
+[2.272s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/_ball_detector_s.ep.rosidl_typesupport_introspection_c.c
+[2.272s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_c.so
+[2.272s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg
+[2.272s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg/_ball_distance.py
+[2.272s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg/_ball_distance_s.c
+[2.273s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg/__init__.py
+[2.273s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/_ball_detector_s.ep.rosidl_typesupport_c.c
+[2.273s] -- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/__init__.py
+[2.329s] Listing '/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector'...
+[2.329s] Compiling '/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/__init__.py'...
+[2.329s] Listing '/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/msg'...
+[2.336s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_fastrtps_c.so
+[2.336s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_introspection_c.so
+[2.337s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector_s__rosidl_typesupport_c.so
+[2.337s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_generator_py.so
+[2.337s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/msg/BallDistance.idl
+[2.337s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/msg/BallDistance.msg
+[2.337s] -- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/ball_detector/ball_detection.py
+[2.337s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/package_run_dependencies/ball_detector
+[2.337s] -- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/parent_prefix_path/ball_detector
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/ament_prefix_path.sh
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/ament_prefix_path.dsv
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/path.sh
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/path.dsv
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/local_setup.bash
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/local_setup.sh
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/local_setup.zsh
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/local_setup.dsv
+[2.338s] -- Installing: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/package.dsv
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/packages/ball_detector
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_generator_cExport.cmake
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_generator_cExport-noconfig.cmake
+[2.338s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_typesupport_fastrtps_cExport.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_introspection_cExport.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_cExport.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_cExport-noconfig.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_generator_cppExport.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_introspection_cppExport.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_cppExport.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detector__rosidl_typesupport_cppExport-noconfig.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_generator_pyExport.cmake
+[2.339s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/export_ball_detector__rosidl_generator_pyExport-noconfig.cmake
+[2.340s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/rosidl_cmake-extras.cmake
+[2.340s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.340s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.340s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ament_cmake_export_libraries-extras.cmake
+[2.340s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ament_cmake_export_targets-extras.cmake
+[2.340s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.340s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.340s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detectorConfig.cmake
+[2.340s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/cmake/ball_detectorConfig-version.cmake
+[2.340s] -- Up-to-date: /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/package.xml
+[2.342s] Invoked command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/altair/Documents/ALTAIR-vision/install/video_subscriber:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/altair/Documents/ALTAIR-vision/build/ball_detector

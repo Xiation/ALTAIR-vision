@@ -39,7 +39,7 @@ ament_export_dependencies(rosidl_default_runtime)
 
 # add this line below to execute py program
 install(PROGRAMS
-  src/ball_detector/ball_detection.py
+  src/ball_detection.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

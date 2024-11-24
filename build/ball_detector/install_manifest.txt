@@ -54,6 +54,7 @@
 /home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/libball_detector__rosidl_generator_py.so
 /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/msg/BallDistance.idl
 /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/msg/BallDistance.msg
+/home/altair/Documents/ALTAIR-vision/install/ball_detector/lib/ball_detector/ball_detection.py
 /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/package_run_dependencies/ball_detector
 /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/parent_prefix_path/ball_detector
 /home/altair/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/environment/ament_prefix_path.sh
