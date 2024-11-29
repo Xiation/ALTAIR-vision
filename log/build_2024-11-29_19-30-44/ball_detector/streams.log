@@ -1,0 +1,20 @@
+[0.023s] Invoking command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/altair/Documents/ALTAIR-vision/install/video_subscriber:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/altair/Documents/ALTAIR-vision/build/ball_detector -- -j16 -l16
+[0.074s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.276s] -- Found rclpy: 7.1.2 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.276s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.281s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.350s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.407s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.410s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.683s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:66 (message):
+[0.683s]   ament_python_install_package() the Python package folder
+[0.683s]   '/home/altair/Documents/ALTAIR-vision/src/ball_detector/ball_detector'
+[0.684s]   doesn't contain an '__init__.py' file
+[0.684s] Call Stack (most recent call first):
+[0.684s]   /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[0.684s]   CMakeLists.txt:33 (ament_python_install_package)
+[0.684s] 
+[0.685s] [0m
+[0.685s] -- Configuring incomplete, errors occurred!
+[0.691s] gmake: *** [Makefile:815: cmake_check_build_system] Error 1
+[0.695s] Invoked command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/altair/Documents/ALTAIR-vision/install/video_subscriber:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/altair/Documents/ALTAIR-vision/build/ball_detector -- -j16 -l16

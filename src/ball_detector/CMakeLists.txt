@@ -28,6 +28,10 @@ find_package(std_msgs REQUIRED)
 #   "std_msgs"
 # )
 
+find_package(ament_cmake_python REQUIRED)
+
+# ament_python_install_package(src/ball_detector)
+
 rosidl_generate_interfaces(
   ${PROJECT_NAME}
   "msg/BallDistance.msg"
@@ -39,7 +43,7 @@ ament_export_dependencies(rosidl_default_runtime)
 
 # add this line below to execute py program
 install(PROGRAMS
-  src/ball_detection.py
+  src/ball_detector/ball_detection.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

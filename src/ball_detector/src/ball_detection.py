@@ -21,8 +21,8 @@ class BallDetector(Node):
         self.ball_distance_publisher = self.create_publisher(Float64, 'vision/ball_distance', 10)
 
         # for subscribing as image 
-        self.publishers = self.create_publisher(Image, 'vision/camera_feed', 10)
-        self.bridge = CvBridge()
+        # self.publishers = self.create_publisher(Image, 'vision/camera_feed', 10)
+        # self.bridge = CvBridge()
         # unfinished
 
     def publish_frame(self, frame):

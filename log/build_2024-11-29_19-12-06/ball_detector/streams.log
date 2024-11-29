@@ -1,0 +1,21 @@
+[0.024s] Invoking command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/altair/Documents/ALTAIR-vision/build/ball_detector -- -j16 -l16
+[0.107s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.163s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.341s] -- Found rclpy: 7.1.2 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.342s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.350s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.455s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.533s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.540s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.784s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:66 (message):
+[0.785s]   ament_python_install_package() the Python package folder
+[0.785s]   '/home/altair/Documents/ALTAIR-vision/src/ball_detector/ball_detector'
+[0.785s]   doesn't contain an '__init__.py' file
+[0.785s] Call Stack (most recent call first):
+[0.785s]   /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[0.785s]   CMakeLists.txt:33 (ament_python_install_package)
+[0.785s] 
+[0.785s] [0m
+[0.785s] -- Configuring incomplete, errors occurred!
+[0.792s] gmake: *** [Makefile:815: cmake_check_build_system] Error 1
+[0.795s] Invoked command in '/home/altair/Documents/ALTAIR-vision/build/ball_detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/altair/Documents/ALTAIR-vision/build/ball_detector -- -j16 -l16

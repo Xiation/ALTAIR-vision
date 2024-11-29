@@ -371,7 +371,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ball_detector" TYPE PROGRAM FILES "/home/altair/Documents/ALTAIR-vision/src/ball_detector/src/ball_detection.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ball_detector" TYPE PROGRAM FILES "/home/altair/Documents/ALTAIR-vision/src/ball_detector/src/ball_detector/ball_detection.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
