@@ -1,0 +1,21 @@
+[1.285s] Invoking command in '/home/altair/Documents/ALTAIR-vision/src/ball_detPy': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/altair/Documents/ALTAIR-vision/build/ball_detPy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/altair/Documents/ALTAIR-vision/install/ball_detPy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ball_detPy build --build-base /home/altair/Documents/ALTAIR-vision/build/ball_detPy/build install --record /home/altair/Documents/ALTAIR-vision/build/ball_detPy/install.log --single-version-externally-managed install_data
+[1.657s] running egg_info
+[1.680s] writing ../../build/ball_detPy/ball_detPy.egg-info/PKG-INFO
+[1.681s] writing dependency_links to ../../build/ball_detPy/ball_detPy.egg-info/dependency_links.txt
+[1.681s] writing entry points to ../../build/ball_detPy/ball_detPy.egg-info/entry_points.txt
+[1.681s] writing requirements to ../../build/ball_detPy/ball_detPy.egg-info/requires.txt
+[1.681s] writing top-level names to ../../build/ball_detPy/ball_detPy.egg-info/top_level.txt
+[1.731s] reading manifest file '../../build/ball_detPy/ball_detPy.egg-info/SOURCES.txt'
+[1.732s] writing manifest file '../../build/ball_detPy/ball_detPy.egg-info/SOURCES.txt'
+[1.733s] running build
+[1.733s] running build_py
+[1.733s] running install
+[1.744s] running install_lib
+[1.773s] running install_data
+[1.773s] running install_egg_info
+[1.804s] removing '/home/altair/Documents/ALTAIR-vision/install/ball_detPy/lib/python3.12/site-packages/ball_detPy-0.0.0-py3.12.egg-info' (and everything under it)
+[1.804s] Copying ../../build/ball_detPy/ball_detPy.egg-info to /home/altair/Documents/ALTAIR-vision/install/ball_detPy/lib/python3.12/site-packages/ball_detPy-0.0.0-py3.12.egg-info
+[1.805s] running install_scripts
+[1.976s] Installing ball_DetPub script to /home/altair/Documents/ALTAIR-vision/install/ball_detPy/lib/ball_detPy
+[1.977s] writing list of installed files to '/home/altair/Documents/ALTAIR-vision/build/ball_detPy/install.log'
+[2.010s] Invoked command in '/home/altair/Documents/ALTAIR-vision/src/ball_detPy' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/altair/Documents/ALTAIR-vision/build/ball_detPy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/altair/Documents/ALTAIR-vision/install/ball_detPy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ball_detPy build --build-base /home/altair/Documents/ALTAIR-vision/build/ball_detPy/build install --record /home/altair/Documents/ALTAIR-vision/build/ball_detPy/install.log --single-version-externally-managed install_data

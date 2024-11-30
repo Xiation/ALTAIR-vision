@@ -1,2 +1,2 @@
 [console_scripts]
-ball_det = ball_detPy.ballDetPub:main
+ball_DetPub = ball_detPy.ballDetPub:main

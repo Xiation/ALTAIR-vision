@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/ball_detPy/ball_detPy.egg-info/PKG-INFO
+writing dependency_links to ../../build/ball_detPy/ball_detPy.egg-info/dependency_links.txt
+writing entry points to ../../build/ball_detPy/ball_detPy.egg-info/entry_points.txt
+writing requirements to ../../build/ball_detPy/ball_detPy.egg-info/requires.txt
+writing top-level names to ../../build/ball_detPy/ball_detPy.egg-info/top_level.txt
+reading manifest file '../../build/ball_detPy/ball_detPy.egg-info/SOURCES.txt'
+writing manifest file '../../build/ball_detPy/ball_detPy.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/altair/Documents/ALTAIR-vision/install/ball_detPy/lib/python3.12/site-packages/ball_detPy-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/ball_detPy/ball_detPy.egg-info to /home/altair/Documents/ALTAIR-vision/install/ball_detPy/lib/python3.12/site-packages/ball_detPy-0.0.0-py3.12.egg-info
+running install_scripts
+Installing ball_DetPub script to /home/altair/Documents/ALTAIR-vision/install/ball_detPy/lib/ball_detPy
+writing list of installed files to '/home/altair/Documents/ALTAIR-vision/build/ball_detPy/install.log'
