@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'ball_detection = ball_detPy.ballDetPub:main'
+            'ball_det = ball_detPy.ballDetPub:main'
         ],
     },
 )
