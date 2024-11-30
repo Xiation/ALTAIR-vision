@@ -1,0 +1,37 @@
+[1.944s] Invoking command in '/home/altair/Documents/ALTAIR-vision/src/video_subscriber': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/altair/Documents/ALTAIR-vision/build/video_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/altair/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/video_subscriber build --build-base /home/altair/Documents/ALTAIR-vision/build/video_subscriber/build install --record /home/altair/Documents/ALTAIR-vision/build/video_subscriber/install.log --single-version-externally-managed install_data
+[2.431s] running egg_info
+[2.431s] creating ../../build/video_subscriber/video_subscriber.egg-info
+[2.466s] writing ../../build/video_subscriber/video_subscriber.egg-info/PKG-INFO
+[2.466s] writing dependency_links to ../../build/video_subscriber/video_subscriber.egg-info/dependency_links.txt
+[2.466s] writing entry points to ../../build/video_subscriber/video_subscriber.egg-info/entry_points.txt
+[2.466s] writing requirements to ../../build/video_subscriber/video_subscriber.egg-info/requires.txt
+[2.466s] writing top-level names to ../../build/video_subscriber/video_subscriber.egg-info/top_level.txt
+[2.466s] writing manifest file '../../build/video_subscriber/video_subscriber.egg-info/SOURCES.txt'
+[2.533s] reading manifest file '../../build/video_subscriber/video_subscriber.egg-info/SOURCES.txt'
+[2.535s] writing manifest file '../../build/video_subscriber/video_subscriber.egg-info/SOURCES.txt'
+[2.535s] running build
+[2.535s] running build_py
+[2.535s] creating /home/altair/Documents/ALTAIR-vision/build/video_subscriber/build
+[2.535s] creating /home/altair/Documents/ALTAIR-vision/build/video_subscriber/build/lib
+[2.536s] creating /home/altair/Documents/ALTAIR-vision/build/video_subscriber/build/lib/video_subscriber
+[2.536s] copying video_subscriber/vid_subscriber.py -> /home/altair/Documents/ALTAIR-vision/build/video_subscriber/build/lib/video_subscriber
+[2.536s] copying video_subscriber/__init__.py -> /home/altair/Documents/ALTAIR-vision/build/video_subscriber/build/lib/video_subscriber
+[2.536s] running install
+[2.549s] running install_lib
+[2.582s] creating /home/altair/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber
+[2.583s] copying /home/altair/Documents/ALTAIR-vision/build/video_subscriber/build/lib/video_subscriber/vid_subscriber.py -> /home/altair/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber
+[2.583s] copying /home/altair/Documents/ALTAIR-vision/build/video_subscriber/build/lib/video_subscriber/__init__.py -> /home/altair/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber
+[2.584s] byte-compiling /home/altair/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber/vid_subscriber.py to vid_subscriber.cpython-312.pyc
+[2.584s] byte-compiling /home/altair/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber/__init__.py to __init__.cpython-312.pyc
+[2.584s] running install_data
+[2.584s] creating /home/altair/Documents/ALTAIR-vision/install/video_subscriber/share/ament_index
+[2.585s] creating /home/altair/Documents/ALTAIR-vision/install/video_subscriber/share/ament_index/resource_index
+[2.585s] creating /home/altair/Documents/ALTAIR-vision/install/video_subscriber/share/ament_index/resource_index/packages
+[2.585s] copying resource/video_subscriber -> /home/altair/Documents/ALTAIR-vision/install/video_subscriber/share/ament_index/resource_index/packages
+[2.585s] copying package.xml -> /home/altair/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber
+[2.585s] running install_egg_info
+[2.621s] Copying ../../build/video_subscriber/video_subscriber.egg-info to /home/altair/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber-0.0.0-py3.12.egg-info
+[2.622s] running install_scripts
+[2.852s] Installing gui_subscriber script to /home/altair/Documents/ALTAIR-vision/install/video_subscriber/lib/video_subscriber
+[2.853s] writing list of installed files to '/home/altair/Documents/ALTAIR-vision/build/video_subscriber/install.log'
+[2.893s] Invoked command in '/home/altair/Documents/ALTAIR-vision/src/video_subscriber' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/altair/Documents/ALTAIR-vision/build/video_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/altair/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/video_subscriber build --build-base /home/altair/Documents/ALTAIR-vision/build/video_subscriber/build install --record /home/altair/Documents/ALTAIR-vision/build/video_subscriber/install.log --single-version-externally-managed install_data

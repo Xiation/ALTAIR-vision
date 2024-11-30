@@ -346,15 +346,6 @@ ament_pep257_BIN:FILEPATH=/opt/ros/jazzy/bin/ament_pep257
 ament_xmllint_BIN:FILEPATH=/opt/ros/jazzy/bin/ament_xmllint
 
 //Value Computed by CMake
-ball_detection_BINARY_DIR:STATIC=/home/altair/Documents/ALTAIR-vision/build/ball_detector
-
-//Value Computed by CMake
-ball_detection_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-ball_detection_SOURCE_DIR:STATIC=/home/altair/Documents/ALTAIR-vision/src/ball_detector
-
-//Value Computed by CMake
 ball_detector_BINARY_DIR:STATIC=/home/altair/Documents/ALTAIR-vision/build/ball_detector
 
 //Value Computed by CMake
