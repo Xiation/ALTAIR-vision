@@ -1,2 +1,0 @@
-/home/altair/Documents/ALTAIR-vision/build/vision_msg/CMakeFiles/edit_cache.dir
-/home/altair/Documents/ALTAIR-vision/build/vision_msg/CMakeFiles/rebuild_cache.dir

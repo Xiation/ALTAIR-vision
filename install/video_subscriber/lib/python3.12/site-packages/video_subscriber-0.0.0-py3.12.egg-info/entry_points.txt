@@ -1,2 +1,0 @@
-[console_scripts]
-gui_subscriber = video_subscriber.vid_subscriber:main

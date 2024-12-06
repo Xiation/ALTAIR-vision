@@ -1,0 +1,90 @@
+[0.000000] (-) TimerEvent: {}
+[0.000354] (-) JobUnselected: {'identifier': 'ball_detPy'}
+[0.000436] (-) JobUnselected: {'identifier': 'temp_ball_detector'}
+[0.000487] (-) JobUnselected: {'identifier': 'video_subscriber'}
+[0.000520] (-) JobUnselected: {'identifier': 'vision_msg'}
+[0.000556] (ball_detector) JobQueued: {'identifier': 'ball_detector', 'dependencies': OrderedDict()}
+[0.000596] (ball_detector) JobStarted: {'identifier': 'ball_detector'}
+[0.098121] (-) TimerEvent: {}
+[0.198533] (-) TimerEvent: {}
+[0.298961] (-) TimerEvent: {}
+[0.399367] (-) TimerEvent: {}
+[0.499742] (-) TimerEvent: {}
+[0.600078] (-) TimerEvent: {}
+[0.700454] (-) TimerEvent: {}
+[0.800806] (-) TimerEvent: {}
+[0.901169] (-) TimerEvent: {}
+[1.001522] (-) TimerEvent: {}
+[1.101824] (-) TimerEvent: {}
+[1.202127] (-) TimerEvent: {}
+[1.302470] (-) TimerEvent: {}
+[1.402827] (-) TimerEvent: {}
+[1.503164] (-) TimerEvent: {}
+[1.603483] (-) TimerEvent: {}
+[1.703804] (-) TimerEvent: {}
+[1.804162] (-) TimerEvent: {}
+[1.904505] (-) TimerEvent: {}
+[2.004842] (-) TimerEvent: {}
+[2.105193] (-) TimerEvent: {}
+[2.205594] (-) TimerEvent: {}
+[2.306174] (-) TimerEvent: {}
+[2.406552] (-) TimerEvent: {}
+[2.506910] (-) TimerEvent: {}
+[2.606764] (ball_detector) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ball_detector', 'build', '--build-base', '/home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/build', 'install', '--record', '/home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lexciese/Dev/temp/ALTAIR-vision/src/ball_detector', 'env': {'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lexciese', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/share/gz:/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'LESS': '-R', 'HOME': '/home/lexciese', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/lexciese/Dev/temp/ALTAIR-vision/src', 'DESKTOP_SESSION': 'ubuntu', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'ZSH': '/home/lexciese/.oh-my-zsh', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'less', 'SYSTEMD_EXEC_PID': '2871', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'lexciese', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lexciese', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/home/lexciese/miniconda3/condabin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/lexciese/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim-linux64/bin:/opt/nvim-linux64/bin', 'SESSION_MANAGER': 'local/lexciese:@/tmp/.ICE-unix/2820,unix/lexciese:/tmp/.ICE-unix/2820', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/00cd1abc_8974_4a46_9822_96d230f3e752', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.106', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/lexciese/miniconda3/bin/python', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/lexciese/miniconda3/bin/conda', 'GAZEBO_PLUGIN_PATH': ':/opt/ros/jazzy/lib:/opt/ros/jazzy/lib', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/lexciese/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'MANPATH': '/usr/local/man:', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.615341] (-) TimerEvent: {}
+[2.715729] (-) TimerEvent: {}
+[2.816085] (-) TimerEvent: {}
+[2.916464] (-) TimerEvent: {}
+[3.016804] (-) TimerEvent: {}
+[3.117112] (-) TimerEvent: {}
+[3.217436] (-) TimerEvent: {}
+[3.317736] (-) TimerEvent: {}
+[3.418045] (-) TimerEvent: {}
+[3.461306] (ball_detector) StdoutLine: {'line': b'running egg_info\n'}
+[3.461978] (ball_detector) StdoutLine: {'line': b'creating ../../build/ball_detector/ball_detector.egg-info\n'}
+[3.518170] (-) TimerEvent: {}
+[3.533837] (ball_detector) StdoutLine: {'line': b'writing ../../build/ball_detector/ball_detector.egg-info/PKG-INFO\n'}
+[3.534304] (ball_detector) StdoutLine: {'line': b'writing dependency_links to ../../build/ball_detector/ball_detector.egg-info/dependency_links.txt\n'}
+[3.534727] (ball_detector) StdoutLine: {'line': b'writing entry points to ../../build/ball_detector/ball_detector.egg-info/entry_points.txt\n'}
+[3.535063] (ball_detector) StdoutLine: {'line': b'writing requirements to ../../build/ball_detector/ball_detector.egg-info/requires.txt\n'}
+[3.535340] (ball_detector) StdoutLine: {'line': b'writing top-level names to ../../build/ball_detector/ball_detector.egg-info/top_level.txt\n'}
+[3.535716] (ball_detector) StdoutLine: {'line': b"writing manifest file '../../build/ball_detector/ball_detector.egg-info/SOURCES.txt'\n"}
+[3.618295] (-) TimerEvent: {}
+[3.683000] (ball_detector) StdoutLine: {'line': b"reading manifest file '../../build/ball_detector/ball_detector.egg-info/SOURCES.txt'\n"}
+[3.684550] (ball_detector) StdoutLine: {'line': b"writing manifest file '../../build/ball_detector/ball_detector.egg-info/SOURCES.txt'\n"}
+[3.684966] (ball_detector) StdoutLine: {'line': b'running build\n'}
+[3.685189] (ball_detector) StdoutLine: {'line': b'running build_py\n'}
+[3.685502] (ball_detector) StdoutLine: {'line': b'creating /home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/build\n'}
+[3.685755] (ball_detector) StdoutLine: {'line': b'creating /home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/build/lib\n'}
+[3.685999] (ball_detector) StdoutLine: {'line': b'creating /home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/build/lib/ball_detector\n'}
+[3.686228] (ball_detector) StdoutLine: {'line': b'copying ball_detector/__init__.py -> /home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/build/lib/ball_detector\n'}
+[3.686484] (ball_detector) StdoutLine: {'line': b'copying ball_detector/ball_detector.py -> /home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/build/lib/ball_detector\n'}
+[3.686807] (ball_detector) StdoutLine: {'line': b'running install\n'}
+[3.701194] (ball_detector) StdoutLine: {'line': b'running install_lib\n'}
+[3.718436] (-) TimerEvent: {}
+[3.779485] (ball_detector) StdoutLine: {'line': b'creating /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector\n'}
+[3.779928] (ball_detector) StdoutLine: {'line': b'copying /home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/build/lib/ball_detector/__init__.py -> /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector\n'}
+[3.780250] (ball_detector) StdoutLine: {'line': b'copying /home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/build/lib/ball_detector/ball_detector.py -> /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector\n'}
+[3.781412] (ball_detector) StdoutLine: {'line': b'byte-compiling /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/__init__.py to __init__.cpython-312.pyc\n'}
+[3.782232] (ball_detector) StdoutLine: {'line': b'byte-compiling /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector.py to ball_detector.cpython-312.pyc\n'}
+[3.785905] (ball_detector) StdoutLine: {'line': b'running install_data\n'}
+[3.786278] (ball_detector) StdoutLine: {'line': b'creating /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/share/ament_index\n'}
+[3.786649] (ball_detector) StdoutLine: {'line': b'creating /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index\n'}
+[3.786832] (ball_detector) StdoutLine: {'line': b'creating /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/packages\n'}
+[3.787050] (ball_detector) StdoutLine: {'line': b'copying resource/ball_detector -> /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/packages\n'}
+[3.787330] (ball_detector) StdoutLine: {'line': b'copying package.xml -> /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/share/ball_detector\n'}
+[3.787541] (ball_detector) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.818561] (-) TimerEvent: {}
+[3.865342] (ball_detector) StdoutLine: {'line': b'Copying ../../build/ball_detector/ball_detector.egg-info to /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info\n'}
+[3.867867] (ball_detector) StdoutLine: {'line': b'running install_scripts\n'}
+[3.918695] (-) TimerEvent: {}
+[4.019033] (-) TimerEvent: {}
+[4.119350] (-) TimerEvent: {}
+[4.219686] (-) TimerEvent: {}
+[4.320005] (-) TimerEvent: {}
+[4.333131] (ball_detector) StdoutLine: {'line': b'Installing ball_detector script to /home/lexciese/Dev/temp/ALTAIR-vision/install/ball_detector/lib/ball_detector\n'}
+[4.333997] (ball_detector) StdoutLine: {'line': b"writing list of installed files to '/home/lexciese/Dev/temp/ALTAIR-vision/build/ball_detector/install.log'\n"}
+[4.385298] (ball_detector) CommandEnded: {'returncode': 0}
+[4.420130] (-) TimerEvent: {}
+[4.420910] (ball_detector) JobEnded: {'identifier': 'ball_detector', 'rc': 0}
+[4.422459] (-) EventReactorShutdown: {}

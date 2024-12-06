@@ -1,0 +1,2 @@
+[console_scripts]
+ball_detector = ball_detector.ball_detector:main
