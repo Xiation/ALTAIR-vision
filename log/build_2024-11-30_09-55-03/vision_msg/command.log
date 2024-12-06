@@ -1,4 +1,0 @@
-Invoking command in '/home/altair/Documents/ALTAIR-vision/build/vision_msg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/vision_msg -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/vision_msg
-Invoked command in '/home/altair/Documents/ALTAIR-vision/build/vision_msg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/altair/Documents/ALTAIR-vision/vision_msg -DCMAKE_INSTALL_PREFIX=/home/altair/Documents/ALTAIR-vision/install/vision_msg
-Invoking command in '/home/altair/Documents/ALTAIR-vision/build/vision_msg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/altair/Documents/ALTAIR-vision/build/vision_msg -- -j16 -l16
-Invoked command in '/home/altair/Documents/ALTAIR-vision/build/vision_msg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/altair/Documents/ALTAIR-vision/build/vision_msg -- -j16 -l16

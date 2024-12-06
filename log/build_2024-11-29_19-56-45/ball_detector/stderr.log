@@ -1,6 +1,0 @@
-[31mCMake Error at cmake_install.cmake:374 (file):
-  file INSTALL cannot find
-  "/home/altair/Documents/ALTAIR-vision/src/ball_detector/src/ball_detector/ball_detection.py":
-  No such file or directory.
-
-[0m
