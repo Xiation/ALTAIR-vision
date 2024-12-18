@@ -216,7 +216,5 @@ def main():
     display_results(original_image, roi_image, green_mask_cleaned, binarizing(roi_image), thinned_line)
 
 
-
-
 if __name__ == "__main__":
     main()
