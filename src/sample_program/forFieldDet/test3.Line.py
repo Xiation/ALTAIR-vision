@@ -1,6 +1,9 @@
+#
+# PROGRAM WITH MEDIAN FILTER APPLIED
+# 
+
 import cv2 as cv
 import numpy as np
-
 
 low_green = np.array([35, 100, 100])
 up_green = np.array([85, 255, 255])
@@ -49,9 +52,7 @@ def process_image(image_path, low_bound, up_bound):
 
     return roi_image, green_mask_cleaned
 
-
-
-# binarizing for line masking
+# Binarizing for line masking
 def binarizing(roi_image_hsv):
     # white line
     roi_image_hsv = cv.cvtColor(roi_image_hsv, cv.COLOR_BGR2HSV)
@@ -61,27 +62,18 @@ def binarizing(roi_image_hsv):
     line_mask = cv.inRange(roi_image_hsv, white_lower, white_upper)
     kernel = np.ones((2,2), np.uint8)
 
-    # line_mask = cv2.morphologyEx(line_mask, cv2.MORPH_OPEN, kernel)  # Remove small noise
-
     line_mask = cv.morphologyEx(line_mask, cv.MORPH_CLOSE, kernel) # Fill small gaps
     return line_mask
 
-
-
-
-
-# adding median filter before thinning process, filter may be unnessary
-# depending on neccessity
+# Applying median filter for binarized roi image
 def medianFilter(binarized_roi_image, kernel_size=3):
     """
-    applying median filter for binarized roi image
+    Applying median filter for binarized roi image
     """
     filter_roi = cv.medianBlur(binarized_roi_image, kernel_size)
     return filter_roi
 
-
-
-# the thinning process require the image with roi extracted
+# The thinning process requires the image with ROI extracted
 def zhangsuen(binarized_roi_image):
     skeleton = binarized_roi_image.copy() // 255
     changing_pixels = True
@@ -128,25 +120,16 @@ def zhangsuen(binarized_roi_image):
     # Convert back to 255 (white) for visualization
     return (skeleton * 255).astype(np.uint8)
 
-
-
-# receives thinned line from zhangsuen
 def enchanceThinned(zhangsuenThinned):
     kernel1 = np.ones((2,2), np.uint8)
     kernel2 = np.ones((3,3),np.uint8)
-    kernel_rect = cv.getStructuringElement(cv.MORPH_RECT,(5,3))
      
-    # dilated_thinned_line = cv.dilate(zhangsuenThinned, kernel1, iterations = 1)
-    dilated_thinned_line = cv.dilate(zhangsuenThinned, kernel_rect)
+    dilated_thinned_line = cv.dilate(zhangsuenThinned, kernel1, iterations = 1)
 
-    # remove noise
+    # Remove noise
     dilated_thinned_line = cv.morphologyEx(dilated_thinned_line, cv.MORPH_OPEN, kernel1)
 
-    # closing gaps
-    # dilated_thinned_line = cv.morphologyEx(dilated_thinned_line, cv.MORPH_CLOSE, kernel2)
     return dilated_thinned_line
-
-
 
 def get_neighbors(image, x, y):
     """
@@ -174,8 +157,19 @@ def count_transitions(neighbors):
             transitions += 1
     return transitions
 
+def display_results(original_image, roi_image, mask_image, line_mask, thinned_line):
+    """Display the original image, the ROI image, and the mask."""
+    cv.imshow('Original Image', original_image)
+    cv.imshow('Masked Image', roi_image)
+    cv.imshow('Mask', mask_image)
+    cv.imshow('Line Mask', line_mask)
+    cv.imshow('Thinned Line', thinned_line)
 
-def processing(roi_image):
+    cv.waitKey(0)
+    cv.destroyAllWindows()
+
+# New function that applies median filter before thinning
+def process_with_median_filter(roi_image):
     # Apply binarization (convert to binary image)
     binarized_image = binarizing(roi_image)
 
@@ -185,38 +179,17 @@ def processing(roi_image):
     # Perform thinning (Zhang-Suen)
     thinned_line = zhangsuen(filtered_image)
 
-    # enhance line for preserving connectivity
-    thinned_line = enchanceThinned(thinned_line)
-
     return thinned_line
 
-
-def display_results(original_image, roi_image, mask_image, line_mask, thinned_line):
-    """Display the original image, the ROI image, and the mask."""
-    cv.imshow('Original Image', original_image)
-    cv.imshow('Masked Image', roi_image)
-    cv.imshow('Mask', mask_image)
-    cv.imshow('line mask', line_mask)
-
-    # zhangsuen
-    cv.imshow('thinned line', thinned_line )
-
-    cv.waitKey(0)
-    cv.destroyAllWindows()
-
-def main():
+if __name__ == "__main__":
     image_path = "/home/altair/Documents/ALTAIR-vision/src/sample_program/samplesIMG/sampleLineDet.jpeg"  # Provide the correct image path here
     roi_image, green_mask_cleaned = process_image(image_path, low_green, up_green)
     original_image = cv.imread(image_path)  # Use the image path here to load the original image
-    # line_masked = binarizing(roi_image)
 
-   # Process with median filter before thinning
-    thinned_line = processing(roi_image)
+    # Process with median filter before thinning
+    thinned_line = process_with_median_filter(roi_image)
+    
+    # Enhance the thinned line
+    thinned_line = enchanceThinned(thinned_line)
     
     display_results(original_image, roi_image, green_mask_cleaned, binarizing(roi_image), thinned_line)
-
-
-
-
-if __name__ == "__main__":
-    main()
