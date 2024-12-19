@@ -1,23 +1,16 @@
 import cv2 as cv
 import numpy as np
 
-
-low_green = np.array([35, 100, 100])
-up_green = np.array([85, 255, 255])
-
-def process_image(image_path, low_bound, up_bound):
+def process_image(image_path):
     """
     Process an image to extract the region of interest (ROI) based on a color range.
-
-    Parameters:
-    - image_path: Path to the image file.
-    - low_bound: Lower bound of the color range in HSV space.
-    - up_bound: Upper bound of the color range in HSV space.
-
     Returns:
     - roi_image: The image with the region of interest (ROI) extracted.
     - green_mask_cleaned: The cleaned mask showing the green regions.
     """
+    low_green = np.array([35, 100, 100])
+    up_green = np.array([85, 255, 255])
+
     img = cv.imread(image_path)
 
     if img is None:
@@ -25,7 +18,7 @@ def process_image(image_path, low_bound, up_bound):
 
     hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
 
-    green_mask = cv.inRange(hsv, low_bound, up_bound)
+    green_mask = cv.inRange(hsv, low_green, up_green)
 
     # Apply morphological operations (erosion and dilation)
     kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (3, 3))
@@ -67,9 +60,6 @@ def binarizing(roi_image_hsv):
     return line_mask
 
 
-
-
-
 # adding median filter before thinning process, filter may be unnessary
 # depending on neccessity
 def medianFilter(binarized_roi_image, kernel_size=3):
@@ -78,8 +68,6 @@ def medianFilter(binarized_roi_image, kernel_size=3):
     """
     filter_roi = cv.medianBlur(binarized_roi_image, kernel_size)
     return filter_roi
-
-
 
 # the thinning process require the image with roi extracted
 def zhangsuen(binarized_roi_image):
@@ -127,8 +115,6 @@ def zhangsuen(binarized_roi_image):
 
     # Convert back to 255 (white) for visualization
     return (skeleton * 255).astype(np.uint8)
-
-
 
 # receives thinned line from zhangsuen
 def enchanceThinned(zhangsuenThinned):
@@ -206,10 +192,8 @@ def display_results(original_image, roi_image, mask_image, line_mask, thinned_li
 
 def main():
     image_path = "/home/altair/Documents/ALTAIR-vision/src/sample_program/samplesIMG/sampleLineDet.jpeg"  # Provide the correct image path here
-    roi_image, green_mask_cleaned = process_image(image_path, low_green, up_green)
+    roi_image, green_mask_cleaned = process_image(image_path)
     original_image = cv.imread(image_path)  # Use the image path here to load the original image
-    # line_masked = binarizing(roi_image)
-
    # Process with median filter before thinning
     thinned_line = processing(roi_image)
     
