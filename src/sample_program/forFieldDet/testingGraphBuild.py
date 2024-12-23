@@ -229,6 +229,23 @@ def build_lines_from_nodes(major_nodes, radius):
 
     return lines
 
+# build lines from major node continuosly
+def build_lines_from_nodes_continuosly(major_nodes, radius):
+    lines = []
+
+    for i, (x1, y1, _) in enumerate(major_nodes):
+        line = [(x1, y1)]  # Start a new line with the current node
+
+        for j, (x2, y2, _) in enumerate(major_nodes):
+            if i != j : # Ensure not to connect the node to itself
+                distance = np.sqrt((x1 - x2)**2 + (y1 - y2)**2)
+                if distance <= radius:
+                    line.append((x2, y2))  # Add the connected node to the line
+        
+        lines.append(line) # Append the formed line
+    
+    return lines
+
 
 def detect_intersections(lines):
     """
@@ -277,7 +294,7 @@ def processing(roi_image):
 
     # Build lines from major nodes
     line_radius = 10
-    lines = build_lines_from_nodes(major_nodes, line_radius)
+    lines = build_lines_from_nodes_continuosly(major_nodes, line_radius)
 
     # Detect intersections
     intersections = detect_intersections(lines)
