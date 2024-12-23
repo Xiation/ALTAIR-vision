@@ -42,34 +42,28 @@ def process_image(image_path):
 
     return roi_image, green_mask_cleaned
 
-
-
-# binarizing for line masking
+# Binarizing for line masking
 def binarizing(roi_image_hsv):
-    # white line
+    # White line
     roi_image_hsv = cv.cvtColor(roi_image_hsv, cv.COLOR_BGR2HSV)
-    white_lower = np.array([0,0,155], dtype=np.uint8)
-    white_upper = np.array([255,155,255], dtype=np.uint8)
+    white_lower = np.array([0, 0, 155], dtype=np.uint8)
+    white_upper = np.array([255, 155, 255], dtype=np.uint8)
 
     line_mask = cv.inRange(roi_image_hsv, white_lower, white_upper)
-    kernel = np.ones((2,2), np.uint8)
+    kernel = np.ones((2, 2), np.uint8)
 
-    # line_mask = cv2.morphologyEx(line_mask, cv2.MORPH_OPEN, kernel)  # Remove small noise
-
-    line_mask = cv.morphologyEx(line_mask, cv.MORPH_CLOSE, kernel) # Fill small gaps
+    line_mask = cv.morphologyEx(line_mask, cv.MORPH_CLOSE, kernel)  # Fill small gaps
     return line_mask
 
-
-# adding median filter before thinning process, filter may be unnessary
-# depending on neccessity
+# Adding median filter before thinning process, filter may be unnecessary depending on necessity
 def medianFilter(binarized_roi_image, kernel_size=3):
     """
-    applying median filter for binarized roi image
+    Applying median filter for binarized ROI image
     """
     filter_roi = cv.medianBlur(binarized_roi_image, kernel_size)
     return filter_roi
 
-# the thinning process require the image with roi extracted
+# The thinning process requires the image with ROI extracted
 def zhangsuen(binarized_roi_image):
     skeleton = binarized_roi_image.copy() // 255
     changing_pixels = True
@@ -82,7 +76,7 @@ def zhangsuen(binarized_roi_image):
             for y in range(1, skeleton.shape[1] - 1):
                 if skeleton[x, y] == 1:  # Only process white pixels
                     neighbors = get_neighbors(skeleton, x, y)
-                    if (2 <= sum(neighbors) <= 6 and
+                    if (2 <= sum(neighbors) <= 5 and
                         count_transitions(neighbors) == 1 and
                         neighbors[1] * neighbors[3] * neighbors[5] == 0 and
                         neighbors[3] * neighbors[5] * neighbors[7] == 0):
@@ -92,7 +86,7 @@ def zhangsuen(binarized_roi_image):
         for x, y in changing_pixels:
             skeleton[x, y] = 0
 
-        # reset changing_pixels for the second sub-iteration
+        # Reset changing_pixels for the second sub-iteration
         changing_pixels = []
 
         # Second sub-iteration
@@ -100,7 +94,7 @@ def zhangsuen(binarized_roi_image):
             for y in range(1, skeleton.shape[1] - 1):
                 if skeleton[x, y] == 1:  # Only process white pixels
                     neighbors = get_neighbors(skeleton, x, y)
-                    if (2 <= sum(neighbors) <= 6 and
+                    if (2 <= sum(neighbors) <= 5 and
                         count_transitions(neighbors) == 1 and
                         neighbors[1] * neighbors[3] * neighbors[7] == 0 and
                         neighbors[1] * neighbors[5] * neighbors[7] == 0):
@@ -116,22 +110,17 @@ def zhangsuen(binarized_roi_image):
     # Convert back to 255 (white) for visualization
     return (skeleton * 255).astype(np.uint8)
 
-# receives thinned line from zhangsuen
+# Receives thinned line from zhangsuen
 def enchanceThinned(zhangsuenThinned):
-    kernel1 = np.ones((2,2), np.uint8)
-    kernel2 = np.ones((3,3),np.uint8)
-    kernel_rect = cv.getStructuringElement(cv.MORPH_RECT,(5,3))
+    kernel1 = np.ones((2, 2), np.uint8)
+    kernel_rect = cv.getStructuringElement(cv.MORPH_RECT, (5, 3))
      
-    # dilated_thinned_line = cv.dilate(zhangsuenThinned, kernel1, iterations = 1)
     dilated_thinned_line = cv.dilate(zhangsuenThinned, kernel_rect)
 
-    # remove noise
+    # Remove noise
     dilated_thinned_line = cv.morphologyEx(dilated_thinned_line, cv.MORPH_OPEN, kernel1)
 
-    # closing gaps
-    # dilated_thinned_line = cv.morphologyEx(dilated_thinned_line, cv.MORPH_CLOSE, kernel2)
     return dilated_thinned_line
-
 
 
 def get_neighbors(image, x, y):
@@ -160,6 +149,61 @@ def count_transitions(neighbors):
             transitions += 1
     return transitions
 
+# Detect line using graph implementation
+def find_nodes_with_weights(skeleton):
+    """
+    Identify nodes in a skeletonized image and assign weights based on connectivity.
+    :param skeleton: Skeletonized binary image.
+    :return: List of nodes with (x, y, weight).
+    """
+    nodes = []
+    rows, cols = skeleton.shape
+
+    for y in range(1, rows - 1):
+        for x in range(1, cols - 1):
+            if skeleton[y, x] == 255:  # Line pixel
+                # Count neighbors in 3x3 window
+                neighbors = skeleton[y-1:y+2, x-1:x+2] > 0
+                num_neighbors = np.sum(neighbors) - 1  # Exclude center pixel
+                
+                # Assign weight based on connectivity
+                weight = num_neighbors
+                if weight > 0:
+                    nodes.append((x, y, weight))
+
+    return nodes
+
+def digestion_algorithm(nodes, radius):
+    """
+    Merge nearby nodes into major nodes using the digestion process.
+    :param nodes: List of nodes (x, y, weight).
+    :param radius: Digestion radius.
+    :return: List of major nodes.
+    """
+    nodes = sorted(nodes, key=lambda n: n[2], reverse=True)  # Sort by weight
+    consumed = set()
+    major_nodes = []
+
+    for i, (x1, y1, weight1) in enumerate(nodes):
+        if i in consumed:
+            continue
+
+        current_node = [x1, y1, weight1]
+        for j, (x2, y2, weight2) in enumerate(nodes):
+            if i == j or j in consumed:
+                continue
+
+            # Check distance between nodes
+            distance = np.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+            if distance < radius:
+                current_node[0] = (current_node[0] + x2) // 2
+                current_node[1] = (current_node[1] + y2) // 2
+                current_node[2] += weight2
+                consumed.add(j)
+
+        major_nodes.append(tuple(map(int, current_node)))
+
+    return major_nodes
 
 def processing(roi_image):
     # Apply binarization (convert to binary image)
@@ -171,44 +215,35 @@ def processing(roi_image):
     # Perform thinning (Zhang-Suen)
     thinned_line = zhangsuen(filtered_image)
 
-    # enhance line for preserving connectivity
-    thinned_line = enchanceThinned(thinned_line)
+    # Enhance line for preserving connectivity
+    enhanced_line = enchanceThinned(thinned_line)
 
-    return thinned_line
+    # Detect nodes with weights
+    nodes = find_nodes_with_weights(enhanced_line)
 
-# using hough line transform to detect lines
-def LineDetect(roi_image):
-    # using standard hough line transform
+    # Perform digestion to simplify nodes
+    digestion_radius = 10
+    major_nodes = digestion_algorithm(nodes, digestion_radius)
 
-    line_image = roi_image.copy()
+    return enhanced_line, major_nodes
 
-    thinned_line = processing(roi_image)
-    lines = cv.HoughLines(thinned_line, 1, np.pi/180, 200)
 
-    if lines is not None:
-        for rho, theta in lines[:, 0]:
-            a = np.cos(theta)
-            b = np.sin(theta)
-            x0 = a * rho
-            y0 = b * rho
 
-            x1 = int(x0 + 1000 * (-b))
-            x2 = int(x0 - 1000 * (-b))
-
-            y1 = int(y0 + 1000 * (a))
-            y2 = int(y0 - 1000 * (a))
-
-            cv.line(line_image, (x1, y1), (x2, y2), (0,0,255), 2)
-
-def display_results(original_image, roi_image, mask_image, line_mask, thinned_line):
+def display_results(original_image, roi_image, mask_image, line_mask, thinned_line, major_nodes):
     """Display the original image, the ROI image, and the mask."""
     cv.imshow('Original Image', original_image)
     cv.imshow('Masked Image', roi_image)
     cv.imshow('Mask', mask_image)
-    cv.imshow('line mask', line_mask)
+    cv.imshow('Line Mask', line_mask)
 
-    # zhangsuen
-    cv.imshow('thinned line', thinned_line )
+    # Display thinned line
+    cv.imshow('Thinned Line', thinned_line)
+
+    # Overlay major nodes on the thinned line
+    node_overlay = cv.cvtColor(thinned_line, cv.COLOR_GRAY2BGR)
+    for x, y, weight in major_nodes:
+        cv.circle(node_overlay, (x, y), 3, (0, 0, 255), -1)  # Red dots for nodes
+    cv.imshow('Major Nodes', node_overlay)
 
     cv.waitKey(0)
     cv.destroyAllWindows()
@@ -217,11 +252,12 @@ def main():
     image_path = "/home/altair/Documents/ALTAIR-vision/src/sample_program/samplesIMG/sampleLineDet.jpeg"  # Provide the correct image path here
     roi_image, green_mask_cleaned = process_image(image_path)
     original_image = cv.imread(image_path)  # Use the image path here to load the original image
-   # Process with median filter before thinning
-    thinned_line = processing(roi_image)
-    
-    display_results(original_image, roi_image, green_mask_cleaned, binarizing(roi_image), thinned_line)
 
+    # Process with median filter before thinning and node digestion
+    thinned_line, major_nodes = processing(roi_image)
+
+    # Display results with major nodes
+    display_results(original_image, roi_image, green_mask_cleaned, binarizing(roi_image), thinned_line, major_nodes)
 
 if __name__ == "__main__":
     main()

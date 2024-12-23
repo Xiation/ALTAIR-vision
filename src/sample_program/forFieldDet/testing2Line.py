@@ -43,33 +43,27 @@ def process_image(image_path):
     return roi_image, green_mask_cleaned
 
 
-
-# binarizing for line masking
 def binarizing(roi_image_hsv):
     # white line
     roi_image_hsv = cv.cvtColor(roi_image_hsv, cv.COLOR_BGR2HSV)
-    white_lower = np.array([0,0,155], dtype=np.uint8)
-    white_upper = np.array([255,155,255], dtype=np.uint8)
+    white_lower = np.array([0, 0, 155], dtype=np.uint8)
+    white_upper = np.array([255, 155, 255], dtype=np.uint8)
 
     line_mask = cv.inRange(roi_image_hsv, white_lower, white_upper)
-    kernel = np.ones((2,2), np.uint8)
+    kernel = np.ones((2, 2), np.uint8)
 
-    # line_mask = cv2.morphologyEx(line_mask, cv2.MORPH_OPEN, kernel)  # Remove small noise
-
-    line_mask = cv.morphologyEx(line_mask, cv.MORPH_CLOSE, kernel) # Fill small gaps
+    line_mask = cv.morphologyEx(line_mask, cv.MORPH_CLOSE, kernel)  # Fill small gaps
     return line_mask
 
 
-# adding median filter before thinning process, filter may be unnessary
-# depending on neccessity
 def medianFilter(binarized_roi_image, kernel_size=3):
     """
-    applying median filter for binarized roi image
+    Applying median filter for binarized roi image
     """
     filter_roi = cv.medianBlur(binarized_roi_image, kernel_size)
     return filter_roi
 
-# the thinning process require the image with roi extracted
+
 def zhangsuen(binarized_roi_image):
     skeleton = binarized_roi_image.copy() // 255
     changing_pixels = True
@@ -116,22 +110,17 @@ def zhangsuen(binarized_roi_image):
     # Convert back to 255 (white) for visualization
     return (skeleton * 255).astype(np.uint8)
 
-# receives thinned line from zhangsuen
+
 def enchanceThinned(zhangsuenThinned):
-    kernel1 = np.ones((2,2), np.uint8)
-    kernel2 = np.ones((3,3),np.uint8)
-    kernel_rect = cv.getStructuringElement(cv.MORPH_RECT,(5,3))
+    kernel1 = np.ones((2, 2), np.uint8)
+    kernel_rect = cv.getStructuringElement(cv.MORPH_RECT, (5, 3))
      
-    # dilated_thinned_line = cv.dilate(zhangsuenThinned, kernel1, iterations = 1)
     dilated_thinned_line = cv.dilate(zhangsuenThinned, kernel_rect)
 
-    # remove noise
+    # Remove noise
     dilated_thinned_line = cv.morphologyEx(dilated_thinned_line, cv.MORPH_OPEN, kernel1)
 
-    # closing gaps
-    # dilated_thinned_line = cv.morphologyEx(dilated_thinned_line, cv.MORPH_CLOSE, kernel2)
     return dilated_thinned_line
-
 
 
 def get_neighbors(image, x, y):
@@ -149,6 +138,7 @@ def get_neighbors(image, x, y):
         image[x-1, y-1]  # P9
     ]
     return neighbors
+
 
 def count_transitions(neighbors):
     """
@@ -171,57 +161,49 @@ def processing(roi_image):
     # Perform thinning (Zhang-Suen)
     thinned_line = zhangsuen(filtered_image)
 
-    # enhance line for preserving connectivity
+    # Enhance line for preserving connectivity
     thinned_line = enchanceThinned(thinned_line)
 
     return thinned_line
 
-# using hough line transform to detect lines
+
 def LineDetect(roi_image):
-    # using standard hough line transform
-
+    # Create a copy of the ROI image to draw lines on
     line_image = roi_image.copy()
-
+    
+    # Using standard Hough line transform
     thinned_line = processing(roi_image)
-    lines = cv.HoughLines(thinned_line, 1, np.pi/180, 200)
+    lines = cv.HoughLinesP(thinned_line, 1, np.pi/180, threshold=100, minLineLength=100, maxLineGap=10)
 
     if lines is not None:
-        for rho, theta in lines[:, 0]:
-            a = np.cos(theta)
-            b = np.sin(theta)
-            x0 = a * rho
-            y0 = b * rho
+        for line in lines:
+            x1, y1, x2, y2 = line[0]
+            cv.line(line_image, (x1, y1), (x2, y2), (0, 0, 255), 2)
 
-            x1 = int(x0 + 1000 * (-b))
-            x2 = int(x0 - 1000 * (-b))
-
-            y1 = int(y0 + 1000 * (a))
-            y2 = int(y0 - 1000 * (a))
-
-            cv.line(line_image, (x1, y1), (x2, y2), (0,0,255), 2)
+    return line_image  # Return the image with detected lines
 
 def display_results(original_image, roi_image, mask_image, line_mask, thinned_line):
     """Display the original image, the ROI image, and the mask."""
     cv.imshow('Original Image', original_image)
     cv.imshow('Masked Image', roi_image)
     cv.imshow('Mask', mask_image)
-    cv.imshow('line mask', line_mask)
-
-    # zhangsuen
-    cv.imshow('thinned line', thinned_line )
+    cv.imshow('Line Mask', line_mask)
+    cv.imshow('Thinned Line', thinned_line)
 
     cv.waitKey(0)
     cv.destroyAllWindows()
+
 
 def main():
     image_path = "/home/altair/Documents/ALTAIR-vision/src/sample_program/samplesIMG/sampleLineDet.jpeg"  # Provide the correct image path here
     roi_image, green_mask_cleaned = process_image(image_path)
     original_image = cv.imread(image_path)  # Use the image path here to load the original image
-   # Process with median filter before thinning
-    thinned_line = processing(roi_image)
-    
-    display_results(original_image, roi_image, green_mask_cleaned, binarizing(roi_image), thinned_line)
 
+    # Detect lines using Hough Transform
+    line_image = LineDetect(roi_image)  # Pass the ROI image to the LineDetect function
+
+    # Display results
+    display_results(original_image, roi_image, green_mask_cleaned, binarizing(roi_image), line_image)
 
 if __name__ == "__main__":
     main()
