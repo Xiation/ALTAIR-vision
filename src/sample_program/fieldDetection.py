@@ -320,7 +320,8 @@ def display_results(original_image, roi_image, line_mask, thinned_line, lines, i
     cv.destroyAllWindows()
 
 def main():
-    image_path = "/home/altair/Documents/ALTAIR-vision/src/sample_program/samplesIMG/sampleLineDet.jpeg" 
+    # image_path = "/home/altair/Documents/ALTAIR-vision/src/sample_program/samplesIMG/sampleLineDet.jpeg"
+    image_path = "/home/altair/Documents/ALTAIR-vision/src/sample_program/samplesIMG/Screenshot from 2025-02-03 12-26-24.png"
     roi_image, green_mask_cleaned = process_image(image_path)
     original_image = cv.imread(image_path)  
     thinned_line, major_nodes, lines, intersections = processing(roi_image)    
