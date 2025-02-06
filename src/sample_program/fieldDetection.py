@@ -17,8 +17,9 @@ def process_image(image_path):
 
     # Apply morphological operations (erosion and dilation)
     kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (3, 3))
-    mask1 = cv.erode(green_mask, kernel, iterations=1)
-    green_mask_cleaned = cv.dilate(mask1, kernel, iterations=6)
+    # mask1 = cv.erode(green_mask, kernel, iterations=1)
+    # green_mask_cleaned = cv.dilate(mask1, kernel, iterations=6)
+    green_mask_cleaned = cv.morphologyEx(green_mask, cv.MORPH_CLOSE, kernel, iterations=3)
 
     # Find the largest contour in the mask
     contours, _ = cv.findContours(green_mask_cleaned, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
