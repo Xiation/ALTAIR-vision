@@ -1,22 +1,30 @@
 import cv2 as cv
 import numpy as np
 
-def process_image(frame):
-    
+
+def process_image(image_path):
     low_green = np.array([35, 100, 100])
-    up_green = np.array([85, 255, 255])
+    upper_green = np.array([85,255,255])
 
-    if frame is None:
-        raise ValueError("Invalid frame")
+    img = cv.imread(image_path)
 
-    hsv = cv.cvtColor(frame, cv.COLOR_BGR2HSV)
+    if img is None:
+        raise ValueError('image is not found or invalid path')
+    
+    hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
 
-    green_mask = cv.inRange(hsv, low_green, up_green)
+    v_channel = hsv[:, :, 2]
+    adaptive_thresh = cv.adaptiveThreshold(v_channel, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 11, 2)
 
+    green_mask = cv.inRange(hsv, low_green, upper_green)
+
+    # combine green mask with adaptive threshold
+    green_mask_thresh = cv.bitwise_and(green_mask, adaptive_thresh)
+
+    # closing to remove holes
     kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE, (3, 3))
-    mask1 = cv.erode(green_mask, kernel, iterations=1)
-    green_mask_cleaned = cv.dilate(mask1, kernel, iterations=6)
-
+    green_mask_cleaned = cv.morphologyEx(green_mask_thresh, cv.MORPH_CLOSE, kernel, iterations=3)
+    
     contours, _ = cv.findContours(green_mask_cleaned, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
     largest_contour = max(contours, key=cv.contourArea) if contours else None
 
@@ -25,13 +33,12 @@ def process_image(frame):
         cv.drawContours(roi_mask, [cv.convexHull(largest_contour)], -1, 255, thickness=-1)
     
     if largest_contour is None:
-        return frame, green_mask_cleaned
-
-    roi_image = cv.bitwise_and(frame, frame, mask=roi_mask)
+        return img, green_mask_cleaned  # Return original image and mask if no contour is found
+    
+    roi_image = cv.bitwise_and(img, img, mask=roi_mask)
 
     return roi_image, green_mask_cleaned
 
-# Binarizing for line masking
 def binarizing(roi_image_hsv):
     # White line
     roi_image_hsv = cv.cvtColor(roi_image_hsv, cv.COLOR_BGR2HSV)
@@ -44,71 +51,36 @@ def binarizing(roi_image_hsv):
     line_mask = cv.morphologyEx(line_mask, cv.MORPH_CLOSE, kernel)  # Fill small gaps
     return line_mask
 
-# Adding median filter before thinning process, filter may be unnecessary depending on necessity
 def medianFilter(binarized_roi_image, kernel_size=3):
     
     filter_roi = cv.medianBlur(binarized_roi_image, kernel_size)
     return filter_roi
 
-# The thinning process requires the image with ROI extracted
-def zhangsuen(binarized_roi_image):
-    skeleton = binarized_roi_image.copy() // 255
-    changing_pixels = True
+def thinning(binarized_roi_image):
+    kernel = np.ones((2,2), np.uint8)
+    kernel_rect = cv.getStructuringElement(cv.MORPH_RECT, (5, 3))
 
-    while changing_pixels:
-        changing_pixels = []
-
-        # First sub-iteration
-        for x in range(1, skeleton.shape[0] - 1):
-            for y in range(1, skeleton.shape[1] - 1):
-                if skeleton[x, y] == 1:  # Only process white pixels
-                    neighbors = get_neighbors(skeleton, x, y)
-                    if (2 <= sum(neighbors) <= 5 and
-                        count_transitions(neighbors) == 1 and
-                        neighbors[1] * neighbors[3] * neighbors[5] == 0 and
-                        neighbors[3] * neighbors[5] * neighbors[7] == 0):
-                        changing_pixels.append((x, y))
-        
-        # Remove flagged pixels
-        for x, y in changing_pixels:
-            skeleton[x, y] = 0
-
-        # Reset changing_pixels for the second sub-iteration
-        changing_pixels = []
-
-        # Second sub-iteration
-        for x in range(1, skeleton.shape[0] - 1):
-            for y in range(1, skeleton.shape[1] - 1):
-                if skeleton[x, y] == 1:  # Only process white pixels
-                    neighbors = get_neighbors(skeleton, x, y)
-                    if (2 <= sum(neighbors) <= 5 and
-                        count_transitions(neighbors) == 1 and
-                        neighbors[1] * neighbors[3] * neighbors[7] == 0 and
-                        neighbors[1] * neighbors[5] * neighbors[7] == 0):
-                        changing_pixels.append((x, y))
-        
-        # Remove flagged pixels
-        for x, y in changing_pixels:
-            skeleton[x, y] = 0
-
-        if not changing_pixels:
-            break
-
-    # Convert back to 255 (white) for visualization
-    return (skeleton * 255).astype(np.uint8)
+    thinned = cv.ximgproc.thinning(binarized_roi_image, thinningType=cv.ximgproc.THINNING_ZHANGSUEN)
+    # thinned = cv.erode(thinned, kernel_rect)
+    return thinned
 
 # Receives thinned line from zhangsuen
-def enchanceThinned(zhangsuenThinned):
+def enchanceThinned(Thinned):
     kernel1 = np.ones((2, 2), np.uint8)
     kernel_rect = cv.getStructuringElement(cv.MORPH_RECT, (5, 3))
      
-    dilated_thinned_line = cv.dilate(zhangsuenThinned, kernel_rect)
+    dilated_thinned_line = cv.dilate(Thinned, kernel_rect)
 
     # Remove noise
     dilated_thinned_line = cv.morphologyEx(dilated_thinned_line, cv.MORPH_OPEN, kernel1)
 
     return dilated_thinned_line
 
+
+# hough transform 
+def houghDetect(Thinned):
+    lines = cv.HoughLinesP(Thinned, rho= 1, theta=np.pi/180, threshold = 50, minLineLength=10, maxLineGap=5)
+    return lines
 
 def get_neighbors(image, x, y):
     """
@@ -253,28 +225,26 @@ def detect_intersections(lines):
 
     return intersections
 
-
-
 def processing(roi_image):
-    binarized_image = binarizing(roi_image)
+    roi_image_copy = roi_image.copy()
+    binarized_image = binarizing(roi_image_copy)
     filtered_image = medianFilter(binarized_image)
-    thinned_line = zhangsuen(filtered_image)
-    enhanced_line = enchanceThinned(thinned_line)
-    nodes = find_nodes_with_weights(enhanced_line)
+    thinned_line = thinning(filtered_image)
+    thinned_line = enchanceThinned(thinned_line)
+    nodes = find_nodes_with_weights(thinned_line)
 
-    # Perform digestion to simplify nodes
-    digestion_radius = 5
-    major_nodes = digestion_algorithm(nodes, digestion_radius)
+    # perform digestion
+    major_nodes = digestion_algorithm(nodes, radius=5)
 
-    # Build lines from major nodes
-    line_radius = 10
-    lines = build_lines_from_nodes_continuosly(major_nodes, line_radius)
+    lines = build_lines_from_nodes_continuosly(major_nodes, radius=10)
 
-    # Detect intersections
+    # detect intersections
     intersections = detect_intersections(lines)
 
-    return enhanced_line, major_nodes, lines, intersections
+    return thinned_line, major_nodes, lines, intersections
 
+
+# drawing intersection on original image
 def draw_lines_intersection(ori_image, lines, intersections):
     # Draw lines
     for line in lines:
@@ -286,26 +256,17 @@ def draw_lines_intersection(ori_image, lines, intersections):
     colors = {'L': (0, 255, 0), 'T': (0, 0, 255), 'X': (255, 255, 0)}  # Green, Red, Yellow
     for category, nodes in intersections.items():
         for x, y in nodes:
-            cv.circle(ori_image, (x, y), 5, colors[category], -1)  # Filled circles        
+            cv.circle(ori_image, (x, y), 5, colors[category], -1)  # Filled circles   
 
+def display_result(original_image, lines, thinned_line,intersections, major_nodes):
+    result_image =original_image.copy()
 
-def display_results(original_image, roi_image, line_mask, thinned_line, lines, intersections, major_nodes):
-    
-    # Create a copy of the original image to draw on
-    result_image = original_image.copy()
-
-    # Draw lines and intersections
+    # draw lines and intersections
     draw_lines_intersection(result_image, lines, intersections)
-    
-    # cv.imshow('Original Image', original_image)
-    # cv.imshow('Masked Image', roi_image)
-    # cv.imshow('Line Mask', line_mask)
 
-    cv.imshow('Thinned Line', thinned_line)
+    cv.imshow("thinned line", thinned_line)
+    cv.imshow('Result Image with lines and intersections', result_image)
 
-    cv.imshow('Result Image with Lines and Intersections', result_image)
-
-    # Overlay major nodes on the thinned line
     node_overlay = cv.cvtColor(thinned_line, cv.COLOR_GRAY2BGR)
     for x, y, weight in major_nodes:
         cv.circle(node_overlay, (x, y), 3, (0, 0, 255), -1)  # Red dots for nodes
@@ -313,78 +274,23 @@ def display_results(original_image, roi_image, line_mask, thinned_line, lines, i
     cv.waitKey(0)
     cv.destroyAllWindows()
 
-def display_frame_results(frame, roi_image, line_mask, thinned_line, lines, intersections, major_nodes):
-    # Create a copy of the frame to draw on
-    result_frame = frame.copy()
-
-    # Draw lines and intersections
-    draw_lines_intersection(result_frame, lines, intersections)
-    
-    # Convert thinned line to BGR for node overlay
-    node_overlay = cv.cvtColor(thinned_line, cv.COLOR_GRAY2BGR)
-    for x, y, weight in major_nodes:
-        cv.circle(node_overlay, (x, y), 3, (0, 0, 255), -1)  # Red dots for nodes
-
-    # Resize windows to a smaller size for better viewing
-    window_width = 640
-    window_height = 480
-    
-    # Resize and display all windows
-    result_frame_resized = cv.resize(result_frame, (window_width, window_height))
-    thinned_line_resized = cv.resize(thinned_line, (window_width, window_height))
-    node_overlay_resized = cv.resize(node_overlay, (window_width, window_height))
-    
-    cv.imshow('Result Frame with Lines and Intersections', result_frame_resized)
-    cv.imshow('Thinned Line', thinned_line_resized)
-    cv.imshow('Major Nodes', node_overlay_resized)
-
-
 def main():
-    video_path = "/home/altair/Documents/ALTAIR-vision/src/sample_program/samplesIMG/Robot Soccer Goes Big Time - Slate (720p, h264)(1) (online-video-cutter.com).mp4"  # Use 0 for webcam or provide video file path
-    cap = cv.VideoCapture(video_path)
-    
-    if not cap.isOpened():
-        print("Error: Could not open video source")
-        return
+    image_path = "/home/altair/Documents/ALTAIR-vision/src/sample_program/samplesIMG/sampleLineDet.jpeg"
+    try:
+        roi_image, green_mask_cleaned = process_image(image_path)
+        thinned_line, major_nodes, lines, intersections = processing(roi_image)
+        
+        # Load the original image again for display purposes
+        original_image = cv.imread(image_path)
+        if original_image is None:
+            raise ValueError("Could not load the original image for display.")
 
-    # Set up window positions
-    cv.namedWindow('Result Frame with Lines and Intersections')
-    # cv.namedWindow('Thinned Line')
-    cv.namedWindow('Major Nodes')
-    
-    cv.moveWindow('Result Frame with Lines and Intersections', 0, 0)
-    # cv.moveWindow('Thinned Line', 650, 0)
-    cv.moveWindow('Major Nodes', 1300, 0)
+        display_result(original_image, lines, thinned_line, intersections, major_nodes)
 
-    while True:
-        ret, frame = cap.read()
-        if not ret:
-            print("Error: Can't receive frame (stream end?). Exiting ...")
-            break
-
-        try:
-            # Process the frame
-            roi_image, green_mask_cleaned = process_image(frame)
-            thinned_line, major_nodes, lines, intersections = processing(roi_image)
-            
-            # Display results
-            # display_frame_results(frame, roi_image, binarizing(roi_image), 
-            #                     thinned_line, lines, intersections, major_nodes)
-            
-            display_frame_results(frame, roi_image, binarizing(roi_image), 
-                                thinned_line, lines, intersections, major_nodes)
-
-        except Exception as e:
-            print(f"Error processing frame: {e}")
-            continue
-
-        # Break the loop if 'q' is pressed
-        if cv.waitKey(1) & 0xFF == ord('q'):
-            break
-
-    # Release everything when done
-    cap.release()
-    cv.destroyAllWindows()
+    except ValueError as e:
+        print(f"Error: {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
     main()
