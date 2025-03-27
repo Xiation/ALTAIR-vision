@@ -1,0 +1,4 @@
+source;share/temp_ball_detector/local_setup.bash
+source;share/temp_ball_detector/local_setup.dsv
+source;share/temp_ball_detector/local_setup.sh
+source;share/temp_ball_detector/local_setup.zsh

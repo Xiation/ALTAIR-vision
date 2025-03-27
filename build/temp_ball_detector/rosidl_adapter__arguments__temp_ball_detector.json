@@ -1,0 +1,6 @@
+{
+  "package_name": "temp_ball_detector",
+  "non_idl_tuples": [
+    "/home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector:msg/BallDistance.msg"
+  ]
+}

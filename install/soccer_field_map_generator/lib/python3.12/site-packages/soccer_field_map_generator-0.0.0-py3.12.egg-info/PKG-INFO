@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: soccer-field-map-generator
+Version: 0.0.0
+Summary: A package to generate a soccer field map using a gui or cli
+Maintainer: florian
+Maintainer-email: git@flova.de
+License: Apache License 2.0

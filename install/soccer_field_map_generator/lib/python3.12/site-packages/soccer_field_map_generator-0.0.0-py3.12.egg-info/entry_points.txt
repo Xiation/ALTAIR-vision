@@ -1,0 +1,3 @@
+[console_scripts]
+cli = soccer_field_map_generator.cli:main
+gui = soccer_field_map_generator.gui:main

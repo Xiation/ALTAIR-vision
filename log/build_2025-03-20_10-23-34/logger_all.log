@@ -1,0 +1,560 @@
+[0.124s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.124s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x75d0b93810d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x75d0b9380950>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x75d0b9380950>>)
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.215s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/abyan/Documents/ALTAIR-vision'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extension 'ros'
+[0.323s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ball_detector' with type 'ros.ament_python' and name 'ball_detector'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'python_setup_py'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/Ball_det_cpp) by extension 'python_setup_py'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'ros'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['cmake', 'python']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'cmake'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'python'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['python_setup_py']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'python_setup_py'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'ros'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['cmake', 'python']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'cmake'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'python'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['python_setup_py']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'python_setup_py'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'ros'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['cmake', 'python']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'ros'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['cmake', 'python']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'python_setup_py'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extension 'ros'
+[0.328s] DEBUG:colcon.colcon_core.package_identification:Package 'src/soccer_field_map_generator/soccer_field_map_generator' with type 'ros.ament_python' and name 'soccer_field_map_generator'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extension 'ignore_ament_install'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extensions ['colcon_pkg']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extension 'colcon_pkg'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extensions ['colcon_meta']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extension 'colcon_meta'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extension 'ros'
+[0.329s] DEBUG:colcon.colcon_core.package_identification:Package 'src/temp_ball_detector' with type 'ros.ament_cmake' and name 'temp_ball_detector'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore_ament_install'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_pkg']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ros'
+[0.331s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usb_cam' with type 'ros.ament_cmake' and name 'usb_cam'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extension 'ros'
+[0.332s] DEBUG:colcon.colcon_core.package_identification:Package 'src/video_subscriber' with type 'ros.ament_python' and name 'video_subscriber'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'ignore_ament_install'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extensions ['colcon_pkg']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'colcon_pkg'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extensions ['colcon_meta']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'colcon_meta'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extensions ['ros']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'ros'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extensions ['cmake', 'python']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'cmake'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'python'
+[0.333s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_msg' with type 'cmake' and name 'vision_msg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'ros'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['cmake', 'python']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'cmake'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'python'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['python_setup_py']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'python_setup_py'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'ros'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['cmake', 'python']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'cmake'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'python'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['python_setup_py']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'python_setup_py'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'ros'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['cmake', 'python']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'cmake'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'python'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['python_setup_py']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'python_setup_py'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'ros'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['cmake', 'python']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'cmake'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'python'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['python_setup_py']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'python_setup_py'
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.359s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 292 installed packages in /opt/ros/jazzy
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'ball_detector' build argument 'cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'ball_detector' build argument 'cmake_target' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'ball_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'ball_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'ball_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'ball_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'ball_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'ball_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'ball_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.392s] DEBUG:colcon.colcon_core.verb:Building package 'ball_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abyan/Documents/ALTAIR-vision/build/ball_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abyan/Documents/ALTAIR-vision/install/ball_detector', 'merge_install': False, 'path': '/home/abyan/Documents/ALTAIR-vision/src/ball_detector', 'symlink_install': False, 'test_result_base': None}
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'soccer_field_map_generator' build argument 'cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'soccer_field_map_generator' build argument 'cmake_target' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'soccer_field_map_generator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'soccer_field_map_generator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'soccer_field_map_generator' build argument 'cmake_clean_first' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'soccer_field_map_generator' build argument 'cmake_force_configure' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'soccer_field_map_generator' build argument 'ament_cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'soccer_field_map_generator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'soccer_field_map_generator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.392s] DEBUG:colcon.colcon_core.verb:Building package 'soccer_field_map_generator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abyan/Documents/ALTAIR-vision/build/soccer_field_map_generator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator', 'merge_install': False, 'path': '/home/abyan/Documents/ALTAIR-vision/src/soccer_field_map_generator/soccer_field_map_generator', 'symlink_install': False, 'test_result_base': None}
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'temp_ball_detector' build argument 'cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'temp_ball_detector' build argument 'cmake_target' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'temp_ball_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'temp_ball_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'temp_ball_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'temp_ball_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'temp_ball_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'temp_ball_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'temp_ball_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.393s] DEBUG:colcon.colcon_core.verb:Building package 'temp_ball_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector', 'merge_install': False, 'path': '/home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector', 'symlink_install': False, 'test_result_base': None}
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_first' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_force_configure' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'ament_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.393s] DEBUG:colcon.colcon_core.verb:Building package 'usb_cam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abyan/Documents/ALTAIR-vision/build/usb_cam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abyan/Documents/ALTAIR-vision/install/usb_cam', 'merge_install': False, 'path': '/home/abyan/Documents/ALTAIR-vision/src/usb_cam', 'symlink_install': False, 'test_result_base': None}
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'video_subscriber' build argument 'cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'video_subscriber' build argument 'cmake_target' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'video_subscriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'video_subscriber' build argument 'cmake_clean_cache' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'video_subscriber' build argument 'cmake_clean_first' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'video_subscriber' build argument 'cmake_force_configure' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'video_subscriber' build argument 'ament_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'video_subscriber' build argument 'catkin_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'video_subscriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.393s] DEBUG:colcon.colcon_core.verb:Building package 'video_subscriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abyan/Documents/ALTAIR-vision/build/video_subscriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber', 'merge_install': False, 'path': '/home/abyan/Documents/ALTAIR-vision/src/video_subscriber', 'symlink_install': False, 'test_result_base': None}
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_target' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_clean_first' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'cmake_force_configure' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'ament_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'vision_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.394s] DEBUG:colcon.colcon_core.verb:Building package 'vision_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abyan/Documents/ALTAIR-vision/build/vision_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abyan/Documents/ALTAIR-vision/install/vision_msg', 'merge_install': False, 'path': '/home/abyan/Documents/ALTAIR-vision/src/vision_msg', 'symlink_install': False, 'test_result_base': None}
+[0.394s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.394s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.395s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/abyan/Documents/ALTAIR-vision/src/ball_detector' with build type 'ament_python'
+[0.395s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_detector', 'ament_prefix_path')
+[0.399s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/hook/ament_prefix_path.ps1'
+[0.401s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/hook/ament_prefix_path.dsv'
+[0.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/hook/ament_prefix_path.sh'
+[0.405s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.405s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.409s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/abyan/Documents/ALTAIR-vision/src/soccer_field_map_generator/soccer_field_map_generator' with build type 'ament_python'
+[0.409s] Level 1:colcon.colcon_core.shell:create_environment_hook('soccer_field_map_generator', 'ament_prefix_path')
+[0.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/hook/ament_prefix_path.ps1'
+[0.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/hook/ament_prefix_path.dsv'
+[0.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/hook/ament_prefix_path.sh'
+[0.412s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.412s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.415s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector' with build type 'ament_cmake'
+[0.415s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector'
+[0.415s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.415s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.418s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/abyan/Documents/ALTAIR-vision/src/usb_cam' with build type 'ament_cmake'
+[0.418s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/abyan/Documents/ALTAIR-vision/src/usb_cam'
+[0.419s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.419s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.421s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/abyan/Documents/ALTAIR-vision/src/video_subscriber' with build type 'ament_python'
+[0.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('video_subscriber', 'ament_prefix_path')
+[0.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/hook/ament_prefix_path.ps1'
+[0.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/hook/ament_prefix_path.dsv'
+[0.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/hook/ament_prefix_path.sh'
+[0.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.425s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/abyan/Documents/ALTAIR-vision/src/vision_msg'
+[0.425s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.425s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.604s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/abyan/Documents/ALTAIR-vision/src/ball_detector'
+[0.604s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.604s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.783s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/abyan/Documents/ALTAIR-vision/src/soccer_field_map_generator/soccer_field_map_generator'
+[0.783s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.783s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector -- -j16 -l16
+[0.791s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abyan/Documents/ALTAIR-vision/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/ALTAIR-vision/build/usb_cam -- -j16 -l16
+[0.976s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/abyan/Documents/ALTAIR-vision/src/video_subscriber'
+[0.976s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.976s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abyan/Documents/ALTAIR-vision/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/ALTAIR-vision/build/usb_cam -- -j16 -l16
+[0.995s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abyan/Documents/ALTAIR-vision/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/ALTAIR-vision/build/usb_cam
+[0.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abyan/Documents/ALTAIR-vision/build/vision_msg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/ALTAIR-vision/build/vision_msg -- -j16 -l16
+[1.012s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usb_cam)
+[1.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abyan/Documents/ALTAIR-vision/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/ALTAIR-vision/build/usb_cam
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam' for CMake module files
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam' for CMake config files
+[1.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'cmake_prefix_path')
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.ps1'
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.dsv'
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.sh'
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/lib'
+[1.019s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'ld_library_path_lib')
+[1.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.ps1'
+[1.019s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.dsv'
+[1.020s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.sh'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/bin'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/lib/pkgconfig/usb_cam.pc'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/lib/python3.12/site-packages'
+[1.020s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/bin'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/package.ps1'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/package.dsv'
+[1.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/package.sh'
+[1.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/package.bash'
+[1.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/package.zsh'
+[1.024s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/colcon-core/packages/usb_cam)
+[1.025s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usb_cam)
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam' for CMake module files
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam' for CMake config files
+[1.026s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'cmake_prefix_path')
+[1.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.ps1'
+[1.026s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.dsv'
+[1.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.sh'
+[1.027s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/lib'
+[1.027s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'ld_library_path_lib')
+[1.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.ps1'
+[1.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.dsv'
+[1.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.sh'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/bin'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/lib/pkgconfig/usb_cam.pc'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/lib/python3.12/site-packages'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/bin'
+[1.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/package.ps1'
+[1.029s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/package.dsv'
+[1.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/package.sh'
+[1.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/package.bash'
+[1.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/usb_cam/package.zsh'
+[1.030s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abyan/Documents/ALTAIR-vision/install/usb_cam/share/colcon-core/packages/usb_cam)
+[1.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abyan/Documents/ALTAIR-vision/build/vision_msg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/ALTAIR-vision/build/vision_msg -- -j16 -l16
+[1.033s] WARNING:colcon.colcon_cmake.task.cmake.build:Could not run installation step for package 'vision_msg' because it has no 'install' target
+[1.033s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_msg)
+[1.034s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/vision_msg' for CMake module files
+[1.034s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/vision_msg' for CMake config files
+[1.035s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/vision_msg/bin'
+[1.035s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/vision_msg/lib/pkgconfig/vision_msg.pc'
+[1.035s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/vision_msg/lib/python3.12/site-packages'
+[1.036s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/vision_msg/bin'
+[1.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/vision_msg/share/vision_msg/package.ps1'
+[1.036s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abyan/Documents/ALTAIR-vision/install/vision_msg/share/vision_msg/package.dsv'
+[1.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/vision_msg/share/vision_msg/package.sh'
+[1.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/vision_msg/share/vision_msg/package.bash'
+[1.037s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/vision_msg/share/vision_msg/package.zsh'
+[1.038s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abyan/Documents/ALTAIR-vision/install/vision_msg/share/colcon-core/packages/vision_msg)
+[1.160s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector -- -j16 -l16
+[1.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector
+[1.221s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(temp_ball_detector)
+[1.222s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector' for CMake module files
+[1.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector
+[1.223s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector' for CMake config files
+[1.224s] Level 1:colcon.colcon_core.shell:create_environment_hook('temp_ball_detector', 'cmake_prefix_path')
+[1.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/cmake_prefix_path.ps1'
+[1.225s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/cmake_prefix_path.dsv'
+[1.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/cmake_prefix_path.sh'
+[1.226s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/lib'
+[1.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('temp_ball_detector', 'ld_library_path_lib')
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/ld_library_path_lib.ps1'
+[1.226s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/ld_library_path_lib.dsv'
+[1.227s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/ld_library_path_lib.sh'
+[1.227s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/bin'
+[1.227s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/lib/pkgconfig/temp_ball_detector.pc'
+[1.228s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages'
+[1.228s] Level 1:colcon.colcon_core.shell:create_environment_hook('temp_ball_detector', 'pythonpath')
+[1.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/pythonpath.ps1'
+[1.228s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/pythonpath.dsv'
+[1.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/pythonpath.sh'
+[1.229s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/bin'
+[1.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.ps1'
+[1.230s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.dsv'
+[1.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.sh'
+[1.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.bash'
+[1.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.zsh'
+[1.231s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/colcon-core/packages/temp_ball_detector)
+[1.231s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(temp_ball_detector)
+[1.231s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector' for CMake module files
+[1.232s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector' for CMake config files
+[1.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('temp_ball_detector', 'cmake_prefix_path')
+[1.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/cmake_prefix_path.ps1'
+[1.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/cmake_prefix_path.dsv'
+[1.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/cmake_prefix_path.sh'
+[1.233s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/lib'
+[1.233s] Level 1:colcon.colcon_core.shell:create_environment_hook('temp_ball_detector', 'ld_library_path_lib')
+[1.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/ld_library_path_lib.ps1'
+[1.234s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/ld_library_path_lib.dsv'
+[1.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/ld_library_path_lib.sh'
+[1.234s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/bin'
+[1.234s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/lib/pkgconfig/temp_ball_detector.pc'
+[1.234s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages'
+[1.235s] Level 1:colcon.colcon_core.shell:create_environment_hook('temp_ball_detector', 'pythonpath')
+[1.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/pythonpath.ps1'
+[1.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/pythonpath.dsv'
+[1.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/hook/pythonpath.sh'
+[1.236s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/bin'
+[1.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.ps1'
+[1.236s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.dsv'
+[1.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.sh'
+[1.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.bash'
+[1.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.zsh'
+[1.237s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector/share/colcon-core/packages/temp_ball_detector)
+[1.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abyan/Documents/ALTAIR-vision/src/ball_detector': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/ALTAIR-vision/build/ball_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_detector build --build-base /home/abyan/Documents/ALTAIR-vision/build/ball_detector/build install --record /home/abyan/Documents/ALTAIR-vision/build/ball_detector/install.log --single-version-externally-managed install_data
+[1.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abyan/Documents/ALTAIR-vision/src/video_subscriber': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/ALTAIR-vision/build/video_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/video_subscriber build --build-base /home/abyan/Documents/ALTAIR-vision/build/video_subscriber/build install --record /home/abyan/Documents/ALTAIR-vision/build/video_subscriber/install.log --single-version-externally-managed install_data
+[1.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abyan/Documents/ALTAIR-vision/src/soccer_field_map_generator/soccer_field_map_generator': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/ALTAIR-vision/build/soccer_field_map_generator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/soccer_field_map_generator build --build-base /home/abyan/Documents/ALTAIR-vision/build/soccer_field_map_generator/build install --record /home/abyan/Documents/ALTAIR-vision/build/soccer_field_map_generator/install.log --single-version-externally-managed install_data
+[2.735s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator' for CMake module files
+[2.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abyan/Documents/ALTAIR-vision/src/soccer_field_map_generator/soccer_field_map_generator' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/ALTAIR-vision/build/soccer_field_map_generator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/soccer_field_map_generator build --build-base /home/abyan/Documents/ALTAIR-vision/build/soccer_field_map_generator/build install --record /home/abyan/Documents/ALTAIR-vision/build/soccer_field_map_generator/install.log --single-version-externally-managed install_data
+[2.737s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator' for CMake config files
+[2.738s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/lib'
+[2.738s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/bin'
+[2.738s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/lib/pkgconfig/soccer_field_map_generator.pc'
+[2.739s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages'
+[2.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('soccer_field_map_generator', 'pythonpath')
+[2.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/hook/pythonpath.ps1'
+[2.740s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/hook/pythonpath.dsv'
+[2.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/hook/pythonpath.sh'
+[2.742s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/bin'
+[2.742s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(soccer_field_map_generator)
+[2.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/package.ps1'
+[2.744s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/package.dsv'
+[2.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/package.sh'
+[2.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/package.bash'
+[2.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator/package.zsh'
+[2.747s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abyan/Documents/ALTAIR-vision/install/soccer_field_map_generator/share/colcon-core/packages/soccer_field_map_generator)
+[2.749s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber' for CMake module files
+[2.751s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abyan/Documents/ALTAIR-vision/src/video_subscriber' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/ALTAIR-vision/build/video_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/video_subscriber build --build-base /home/abyan/Documents/ALTAIR-vision/build/video_subscriber/build install --record /home/abyan/Documents/ALTAIR-vision/build/video_subscriber/install.log --single-version-externally-managed install_data
+[2.751s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber' for CMake config files
+[2.752s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/lib'
+[2.752s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/bin'
+[2.752s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/lib/pkgconfig/video_subscriber.pc'
+[2.753s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages'
+[2.753s] Level 1:colcon.colcon_core.shell:create_environment_hook('video_subscriber', 'pythonpath')
+[2.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/hook/pythonpath.ps1'
+[2.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/hook/pythonpath.dsv'
+[2.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/hook/pythonpath.sh'
+[2.756s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/bin'
+[2.756s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(video_subscriber)
+[2.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/package.ps1'
+[2.758s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/package.dsv'
+[2.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/package.sh'
+[2.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/package.bash'
+[2.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/video_subscriber/package.zsh'
+[2.760s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abyan/Documents/ALTAIR-vision/install/video_subscriber/share/colcon-core/packages/video_subscriber)
+[2.760s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/ball_detector' for CMake module files
+[2.762s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/ball_detector' for CMake config files
+[2.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abyan/Documents/ALTAIR-vision/src/ball_detector' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/ALTAIR-vision/build/ball_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_detector build --build-base /home/abyan/Documents/ALTAIR-vision/build/ball_detector/build install --record /home/abyan/Documents/ALTAIR-vision/build/ball_detector/install.log --single-version-externally-managed install_data
+[2.763s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/lib'
+[2.764s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/bin'
+[2.764s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/lib/pkgconfig/ball_detector.pc'
+[2.764s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages'
+[2.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_detector', 'pythonpath')
+[2.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/hook/pythonpath.ps1'
+[2.765s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/hook/pythonpath.dsv'
+[2.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/hook/pythonpath.sh'
+[2.767s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/bin'
+[2.767s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ball_detector)
+[2.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/package.ps1'
+[2.768s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/package.dsv'
+[2.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/package.sh'
+[2.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/package.bash'
+[2.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/ball_detector/package.zsh'
+[2.770s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abyan/Documents/ALTAIR-vision/install/ball_detector/share/colcon-core/packages/ball_detector)
+[2.770s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.771s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.771s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.771s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.783s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.783s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.783s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.827s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.827s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abyan/Documents/ALTAIR-vision/install/local_setup.ps1'
+[2.829s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abyan/Documents/ALTAIR-vision/install/_local_setup_util_ps1.py'
+[2.830s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abyan/Documents/ALTAIR-vision/install/setup.ps1'
+[2.831s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abyan/Documents/ALTAIR-vision/install/local_setup.sh'
+[2.832s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abyan/Documents/ALTAIR-vision/install/_local_setup_util_sh.py'
+[2.832s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abyan/Documents/ALTAIR-vision/install/setup.sh'
+[2.833s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abyan/Documents/ALTAIR-vision/install/local_setup.bash'
+[2.834s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abyan/Documents/ALTAIR-vision/install/setup.bash'
+[2.835s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abyan/Documents/ALTAIR-vision/install/local_setup.zsh'
+[2.836s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abyan/Documents/ALTAIR-vision/install/setup.zsh'
