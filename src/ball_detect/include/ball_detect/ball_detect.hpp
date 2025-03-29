@@ -6,9 +6,8 @@
 #include <numeric>
 
 #include <utility>
-#include "rclcpp/rclcpp.hpp"
+#include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/image.hpp>
-#include <cv_bridge/cv_bridge.h>
 
 #include <chrono>
 #include <functional>
@@ -16,6 +15,7 @@
 #include <string>
 
 #include "std_msgs/msg/string.hpp"
+#include "cv_bridge/cv_bridge.h"
 
 class MinimalPublisher : public rclcpp::Node
 {

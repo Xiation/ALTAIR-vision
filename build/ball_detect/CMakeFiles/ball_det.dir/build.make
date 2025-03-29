@@ -108,7 +108,6 @@ ball_det_EXTERNAL_OBJECTS =
 ball_det: CMakeFiles/ball_det.dir/src/ball_detect.cpp.o
 ball_det: CMakeFiles/ball_det.dir/src/ball_detector_node.cpp.o
 ball_det: CMakeFiles/ball_det.dir/build.make
-ball_det: /opt/ros/jazzy/lib/libcv_bridge.so
 ball_det: /opt/ros/jazzy/lib/x86_64-linux-gnu/libimage_transport.so
 ball_det: /usr/local/lib/libopencv_gapi.so.4.12.0
 ball_det: /usr/local/lib/libopencv_stitching.so.4.12.0
@@ -147,6 +146,7 @@ ball_det: /usr/local/lib/libopencv_wechat_qrcode.so.4.12.0
 ball_det: /usr/local/lib/libopencv_xfeatures2d.so.4.12.0
 ball_det: /usr/local/lib/libopencv_xobjdetect.so.4.12.0
 ball_det: /usr/local/lib/libopencv_xphoto.so.4.12.0
+ball_det: /opt/ros/jazzy/lib/libcv_bridge.so
 ball_det: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 ball_det: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 ball_det: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so

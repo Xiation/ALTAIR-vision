@@ -1,0 +1,24 @@
+[0.293s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector -- -j16 -l16
+[0.448s] [  2%] Built target temp_ball_detector__rosidl_generator_type_description
+[0.448s] [  2%] Built target ament_cmake_python_copy_temp_ball_detector
+[0.449s] [  5%] Built target temp_ball_detector__cpp
+[0.449s] [ 20%] Built target temp_ball_detector__rosidl_generator_c
+[0.449s] [ 47%] Built target temp_ball_detector__rosidl_typesupport_fastrtps_c
+[0.449s] [ 47%] Built target temp_ball_detector__rosidl_typesupport_cpp
+[0.449s] [ 47%] Built target temp_ball_detector__rosidl_typesupport_introspection_c
+[0.449s] [ 55%] Built target temp_ball_detector__rosidl_typesupport_c
+[0.449s] [ 64%] Built target temp_ball_detector__rosidl_typesupport_introspection_cpp
+[0.449s] [ 73%] Built target temp_ball_detector__rosidl_typesupport_fastrtps_cpp
+[0.449s] [ 73%] Built target temp_ball_detector
+[0.449s] [ 76%] Built target temp_ball_detector__py
+[0.449s] [ 82%] Built target temp_ball_detector__rosidl_generator_py
+[0.449s] [ 88%] Built target temp_ball_detector_s__rosidl_typesupport_fastrtps_c
+[0.449s] [ 94%] Built target temp_ball_detector_s__rosidl_typesupport_c
+[0.449s] [100%] Built target temp_ball_detector_s__rosidl_typesupport_introspection_c
+[0.481s] running egg_info
+[0.493s] writing temp_ball_detector.egg-info/PKG-INFO
+[0.494s] writing dependency_links to temp_ball_detector.egg-info/dependency_links.txt
+[0.494s] writing top-level names to temp_ball_detector.egg-info/top_level.txt
+[0.525s] reading manifest file 'temp_ball_detector.egg-info/SOURCES.txt'
+[0.525s] writing manifest file 'temp_ball_detector.egg-info/SOURCES.txt'
+[0.547s] [100%] Built target ament_cmake_python_build_temp_ball_detector_egg
