@@ -22,8 +22,16 @@ add_executable(ball_det src/ball_detect.cpp src/ball_detector_node.cpp)
 include_directories(${OpenCV_INCLUDE_DIRS})
 target_include_directories(ball_det PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+ament_target_dependencies(ball_det 
+  "rclcpp"
+  "sensor_msgs"
+  "cv_bridge"
+  "image_transport"
+  "OpenCV"    
+  )
+
 # Link libraries
-target_link_libraries(ball_det ${OpenCV_LIBS})
+target_link_libraries(ball_det ${OpenCV_LIBS} rclcpp::rclcpp)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
