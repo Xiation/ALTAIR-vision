@@ -1,0 +1,62 @@
+[ 14%] Built target gtest_main
+[ 28%] Built target usb_cam_node_exe
+[ 42%] Built target usb_cam
+[ 57%] Built target gtest
+[ 85%] Built target test_pixel_formats
+[ 85%] Built target test_usb_cam_utils
+[100%] Built target usb_cam_node
+-- Install configuration: ""
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/library_path.sh
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/library_path.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+-- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/usb_cam/usb_cam_node_exe" to ""
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/usb_cam/show_image.py
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/libusb_cam.so
+-- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/libusb_cam.so" to ""
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/libusb_cam_node.so
+-- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/libusb_cam_node.so" to ""
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/constants.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/yuyv.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/mjpeg.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/uyvy.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/m420.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/mono.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/rgb.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/utils.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/usb_cam.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/conversions.hpp
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/utils.hpp
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/libusb_cam_node.so
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/launch
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/launch/camera.launch.py
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/launch/camera_config.py
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/launch/__init__.py
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/config
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/config/camera_info.yaml
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/config/params_1.yaml
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/config/params_2.yaml
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/path.sh
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/path.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/local_setup.bash
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/local_setup.sh
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/local_setup.zsh
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/local_setup.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/package.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/package.xml
