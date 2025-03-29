@@ -1,0 +1,6 @@
+[submodule "src/soccer_field_map_generator"]
+	path = src/soccer_field_map_generator
+	url = https://github.com/ros-sports/soccer_field_map_generator.git
+[submodule "src/usb_cam"]
+	path = src/usb_cam
+	url = https://github.com/ros-drivers/usb_cam.git
