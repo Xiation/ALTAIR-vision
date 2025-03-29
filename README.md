@@ -16,11 +16,11 @@ Before using this repository, ensure to meet the following requirements:
 
 ### Option 1: Clone with Submodules (Recommended)
 ```bash
-git clone --recurse-submodules https://github.com/yourusername/ALTAIR-vision.git
+git clone --recurse-submodules https://github.com/Xiation/ALTAIR-vision.git
 ```
 ### Option 2: Clone and Initialize Submodules Manually
 ```bash
-git clone https://github.com/yourusername/ALTAIR-vision.git
+git clone https://github.com/Xiation/ALTAIR-vision.git
 cd ALTAIR-vision
 git submodule update --init --recursive
 ```
