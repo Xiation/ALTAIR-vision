@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DROSIDL_TYPESUPPORT_INTROSPECTION_C_BUILDING_DLL_temp_ball_detector -DROS_PACKAGE_NAME=\"temp_ball_detector\"
 
-C_INCLUDES = -I/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_typesupport_introspection_c -I/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_c -isystem /opt/ros/jazzy/include/std_msgs -isystem /opt/ros/jazzy/include/builtin_interfaces -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /opt/ros/jazzy/include/rosidl_typesupport_introspection_c
+C_INCLUDES = -I/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_typesupport_introspection_c -I/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_c -isystem /opt/ros/jazzy/include/std_msgs -isystem /opt/ros/jazzy/include/builtin_interfaces -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /opt/ros/jazzy/include/rosidl_typesupport_introspection_c
 
 C_FLAGS = -std=gnu11 -fPIC -Wall
 

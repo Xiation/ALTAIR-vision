@@ -1,8 +1,8 @@
-# Install script for directory: /home/abyan/Documents/ALTAIR-vision/src/vision_msg
+# Install script for directory: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/vision_msg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/abyan/Documents/ALTAIR-vision/install/vision_msg")
+  set(CMAKE_INSTALL_PREFIX "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/vision_msg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/abyan/Documents/ALTAIR-vision/build/vision_msg/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/vision_msg/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

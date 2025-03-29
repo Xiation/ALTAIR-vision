@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector
+CMAKE_SOURCE_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector
+CMAKE_BINARY_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector
 
 # Utility rule file for temp_ball_detector__cpp.
 
@@ -125,8 +125,8 @@ rosidl_generator_cpp/temp_ball_detector/msg/ball_distance.hpp: /opt/ros/jazzy/sh
 rosidl_generator_cpp/temp_ball_detector/msg/ball_distance.hpp: /opt/ros/jazzy/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_cpp/temp_ball_detector/msg/ball_distance.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/temp_ball_detector/msg/ball_distance.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/temp_ball_detector/msg/detail/ball_distance__builder.hpp: rosidl_generator_cpp/temp_ball_detector/msg/ball_distance.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/temp_ball_detector/msg/detail/ball_distance__builder.hpp
@@ -162,6 +162,6 @@ CMakeFiles/temp_ball_detector__cpp.dir/clean:
 .PHONY : CMakeFiles/temp_ball_detector__cpp.dir/clean
 
 CMakeFiles/temp_ball_detector__cpp.dir/depend:
-	cd /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/CMakeFiles/temp_ball_detector__cpp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/CMakeFiles/temp_ball_detector__cpp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/temp_ball_detector__cpp.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py
+# Install script for directory: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/abyan/Documents/ALTAIR-vision/install/temp_ball_detector")
+  set(CMAKE_INSTALL_PREFIX "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

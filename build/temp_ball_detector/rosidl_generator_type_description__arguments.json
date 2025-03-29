@@ -1,8 +1,8 @@
 {
   "package_name": "temp_ball_detector",
-  "output_dir": "/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_type_description/temp_ball_detector",
+  "output_dir": "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_type_description/temp_ball_detector",
   "idl_tuples": [
-    "/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_adapter/temp_ball_detector:msg/BallDistance.idl"
+    "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_adapter/temp_ball_detector:msg/BallDistance.idl"
   ],
   "include_paths": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs",

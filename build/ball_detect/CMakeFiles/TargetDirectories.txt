@@ -1,0 +1,10 @@
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles/uninstall.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles/ball_detect_uninstall.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles/ball_det.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles/test.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles/edit_cache.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles/rebuild_cache.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles/list_install_components.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles/install.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles/install/local.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles/install/strip.dir

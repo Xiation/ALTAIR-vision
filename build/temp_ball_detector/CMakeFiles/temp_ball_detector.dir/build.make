@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector
+CMAKE_SOURCE_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector
+CMAKE_BINARY_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector
 
 # Utility rule file for temp_ball_detector.
 
@@ -66,7 +66,7 @@ include CMakeFiles/temp_ball_detector.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/temp_ball_detector.dir/progress.make
 
-CMakeFiles/temp_ball_detector: /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector/msg/BallDistance.msg
+CMakeFiles/temp_ball_detector: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector/msg/BallDistance.msg
 CMakeFiles/temp_ball_detector: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 CMakeFiles/temp_ball_detector: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 CMakeFiles/temp_ball_detector: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -111,6 +111,6 @@ CMakeFiles/temp_ball_detector.dir/clean:
 .PHONY : CMakeFiles/temp_ball_detector.dir/clean
 
 CMakeFiles/temp_ball_detector.dir/depend:
-	cd /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/CMakeFiles/temp_ball_detector.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/CMakeFiles/temp_ball_detector.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/temp_ball_detector.dir/depend
 

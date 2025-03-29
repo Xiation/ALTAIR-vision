@@ -1,9 +1,9 @@
 {
   "package_name": "temp_ball_detector",
-  "output_dir": "/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_cpp/temp_ball_detector",
+  "output_dir": "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_cpp/temp_ball_detector",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_adapter/temp_ball_detector:msg/BallDistance.idl"
+    "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_adapter/temp_ball_detector:msg/BallDistance.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
@@ -59,7 +59,7 @@
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__type_support.hpp.em",
-    "/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_adapter/temp_ball_detector/msg/BallDistance.idl",
+    "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_adapter/temp_ball_detector/msg/BallDistance.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl",
@@ -94,6 +94,6 @@
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
   ],
   "type_description_tuples": [
-    "msg/BallDistance.idl:/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_type_description/temp_ball_detector/msg/BallDistance.json"
+    "msg/BallDistance.idl:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_type_description/temp_ball_detector/msg/BallDistance.json"
   ]
 }

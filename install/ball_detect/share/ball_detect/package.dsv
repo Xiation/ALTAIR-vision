@@ -1,0 +1,5 @@
+source;share/ball_detect/local_setup.bash
+source;share/ball_detect/local_setup.dsv
+source;share/ball_detect/local_setup.ps1
+source;share/ball_detect/local_setup.sh
+source;share/ball_detect/local_setup.zsh

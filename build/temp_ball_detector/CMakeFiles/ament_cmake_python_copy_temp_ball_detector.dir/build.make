@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector
+CMAKE_SOURCE_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector
+CMAKE_BINARY_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector
 
 # Utility rule file for ament_cmake_python_copy_temp_ball_detector.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_temp_ball_detector.dir/compiler_depen
 include CMakeFiles/ament_cmake_python_copy_temp_ball_detector.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_temp_ball_detector:
-	/usr/bin/cmake -E copy_directory /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_py/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/ament_cmake_python/temp_ball_detector/temp_ball_detector
+	/usr/bin/cmake -E copy_directory /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_py/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/ament_cmake_python/temp_ball_detector/temp_ball_detector
 
 ament_cmake_python_copy_temp_ball_detector: CMakeFiles/ament_cmake_python_copy_temp_ball_detector
 ament_cmake_python_copy_temp_ball_detector: CMakeFiles/ament_cmake_python_copy_temp_ball_detector.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_temp_ball_detector.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_temp_ball_detector.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_temp_ball_detector.dir/depend:
-	cd /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/CMakeFiles/ament_cmake_python_copy_temp_ball_detector.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/CMakeFiles/ament_cmake_python_copy_temp_ball_detector.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_copy_temp_ball_detector.dir/depend
 
