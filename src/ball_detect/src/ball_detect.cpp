@@ -15,3 +15,5 @@ void MinimalPublisher::timer_callback()
     RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
     publisher_->publish(message);
  }  
+
+ 
