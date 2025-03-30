@@ -32,7 +32,13 @@ ament_target_dependencies(ball_det
   )
 
 # Link libraries
-target_link_libraries(ball_det ${OpenCV_LIBS} rclcpp::rclcpp cv_bridge::cv_bridge)
+target_link_libraries(ball_det ${OpenCV_LIBS} rclcpp::rclcpp 
+cv_bridge::cv_bridge
+)
+
+# Install the executable
+install(TARGETS ball_det
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

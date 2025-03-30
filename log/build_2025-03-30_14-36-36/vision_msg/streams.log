@@ -1,0 +1,38 @@
+[0.438s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/vision_msg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/vision_msg -DCMAKE_INSTALL_PREFIX=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/vision_msg
+[0.443s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.443s]   No project() command is present.  The top-level CMakeLists.txt file must
+[0.443s]   contain a literal, direct call to the project() command.  Add a line of
+[0.443s]   code such as
+[0.443s] 
+[0.443s]     project(ProjectName)
+[0.443s] 
+[0.443s]   near the top of the file, but after cmake_minimum_required().
+[0.443s] 
+[0.443s]   CMake is pretending there is a "project(Project)" command on the first
+[0.444s]   line.
+[0.444s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.444s] [0m
+[0.444s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.444s]   cmake_minimum_required() should be called prior to this top-level project()
+[0.444s]   call.  Please see the cmake-commands(7) manual for usage documentation of
+[0.444s]   both commands.
+[0.444s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.445s] [0m
+[0.484s] -- The C compiler identification is GNU 13.3.0
+[0.542s] -- The CXX compiler identification is GNU 13.3.0
+[0.555s] -- Detecting C compiler ABI info
+[0.622s] -- Detecting C compiler ABI info - done
+[0.632s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.632s] -- Detecting C compile features
+[0.632s] -- Detecting C compile features - done
+[0.640s] -- Detecting CXX compiler ABI info
+[0.717s] -- Detecting CXX compiler ABI info - done
+[0.731s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.731s] -- Detecting CXX compile features
+[0.731s] -- Detecting CXX compile features - done
+[0.733s] -- Configuring done (0.3s)
+[0.733s] -- Generating done (0.0s)
+[0.734s] -- Build files have been written to: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/vision_msg
+[0.738s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/vision_msg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/vision_msg -DCMAKE_INSTALL_PREFIX=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/vision_msg
+[0.739s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/vision_msg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/vision_msg -- -j16 -l16
+[0.767s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/vision_msg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/vision_msg -- -j16 -l16

@@ -15,7 +15,7 @@
 #include <string>
 
 #include "std_msgs/msg/string.hpp"
-#include "cv_bridge/cv_bridge.h"
+#include "cv_bridge/cv_bridge.hpp"
 
 class MinimalPublisher : public rclcpp::Node
 {
@@ -27,6 +27,7 @@ public:
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
   size_t count_;
+  
 };
 
 #endif // BALL_DETECT_HPP_
