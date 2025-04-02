@@ -85,3 +85,7 @@ colcon build
 2. Launch the modules
 
 currently the vision modules are still under development and may not run accordingly
+
+## To-Do
+- dockerizing to avoid software incompatible issues
+- tbc
