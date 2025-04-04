@@ -1,0 +1,35 @@
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In constructor ‘[01m[KBallDetector::[01;32m[KBallDetector[m[K()[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:83:[m[K [01;31m[Kerror: [m[K‘[01m[Konst[m[K’ has not been declared
+   35 |     this, "image_raw", [this](const sensor_msgs::msg::Image::ConstSharedPtr& img, [01;31m[Konst[m[K sensor_msgs::msg::CameraInfo::ConstSharedPtr& cinfo) {image_callback(img);}, "raw", rmw_qos_profile_sensor_data);
+      |                                                                                   [01;31m[K^~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:132:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   35 |     this, "image_raw", [this](const sensor_msgs::msg::Image::ConstSharedPtr& img, onst sensor_msgs::msg::CameraInfo::ConstSharedPtr[01;31m[K&[m[K cinfo) {image_callback(img);}, "raw", rmw_qos_profile_sensor_data);
+      |                                                                                                                                    [01;31m[K^[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:132:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   35 |     this, "image_raw", [this][34m[K([m[Kconst sensor_msgs::msg::Image::ConstSharedPtr& img, onst sensor_msgs::msg::CameraInfo::ConstSharedPtr[01;31m[K&[m[K cinfo) {image_callback(img);}, "raw", rmw_qos_profile_sensor_data);
+      |                              [34m[K~[m[K                                                                                                     [01;31m[K^[m[K
+      |                                                                                                                                    [32m[K)[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In lambda function:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:132:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In constructor ‘[01m[KBallDetector::[01;32m[KBallDetector[m[K()[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:134:[m[K [01;31m[Kerror: [m[K‘[01m[Kcinfo[m[K’ was not declared in this scope
+   35 |     this, "image_raw", [this](const sensor_msgs::msg::Image::ConstSharedPtr& img, onst sensor_msgs::msg::CameraInfo::ConstSharedPtr& [01;31m[Kcinfo[m[K) {image_callback(img);}, "raw", rmw_qos_profile_sensor_data);
+      |                                                                                                                                      [01;31m[K^~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:163:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+   35 |     this, "image_raw", [this](const sensor_msgs::msg::Image::ConstSharedPtr& img, onst sensor_msgs::msg::CameraInfo::ConstSharedPtr& cinfo) {image_callback(img);}[01;31m[K,[m[K "raw", rmw_qos_profile_sensor_data);
+      |                                                                                                                                                                   [01;31m[K^[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K At global scope:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:362:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid BallDetector::[01;32m[Kimage_callback[m[K(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&)[m[K’
+  362 | void [01;31m[KBallDetector[m[K::image_callback(const sensor_msgs::msg::Image::ConstSharedPtr& img_msg
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:1[m[K:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:40:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid BallDetector::[01;32m[Kimage_callback[m[K(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&, const sensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstSharedPtr&)[m[K’
+   40 |     void [01;36m[Kimage_callback[m[K(
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:24:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass BallDetector[m[K’ defined here
+   24 | class [01;36m[KBallDetector[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ball_det.dir/build.make:76: CMakeFiles/ball_det.dir/src/ball_detect.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ball_det.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

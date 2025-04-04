@@ -1,0 +1,329 @@
+[0.087s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'ball_detect']
+[0.087s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['ball_detect'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f0c7f185310>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f0c7f184a10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f0c7f184a10>>)
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.122s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detect) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detect) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detect) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detect) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detect) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detect) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detect) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detect) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detect) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ball_detect' with type 'ros.ament_cmake' and name 'ball_detect'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/ball_detector) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ball_detector' with type 'ros.ament_python' and name 'ball_detector'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'ros'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['cmake', 'python']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'cmake'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'python'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extensions ['python_setup_py']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program) by extension 'python_setup_py'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'ros'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['cmake', 'python']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'cmake'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'python'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extensions ['python_setup_py']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/FieldDetBy) by extension 'python_setup_py'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extension 'ros'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extensions ['cmake', 'python']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extension 'cmake'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/ball_detection) by extension 'python'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sample_program/ball_detection' with type 'cmake' and name 'ball_detection'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'ros'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['cmake', 'python']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'cmake'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'python'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extensions ['python_setup_py']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/forFieldDet) by extension 'python_setup_py'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'ros'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['cmake', 'python']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/sample_program/samplesIMG) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/soccer_field_map_generator/soccer_field_map_generator) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/soccer_field_map_generator/soccer_field_map_generator' with type 'ros.ament_python' and name 'soccer_field_map_generator'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_ball_detector) by extension 'ros'
+[0.157s] DEBUG:colcon.colcon_core.package_identification:Package 'src/temp_ball_detector' with type 'ros.ament_cmake' and name 'temp_ball_detector'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usb_cam' with type 'ros.ament_cmake' and name 'usb_cam'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/video_subscriber) by extension 'ros'
+[0.159s] DEBUG:colcon.colcon_core.package_identification:Package 'src/video_subscriber' with type 'ros.ament_python' and name 'video_subscriber'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msg) by extension 'python'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_msg' with type 'cmake' and name 'vision_msg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/app/components) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(vision-dashboard/public) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.179s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ball_detection' in 'src/sample_program/ball_detection'
+[0.179s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ball_detector' in 'src/ball_detector'
+[0.179s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'soccer_field_map_generator' in 'src/soccer_field_map_generator/soccer_field_map_generator'
+[0.179s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'temp_ball_detector' in 'src/temp_ball_detector'
+[0.179s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'usb_cam' in 'src/usb_cam'
+[0.179s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'video_subscriber' in 'src/video_subscriber'
+[0.179s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vision_msg' in 'src/vision_msg'
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.182s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 308 installed packages in /opt/ros/jazzy
+[0.183s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'ball_detect' build argument 'cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'ball_detect' build argument 'cmake_target' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'ball_detect' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'ball_detect' build argument 'cmake_clean_cache' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'ball_detect' build argument 'cmake_clean_first' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'ball_detect' build argument 'cmake_force_configure' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'ball_detect' build argument 'ament_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'ball_detect' build argument 'catkin_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'ball_detect' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.214s] DEBUG:colcon.colcon_core.verb:Building package 'ball_detect' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect', 'merge_install': False, 'path': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect', 'symlink_install': False, 'test_result_base': None}
+[0.214s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.215s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.215s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect' with build type 'ament_cmake'
+[0.215s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect'
+[0.217s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.217s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.217s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect -- -j16 -l16
+[5.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect -- -j16 -l16
+[5.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ball_detect)
+[5.720s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect' for CMake module files
+[5.721s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect' for CMake config files
+[5.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_detect', 'cmake_prefix_path')
+[5.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/hook/cmake_prefix_path.ps1'
+[5.722s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/hook/cmake_prefix_path.dsv'
+[5.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/hook/cmake_prefix_path.sh'
+[5.723s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib'
+[5.723s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/bin'
+[5.723s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/pkgconfig/ball_detect.pc'
+[5.723s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages'
+[5.723s] Level 1:colcon.colcon_core.environment:checking '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/bin'
+[5.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/package.ps1'
+[5.724s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/package.dsv'
+[5.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/package.sh'
+[5.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/package.bash'
+[5.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/package.zsh'
+[5.726s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/colcon-core/packages/ball_detect)
+[5.736s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.737s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.737s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[5.737s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.748s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.748s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.748s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.782s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.783s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/local_setup.ps1'
+[5.784s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/_local_setup_util_ps1.py'
+[5.786s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/setup.ps1'
+[5.787s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/local_setup.sh'
+[5.788s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/_local_setup_util_sh.py'
+[5.789s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/setup.sh'
+[5.790s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/local_setup.bash'
+[5.791s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/setup.bash'
+[5.792s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/local_setup.zsh'
+[5.793s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/setup.zsh'

@@ -1,0 +1,38 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/ball_det.dir/src/ball_detect.cpp.o[0m
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In member function ‘[01m[Kcv::Mat BallDetector::[01;32m[Kdetect[m[K(const cv::Mat&, const cv::Mat&, cv::Mat, std::vector<double, std::allocator<double> >&, int)[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:313:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  313 |         if([01;35m[KdistanceHistory.size() >= moving_average_window_[m[K) {
+      |            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:317:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsmoothedDistance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  317 |             double [01;35m[KsmoothedDistance[m[K=smoothedDistances.back();
+      |                    [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:183:140:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KmovingAverageWindow[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  183 | cv::Mat BallDetector::detect(const cv::Mat &mask_ball, const cv::Mat &mask_field, cv::Mat frame, std::vector<double>& distanceHistory, [01;35m[Kint movingAverageWindow[m[K) {
+      |                                                                                                                                        [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In member function ‘[01m[Kvoid BallDetector::[01;32m[Kimage_callback[m[K(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&, const sensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstSharedPtr&)[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:358:143:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcinfo_msg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  358 | void BallDetector::image_callback(const sensor_msgs::msg::Image::ConstSharedPtr& img_msg, [01;35m[Kconst sensor_msgs::msg::CameraInfo::ConstSharedPtr& cinfo_msg[m[K)
+      |                                                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[ 66%] [32m[1mLinking CXX executable ball_det[0m
+/usr/bin/ld: warning: libopencv_imgcodecs.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.412
+/usr/bin/ld: warning: libopencv_imgproc.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.412
+/usr/bin/ld: warning: libopencv_core.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_core.so.412
+[100%] Built target ball_det
+-- Install configuration: ""
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/ball_detect/ball_det
+-- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/ball_detect/ball_det" to ""
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ament_index/resource_index/package_run_dependencies/ball_detect
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ament_index/resource_index/parent_prefix_path/ball_detect
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/ament_prefix_path.sh
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/ament_prefix_path.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/path.sh
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/path.dsv
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/local_setup.bash
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/local_setup.sh
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/local_setup.zsh
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/local_setup.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/package.dsv
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ament_index/resource_index/packages/ball_detect
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detectConfig.cmake
+-- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detectConfig-version.cmake
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/package.xml

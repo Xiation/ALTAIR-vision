@@ -16,8 +16,17 @@ find_package(cv_bridge REQUIRED)
 find_package(image_transport REQUIRED)
 find_package(OpenCV REQUIRED)
 
+if(OpenCV_FOUND)
+  message(STATUS "OpenCV library status:")
+  message(STATUS "  version: ${OpenCV_VERSION}")
+  message(STATUS "  libraries: ${OpenCV_LIBS}")
+  message(STATUS "  include path: ${OpenCV_INCLUDE_DIRS}")
+endif()
+
 # Add executable
-add_executable(ball_det src/ball_detect.cpp src/ball_detector_node.cpp)
+add_executable(ball_det 
+src/ball_detect.cpp 
+src/ball_detector_node.cpp)
 
 # Include directories
 include_directories(${OpenCV_INCLUDE_DIRS})

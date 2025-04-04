@@ -1,0 +1,29 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/ball_det.dir/src/ball_detect.cpp.o[0m
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:183:9:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kcv::Mat BallDetector::[01;32m[Kdetect[m[K(const cv::Mat&, const cv::Mat&, cv::Mat, std::vector<double, std::allocator<double> >&)[m[K’
+  183 | cv::Mat [01;31m[KBallDetector[m[K::detect(const cv::Mat &mask_ball, const cv::Mat &mask_field, cv::Mat frame, std::vector<double>& distanceHistory
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:1[m[K:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:50:13:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kcv::Mat BallDetector::[01;32m[Kdetect[m[K(const cv::Mat&, const cv::Mat&, cv::Mat, std::vector<double, std::allocator<double> >&, int)[m[K’
+   50 |     cv::Mat [01;36m[Kdetect[m[K(const cv::Mat &mask_ball, const cv::Mat &mask_field, cv::Mat frame, std::vector<double>& distanceHistory, int movingAverageWindow); ///< Detects and tracks the ball.
+      |             [01;36m[K^~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:24:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass BallDetector[m[K’ defined here
+   24 | class [01;36m[KBallDetector[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In member function ‘[01m[Kvoid BallDetector::[01;32m[Kimage_callback[m[K(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&, const sensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstSharedPtr&)[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:369:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBallDetector::detect(cv::Mat&, std::tuple_element<1, std::pair<cv::Mat, cv::Mat> >::type&, cv::Mat&, std::vector<double, std::allocator<double> >&)[m[K’
+  369 |     cv::Mat final_frame = [01;31m[Kdetect(mask_ball, mask_field, frame, distanceHistory[m[K
+      |                           [01;31m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  370 | [01;31m[K      // moving_average_window_[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+  371 | [01;31m[K      )[m[K;
+      |       [01;31m[K~[m[K                          
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:50:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat BallDetector::[01;32m[Kdetect[m[K(const cv::Mat&, const cv::Mat&, cv::Mat, std::vector<double, std::allocator<double> >&, int)[m[K’
+   50 |     cv::Mat [01;36m[Kdetect[m[K(const cv::Mat &mask_ball, const cv::Mat &mask_field, cv::Mat frame, std::vector<double>& distanceHistory, int movingAverageWindow); ///< Detects and tracks the ball.
+      |             [01;36m[K^~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:50:13:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 4 provided
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:360:143:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcinfo_msg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  360 | void BallDetector::image_callback(const sensor_msgs::msg::Image::ConstSharedPtr& img_msg, [01;35m[Kconst sensor_msgs::msg::CameraInfo::ConstSharedPtr& cinfo_msg[m[K)
+      |                                                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ball_det.dir/build.make:76: CMakeFiles/ball_det.dir/src/ball_detect.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ball_det.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

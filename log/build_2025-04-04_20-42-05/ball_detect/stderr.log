@@ -1,0 +1,40 @@
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In constructor ‘[01m[KBallDetector::[01;32m[KBallDetector[m[K()[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:33:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst image_transport::CameraSubscriber::Callback&[m[K’ {aka ‘[01m[Kconst std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CameraInfo_<std::allocator<void> > >&)>&[m[K’} from expression of type ‘[01m[Kstd::_Bind_helper<false, void (BallDetector::*)(const std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&, const std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >&), BallDetector*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type[m[K’
+   35 |     this, "image_raw", [01;31m[Kstd::bind(&BallDetector::image_callback, this,[m[K
+      |                        [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   36 | [01;31m[K    std::placeholders::_1, std::placeholders::_2)[m[K, "raw", rmw_qos_profile_sensor_data);
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:22[m[K,
+                 from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/image_transport/image_transport/image_transport.hpp:88:38:[m[K [01;36m[Knote: [m[Kin passing argument 3 of ‘[01m[Kimage_transport::CameraSubscriber image_transport::[01;32m[Kcreate_camera_subscription[m[K(rclcpp::Node*, const std::string&, const CameraSubscriber::Callback&, const std::string&, rmw_qos_profile_t)[m[K’
+   88 |   [01;36m[Kconst CameraSubscriber::Callback & callback[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In member function ‘[01m[Kstd::vector<double, std::allocator<double> > BallDetector::[01;32m[KmovingAverage[m[K(const std::vector<double, std::allocator<double> >&, int)[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:168:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  168 |   for (int i = 0; [01;35m[Ki < data.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K At global scope:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:183:136:[m[K [01;31m[Kerror: [m[K‘[01m[KmovingAverageWindow[m[K’ has not been declared
+  183 | cv::Mat BallDetector::detect(const cv::Mat &mask_ball, const cv::Mat &mask_field, cv::Mat frame, std::vector<double>& distanceHistory, [01;31m[KmovingAverageWindow[m[K) {
+      |                                                                                                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In member function ‘[01m[Kcv::Mat BallDetector::[01;32m[Kdetect[m[K(const cv::Mat&, const cv::Mat&, cv::Mat, std::vector<double, std::allocator<double> >&, int)[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:313:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  313 |         if([01;35m[KdistanceHistory.size() >= moving_average_window_[m[K) {
+      |            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:317:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KsmoothedDistance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  317 |             double [01;35m[KsmoothedDistance[m[K=smoothedDistances.back();
+      |                    [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K At global scope:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:358:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid BallDetector::[01;32m[Kimage_callback[m[K(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&, const sensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstSharedPtr&)[m[K’
+  358 | void [01;31m[KBallDetector[m[K::image_callback(const sensor_msgs::msg::Image::ConstSharedPtr& img_msg, const sensor_msgs::msg::CameraInfo::ConstSharedPtr& cinfo_msg)
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:40:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid BallDetector::[01;32m[Kimage_callback[m[K(const sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr&, const sensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr&)[m[K’
+   40 |     void [01;36m[Kimage_callback[m[K(
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:24:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass BallDetector[m[K’ defined here
+   24 | class [01;36m[KBallDetector[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ball_det.dir/build.make:76: CMakeFiles/ball_det.dir/src/ball_detect.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ball_det.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

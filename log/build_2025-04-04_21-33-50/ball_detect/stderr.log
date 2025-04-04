@@ -1,0 +1,12 @@
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In constructor ‘[01m[KBallDetector::[01;32m[KBallDetector[m[K()[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:24:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst image_transport::CameraSubscriber::Callback&[m[K’ {aka ‘[01m[Kconst std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CameraInfo_<std::allocator<void> > >&)>&[m[K’} from expression of type ‘[01m[KBallDetector::BallDetector()::<lambda(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&)>[m[K’
+   35 |     this, "image_raw", [01;31m[K[this](const sensor_msgs::msg::Image::ConstSharedPtr& img) {image_callback(img);}[m[K, "raw", rmw_qos_profile_sensor_data);
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:22[m[K,
+                 from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/image_transport/image_transport/image_transport.hpp:88:38:[m[K [01;36m[Knote: [m[Kin passing argument 3 of ‘[01m[Kimage_transport::CameraSubscriber image_transport::[01;32m[Kcreate_camera_subscription[m[K(rclcpp::Node*, const std::string&, const CameraSubscriber::Callback&, const std::string&, rmw_qos_profile_t)[m[K’
+   88 |   [01;36m[Kconst CameraSubscriber::Callback & callback[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ball_det.dir/build.make:76: CMakeFiles/ball_det.dir/src/ball_detect.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ball_det.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

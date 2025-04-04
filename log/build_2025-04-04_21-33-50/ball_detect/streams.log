@@ -1,0 +1,15 @@
+[0.011s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect -- -j16 -l16
+[0.082s] [ 33%] [32mBuilding CXX object CMakeFiles/ball_det.dir/src/ball_detect.cpp.o[0m
+[3.178s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In constructor ‘[01m[KBallDetector::[01;32m[KBallDetector[m[K()[m[K’:
+[3.178s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:24:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst image_transport::CameraSubscriber::Callback&[m[K’ {aka ‘[01m[Kconst std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&, const std::shared_ptr<const sensor_msgs::msg::CameraInfo_<std::allocator<void> > >&)>&[m[K’} from expression of type ‘[01m[KBallDetector::BallDetector()::<lambda(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&)>[m[K’
+[3.179s]    35 |     this, "image_raw", [01;31m[K[this](const sensor_msgs::msg::Image::ConstSharedPtr& img) {image_callback(img);}[m[K, "raw", rmw_qos_profile_sensor_data);
+[3.179s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.179s] In file included from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:22[m[K,
+[3.179s]                  from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:1[m[K:
+[3.179s] [01m[K/opt/ros/jazzy/include/image_transport/image_transport/image_transport.hpp:88:38:[m[K [01;36m[Knote: [m[Kin passing argument 3 of ‘[01m[Kimage_transport::CameraSubscriber image_transport::[01;32m[Kcreate_camera_subscription[m[K(rclcpp::Node*, const std::string&, const CameraSubscriber::Callback&, const std::string&, rmw_qos_profile_t)[m[K’
+[3.179s]    88 |   [01;36m[Kconst CameraSubscriber::Callback & callback[m[K,
+[3.179s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.045s] gmake[2]: *** [CMakeFiles/ball_det.dir/build.make:76: CMakeFiles/ball_det.dir/src/ball_detect.cpp.o] Error 1
+[6.046s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ball_det.dir/all] Error 2
+[6.046s] gmake: *** [Makefile:146: all] Error 2
+[6.049s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect -- -j16 -l16
