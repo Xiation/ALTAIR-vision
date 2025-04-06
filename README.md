@@ -15,6 +15,11 @@ Before using this repository, ensure to meet the following requirements:
 
 ## Installing Prerequisites
 
+### ROS2 (Jazzy Jalisco)
+please refer to the ROS2 documentations since it provides depth comprehension regarding installation etc
+- [`ROS2 Jazzy Jalisco`](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html "ROS2 jazzy installations")
+
+
 ### Opencv (Build with opencv_contrib)
 
 #### 1. Install minimal prerequisites
