@@ -1,0 +1,21 @@
+[4.245s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/video_subscriber': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/video_subscriber build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/install.log --single-version-externally-managed install_data
+[4.955s] running egg_info
+[4.998s] writing ../../build/video_subscriber/video_subscriber.egg-info/PKG-INFO
+[4.999s] writing dependency_links to ../../build/video_subscriber/video_subscriber.egg-info/dependency_links.txt
+[5.000s] writing entry points to ../../build/video_subscriber/video_subscriber.egg-info/entry_points.txt
+[5.000s] writing requirements to ../../build/video_subscriber/video_subscriber.egg-info/requires.txt
+[5.000s] writing top-level names to ../../build/video_subscriber/video_subscriber.egg-info/top_level.txt
+[5.112s] reading manifest file '../../build/video_subscriber/video_subscriber.egg-info/SOURCES.txt'
+[5.115s] writing manifest file '../../build/video_subscriber/video_subscriber.egg-info/SOURCES.txt'
+[5.115s] running build
+[5.115s] running build_py
+[5.116s] running install
+[5.138s] running install_lib
+[5.187s] running install_data
+[5.188s] running install_egg_info
+[5.235s] removing '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber-0.0.0-py3.12.egg-info' (and everything under it)
+[5.235s] Copying ../../build/video_subscriber/video_subscriber.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber-0.0.0-py3.12.egg-info
+[5.237s] running install_scripts
+[5.557s] Installing gui_subscriber script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/video_subscriber
+[5.558s] writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/install.log'
+[5.684s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/video_subscriber' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/video_subscriber build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/install.log --single-version-externally-managed install_data
