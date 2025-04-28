@@ -1,0 +1,10 @@
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration/CMakeFiles/uninstall.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration/CMakeFiles/altair_calibration_uninstall.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration/CMakeFiles/cam_calibration.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration/CMakeFiles/test.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration/CMakeFiles/edit_cache.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration/CMakeFiles/rebuild_cache.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration/CMakeFiles/list_install_components.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration/CMakeFiles/install.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration/CMakeFiles/install/local.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration/CMakeFiles/install/strip.dir

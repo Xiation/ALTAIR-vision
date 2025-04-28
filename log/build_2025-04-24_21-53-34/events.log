@@ -1,0 +1,131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000439] (-) JobUnselected: {'identifier': 'ball_detect'}
+[0.000892] (-) JobUnselected: {'identifier': 'ball_detection'}
+[0.000930] (-) JobUnselected: {'identifier': 'ball_detector'}
+[0.000994] (-) JobUnselected: {'identifier': 'camera_calibration'}
+[0.001048] (-) JobUnselected: {'identifier': 'soccer_field_map_generator'}
+[0.001068] (-) JobUnselected: {'identifier': 'temp_ball_detector'}
+[0.001083] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.001101] (-) JobUnselected: {'identifier': 'video_subscriber'}
+[0.001120] (altair_calibration) JobQueued: {'identifier': 'altair_calibration', 'dependencies': OrderedDict()}
+[0.001140] (altair_calibration) JobStarted: {'identifier': 'altair_calibration'}
+[0.005323] (altair_calibration) JobProgress: {'identifier': 'altair_calibration', 'progress': 'cmake'}
+[0.006223] (altair_calibration) JobProgress: {'identifier': 'altair_calibration', 'progress': 'build'}
+[0.006331] (altair_calibration) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration', '--', '-j16', '-l16'], 'cwd': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'abyan', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/abyan', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src', 'TERM_PROGRAM_VERSION': '1.97.2', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/abyan/.nvm/versions/node/v22.14.0/bin', 'NVM_INC': '/home/abyan/.nvm/versions/node/v22.14.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '3314', 'BUNDLED_DEBUGPY_PATH': '/home/abyan/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/abyan/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'abyan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'abyan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/home/abyan/anaconda3/condabin:/opt/ros/jazzy/bin:/home/abyan/.nvm/versions/node/v22.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/abyan/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/abyan-LOQ:@/tmp/.ICE-unix/3170,unix/abyan-LOQ:/tmp/.ICE-unix/3170', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/21627bf9_a6c8_4c70_8d73_5e7fa34d8b41', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/abyan/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-1c0dc951045d266a.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4dc287ffc9.sock', 'GNOME_TERMINAL_SERVICE': ':1.108', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/abyan/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/abyan/anaconda3/bin/conda', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'OPENCV_EXTRA_MODULES_PATH': '/home/abyan/opencv/contrib/opencv_contrib-4.x/modules', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.064071] (altair_calibration) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cam_calibration.dir/src/cam_calibration.cpp.o\x1b[0m\n'}
+[0.099901] (-) TimerEvent: {}
+[0.200230] (-) TimerEvent: {}
+[0.300566] (-) TimerEvent: {}
+[0.400833] (-) TimerEvent: {}
+[0.501207] (-) TimerEvent: {}
+[0.601593] (-) TimerEvent: {}
+[0.701901] (-) TimerEvent: {}
+[0.802231] (-) TimerEvent: {}
+[0.902579] (-) TimerEvent: {}
+[1.002879] (-) TimerEvent: {}
+[1.103158] (-) TimerEvent: {}
+[1.203474] (-) TimerEvent: {}
+[1.303809] (-) TimerEvent: {}
+[1.404092] (-) TimerEvent: {}
+[1.504516] (-) TimerEvent: {}
+[1.604884] (-) TimerEvent: {}
+[1.705324] (-) TimerEvent: {}
+[1.805595] (-) TimerEvent: {}
+[1.905935] (-) TimerEvent: {}
+[2.006331] (-) TimerEvent: {}
+[2.106631] (-) TimerEvent: {}
+[2.206985] (-) TimerEvent: {}
+[2.307266] (-) TimerEvent: {}
+[2.407593] (-) TimerEvent: {}
+[2.507909] (-) TimerEvent: {}
+[2.608226] (-) TimerEvent: {}
+[2.708559] (-) TimerEvent: {}
+[2.808899] (-) TimerEvent: {}
+[2.909317] (-) TimerEvent: {}
+[3.009600] (-) TimerEvent: {}
+[3.109906] (-) TimerEvent: {}
+[3.210299] (-) TimerEvent: {}
+[3.310605] (-) TimerEvent: {}
+[3.410994] (-) TimerEvent: {}
+[3.511327] (-) TimerEvent: {}
+[3.611759] (-) TimerEvent: {}
+[3.712082] (-) TimerEvent: {}
+[3.812424] (-) TimerEvent: {}
+[3.912728] (-) TimerEvent: {}
+[4.013008] (-) TimerEvent: {}
+[4.113494] (-) TimerEvent: {}
+[4.213773] (-) TimerEvent: {}
+[4.314103] (-) TimerEvent: {}
+[4.414425] (-) TimerEvent: {}
+[4.514730] (-) TimerEvent: {}
+[4.615095] (-) TimerEvent: {}
+[4.715573] (-) TimerEvent: {}
+[4.815875] (-) TimerEvent: {}
+[4.916110] (-) TimerEvent: {}
+[5.016540] (-) TimerEvent: {}
+[5.116868] (-) TimerEvent: {}
+[5.217497] (-) TimerEvent: {}
+[5.317830] (-) TimerEvent: {}
+[5.418072] (-) TimerEvent: {}
+[5.518393] (-) TimerEvent: {}
+[5.618643] (-) TimerEvent: {}
+[5.718891] (-) TimerEvent: {}
+[5.819180] (-) TimerEvent: {}
+[5.919502] (-) TimerEvent: {}
+[6.019750] (-) TimerEvent: {}
+[6.119986] (-) TimerEvent: {}
+[6.220284] (-) TimerEvent: {}
+[6.320512] (-) TimerEvent: {}
+[6.420758] (-) TimerEvent: {}
+[6.520970] (-) TimerEvent: {}
+[6.621272] (-) TimerEvent: {}
+[6.721505] (-) TimerEvent: {}
+[6.821764] (-) TimerEvent: {}
+[6.922050] (-) TimerEvent: {}
+[7.022356] (-) TimerEvent: {}
+[7.122660] (-) TimerEvent: {}
+[7.222915] (-) TimerEvent: {}
+[7.323208] (-) TimerEvent: {}
+[7.423542] (-) TimerEvent: {}
+[7.523876] (-) TimerEvent: {}
+[7.624203] (-) TimerEvent: {}
+[7.720729] (altair_calibration) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cam_calibration\x1b[0m\n'}
+[7.724355] (-) TimerEvent: {}
+[7.824672] (-) TimerEvent: {}
+[7.925103] (-) TimerEvent: {}
+[8.025415] (-) TimerEvent: {}
+[8.125794] (-) TimerEvent: {}
+[8.154431] (altair_calibration) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.412\n'}
+[8.160052] (altair_calibration) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.412\n'}
+[8.161595] (altair_calibration) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_core.so.412\n'}
+[8.225885] (-) TimerEvent: {}
+[8.326156] (-) TimerEvent: {}
+[8.426622] (-) TimerEvent: {}
+[8.526951] (-) TimerEvent: {}
+[8.627269] (-) TimerEvent: {}
+[8.724033] (altair_calibration) StdoutLine: {'line': b'[100%] Built target cam_calibration\n'}
+[8.727341] (-) TimerEvent: {}
+[8.734276] (altair_calibration) CommandEnded: {'returncode': 0}
+[8.735053] (altair_calibration) JobProgress: {'identifier': 'altair_calibration', 'progress': 'install'}
+[8.743306] (altair_calibration) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration'], 'cwd': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'abyan', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/abyan', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src', 'TERM_PROGRAM_VERSION': '1.97.2', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/abyan/.nvm/versions/node/v22.14.0/bin', 'NVM_INC': '/home/abyan/.nvm/versions/node/v22.14.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '3314', 'BUNDLED_DEBUGPY_PATH': '/home/abyan/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/abyan/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'abyan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'abyan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/home/abyan/anaconda3/condabin:/opt/ros/jazzy/bin:/home/abyan/.nvm/versions/node/v22.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/abyan/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/abyan-LOQ:@/tmp/.ICE-unix/3170,unix/abyan-LOQ:/tmp/.ICE-unix/3170', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/21627bf9_a6c8_4c70_8d73_5e7fa34d8b41', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/abyan/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-1c0dc951045d266a.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4dc287ffc9.sock', 'GNOME_TERMINAL_SERVICE': ':1.108', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/abyan/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/abyan/anaconda3/bin/conda', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'OPENCV_EXTRA_MODULES_PATH': '/home/abyan/opencv/contrib/opencv_contrib-4.x/modules', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[8.753391] (altair_calibration) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.753617] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/lib/altair_calibration/cam_calibration\n'}
+[8.756729] (altair_calibration) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/lib/altair_calibration/cam_calibration" to ""\n'}
+[8.757030] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/ament_index/resource_index/package_run_dependencies/altair_calibration\n'}
+[8.757099] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/ament_index/resource_index/parent_prefix_path/altair_calibration\n'}
+[8.757154] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/ament_prefix_path.sh\n'}
+[8.757207] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/ament_prefix_path.dsv\n'}
+[8.757292] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/path.sh\n'}
+[8.757347] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/path.dsv\n'}
+[8.757433] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.bash\n'}
+[8.757485] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.sh\n'}
+[8.757537] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.zsh\n'}
+[8.757583] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.dsv\n'}
+[8.757629] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/package.dsv\n'}
+[8.757677] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/ament_index/resource_index/packages/altair_calibration\n'}
+[8.757829] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/cmake/altair_calibrationConfig.cmake\n'}
+[8.757996] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/cmake/altair_calibrationConfig-version.cmake\n'}
+[8.758098] (altair_calibration) StdoutLine: {'line': b'-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/package.xml\n'}
+[8.759131] (altair_calibration) CommandEnded: {'returncode': 0}
+[8.770033] (altair_calibration) JobEnded: {'identifier': 'altair_calibration', 'rc': 0}
+[8.770567] (-) EventReactorShutdown: {}

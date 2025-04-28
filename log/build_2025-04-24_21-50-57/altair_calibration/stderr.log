@@ -1,0 +1,303 @@
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:[m[K In member function ‘[01m[Kvoid CameraCalibrator::[01;32m[Kimage_callback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:55:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ and ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’)
+   44 |         if ((prev_corners.empty() || cv::norm([32m[Kcorners[m[K [01;31m[K-[m[K [34m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                               [32m[K~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~~~~[m[K
+      |                                               [32m[K|[m[K         [34m[K|[m[K
+      |                                               [32m[K|[m[K         [34m[Kvector<[...]>[m[K
+      |                                               [32m[Kvector<[...]>[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/core/matx.hpp:542[m[K,
+                 from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:56[m[K,
+                 from [01m[K/usr/local/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/include/altair_calibration/cam_calibration.hpp:14[m[K,
+                 from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:1[m[K:
+[01m[K/usr/local/include/opencv4/opencv2/core/matx.inl.hpp:576:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::[01;32m[Koperator-[m[K(const Matx<_Tp, m, n>&, const Matx<_Tp, m, n>&)[m[K’
+  576 | Matx<_Tp, m, n> [01;36m[Koperator[m[K - (const Matx<_Tp, m, n>& a, const Matx<_Tp, m, n>& b)
+      |                 [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/matx.inl.hpp:576:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/matx.inl.hpp:670:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::[01;32m[Koperator-[m[K(const Matx<_Tp, m, n>&)[m[K’
+  670 | Matx<_Tp, m, n> [01;36m[Koperator[m[K - (const Matx<_Tp, m, n>& a)
+      |                 [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/matx.inl.hpp:670:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/matx.inl.hpp:981:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::[01;32m[Koperator-[m[K(const Vec<_Tp, m>&, const Vec<_Tp, m>&)[m[K’
+  981 | Vec<_Tp, cn> [01;36m[Koperator[m[K - (const Vec<_Tp, cn>& a, const Vec<_Tp, cn>& b)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/matx.inl.hpp:981:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Vec<_Tp, m>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/matx.inl.hpp:1092:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::[01;32m[Koperator-[m[K(const Vec<_Tp, m>&)[m[K’
+ 1092 | Vec<_Tp, cn> [01;36m[Koperator[m[K - (const Vec<_Tp, cn>& a)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/matx.inl.hpp:1092:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Vec<_Tp, m>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:57[m[K:
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1078:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp> cv::[01;32m[Koperator-[m[K(const Complex<_Tp>&, const Complex<_Tp>&)[m[K’
+ 1078 | Complex<_Tp> [01;36m[Koperator[m[K - (const Complex<_Tp>& a, const Complex<_Tp>& b)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1078:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1091:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp> cv::[01;32m[Koperator-[m[K(const Complex<_Tp>&)[m[K’
+ 1091 | Complex<_Tp> [01;36m[Koperator[m[K - (const Complex<_Tp>& a)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1091:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1121:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp> cv::[01;32m[Koperator-[m[K(const Complex<_Tp>&, _Tp)[m[K’
+ 1121 | Complex<_Tp> [01;36m[Koperator[m[K - (const Complex<_Tp>& a, _Tp b)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1121:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1131:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp> cv::[01;32m[Koperator-[m[K(_Tp, const Complex<_Tp>&)[m[K’
+ 1131 | Complex<_Tp> [01;36m[Koperator[m[K - (_Tp b, const Complex<_Tp>& a)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1131:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1356:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp> cv::[01;32m[Koperator-[m[K(const Point_<_Tp>&, const Point_<_Tp>&)[m[K’
+ 1356 | Point_<_Tp> [01;36m[Koperator[m[K - (const Point_<_Tp>& a, const Point_<_Tp>& b)
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1356:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Point_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1362:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp> cv::[01;32m[Koperator-[m[K(const Point_<_Tp>&)[m[K’
+ 1362 | Point_<_Tp> [01;36m[Koperator[m[K - (const Point_<_Tp>& a)
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1362:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Point_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1603:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::[01;32m[Koperator-[m[K(const Point3_<_Tp>&, const Point3_<_Tp>&)[m[K’
+ 1603 | Point3_<_Tp> [01;36m[Koperator[m[K - (const Point3_<_Tp>& a, const Point3_<_Tp>& b)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1603:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Point3_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1609:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::[01;32m[Koperator-[m[K(const Point3_<_Tp>&)[m[K’
+ 1609 | Point3_<_Tp> [01;36m[Koperator[m[K - (const Point3_<_Tp>& a)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1609:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Point3_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1788:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Size_<_Tp> cv::[01;32m[Koperator-[m[K(const Size_<_Tp>&, const Size_<_Tp>&)[m[K’
+ 1788 | Size_<_Tp> [01;36m[Koperator[m[K - (const Size_<_Tp>& a, const Size_<_Tp>& b)
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:1788:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Size_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:2000:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Rect_<_Tp> cv::[01;32m[Koperator-[m[K(const Rect_<_Tp>&, const Point_<_Tp>&)[m[K’
+ 2000 | Rect_<_Tp> [01;36m[Koperator[m[K - (const Rect_<_Tp>& a, const Point_<_Tp>& b)
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:2000:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Rect_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:2012:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Rect_<_Tp> cv::[01;32m[Koperator-[m[K(const Rect_<_Tp>&, const Size_<_Tp>&)[m[K’
+ 2012 | Rect_<_Tp> [01;36m[Koperator[m[K - (const Rect_<_Tp>& a, const Size_<_Tp>& b)
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:2012:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Rect_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:2316:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::[01;32m[Koperator-[m[K(const Scalar_<_Tp>&, const Scalar_<_Tp>&)[m[K’
+ 2316 | Scalar_<_Tp> [01;36m[Koperator[m[K - (const Scalar_<_Tp>& a, const Scalar_<_Tp>& b)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:2316:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Scalar_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:2340:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::[01;32m[Koperator-[m[K(const Scalar_<_Tp>&)[m[K’
+ 2340 | Scalar_<_Tp> [01;36m[Koperator[m[K - (const Scalar_<_Tp>& a)
+      |              [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:2340:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Scalar_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:58[m[K:
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3667:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::[01;32m[Koperator-[m[K(const Mat&, const Matx<_Tp, m, n>&)[m[K’
+ 3667 | MatExpr [01;36m[Koperator[m[K - (const Mat& a, const Matx<_Tp, m, n>& b) { return a - Mat(b); }
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3667:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3669:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::[01;32m[Koperator-[m[K(const Matx<_Tp, m, n>&, const Mat&)[m[K’
+ 3669 | MatExpr [01;36m[Koperator[m[K - (const Matx<_Tp, m, n>& a, const Mat& b) { return Mat(a) - b; }
+      |         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3669:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3812[m[K:
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:2601:24:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::MatConstIterator_<_Tp> cv::[01;32m[Koperator-[m[K(const MatConstIterator_<_Tp>&, ptrdiff_t)[m[K’
+ 2601 | MatConstIterator_<_Tp> [01;36m[Koperator[m[K - (const MatConstIterator_<_Tp>& a, ptrdiff_t ofs)
+      |                        [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:2601:24:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::MatConstIterator_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:2738:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::MatIterator_<_Tp> cv::[01;32m[Koperator-[m[K(const MatIterator_<_Tp>&, ptrdiff_t)[m[K’
+ 2738 | MatIterator_<_Tp> [01;36m[Koperator[m[K - (const MatIterator_<_Tp>& a, ptrdiff_t ofs)
+      |                   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:2738:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::MatIterator_<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/imgproc/types_c.h:46[m[K,
+                 from [01m[K/opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:45[m[K,
+                 from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/include/altair_calibration/cam_calibration.hpp:17[m[K:
+[01m[K/usr/local/include/opencv4/opencv2/core/core_c.h:3101:41:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> ptrdiff_t cv::[01;32m[Koperator-[m[K(const SeqIterator<_Tp>&, const SeqIterator<_Tp>&)[m[K’
+ 3101 | template<typename _Tp> inline ptrdiff_t [01;36m[Koperator[m[K - (const SeqIterator<_Tp>& a,
+      |                                         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/core_c.h:3101:41:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst cv::SeqIterator<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/13/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/13/vector:62[m[K,
+                 from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/include/altair_calibration/cam_calibration.hpp:5[m[K:
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:625:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::[01;32m[Koperator-[m[K(const reverse_iterator<_Iterator>&, const reverse_iterator<_IteratorR>&)[m[K’
+  625 |     [01;36m[Koperator[m[K-(const reverse_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:625:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::[01;32m[Koperator-[m[K(const move_iterator<_IteratorL>&, const move_iterator<_IteratorR>&)[m[K’
+ 1800 |     [01;36m[Koperator[m[K-(const move_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1800:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp:47[m[K,
+                 from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:3414[m[K:
+[01m[K/usr/include/c++/13/complex:365:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator-[m[K(const complex<_Tp>&, const complex<_Tp>&)[m[K’
+  365 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:365:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:374:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator-[m[K(const complex<_Tp>&, const _Tp&)[m[K’
+  374 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:374:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:383:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator-[m[K(const _Tp&, const complex<_Tp>&)[m[K’
+  383 |     [01;36m[Koperator[m[K-(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:383:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:460:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator-[m[K(const complex<_Tp>&)[m[K’
+  460 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:460:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:44:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   44 |         if ((prev_corners.empty() || cv::norm(corners - [01;36m[Kprev_corners[m[K) > movement_threshold) && enough_time_passed) {
+      |                                                         [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:2149:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Range cv::[01;32m[Koperator-[m[K(const Range&, int)[m[K’
+ 2149 | Range [01;36m[Koperator[m[K - (const Range& r1, int delta)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/types.hpp:2149:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::Range&[m[K’
+ 2149 | Range operator - ([01;36m[Kconst Range& r1[m[K, int delta)
+      |                   [01;36m[K~~~~~~~~~~~~~^~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3658:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::[01;32m[Koperator-[m[K(const Mat&, const Mat&)[m[K’
+ 3658 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K - (const Mat& a, const Mat& b);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3658:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::Mat&[m[K’
+ 3658 | CV_EXPORTS MatExpr operator - ([01;36m[Kconst Mat& a[m[K, const Mat& b);
+      |                                [01;36m[K~~~~~~~~~~~^[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3659:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::[01;32m[Koperator-[m[K(const Mat&, const Scalar&)[m[K’
+ 3659 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K - (const Mat& a, const Scalar& s);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3659:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::Mat&[m[K’
+ 3659 | CV_EXPORTS MatExpr operator - ([01;36m[Kconst Mat& a[m[K, const Scalar& s);
+      |                                [01;36m[K~~~~~~~~~~~^[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3660:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::[01;32m[Koperator-[m[K(const Scalar&, const Mat&)[m[K’
+ 3660 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K - (const Scalar& s, const Mat& a);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3660:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::Scalar&[m[K’ {aka ‘[01m[Kconst cv::Scalar_<double>&[m[K’}
+ 3660 | CV_EXPORTS MatExpr operator - ([01;36m[Kconst Scalar& s[m[K, const Mat& a);
+      |                                [01;36m[K~~~~~~~~~~~~~~^[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3661:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::[01;32m[Koperator-[m[K(const MatExpr&, const Mat&)[m[K’
+ 3661 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K - (const MatExpr& e, const Mat& m);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3661:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::MatExpr&[m[K’
+ 3661 | CV_EXPORTS MatExpr operator - ([01;36m[Kconst MatExpr& e[m[K, const Mat& m);
+      |                                [01;36m[K~~~~~~~~~~~~~~~^[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3662:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::[01;32m[Koperator-[m[K(const Mat&, const MatExpr&)[m[K’
+ 3662 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K - (const Mat& m, const MatExpr& e);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3662:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::Mat&[m[K’
+ 3662 | CV_EXPORTS MatExpr operator - ([01;36m[Kconst Mat& m[m[K, const MatExpr& e);
+      |                                [01;36m[K~~~~~~~~~~~^[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3663:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::[01;32m[Koperator-[m[K(const MatExpr&, const Scalar&)[m[K’
+ 3663 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K - (const MatExpr& e, const Scalar& s);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3663:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::MatExpr&[m[K’
+ 3663 | CV_EXPORTS MatExpr operator - ([01;36m[Kconst MatExpr& e[m[K, const Scalar& s);
+      |                                [01;36m[K~~~~~~~~~~~~~~~^[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3664:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::[01;32m[Koperator-[m[K(const Scalar&, const MatExpr&)[m[K’
+ 3664 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K - (const Scalar& s, const MatExpr& e);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3664:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::Scalar&[m[K’ {aka ‘[01m[Kconst cv::Scalar_<double>&[m[K’}
+ 3664 | CV_EXPORTS MatExpr operator - ([01;36m[Kconst Scalar& s[m[K, const MatExpr& e);
+      |                                [01;36m[K~~~~~~~~~~~~~~^[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3665:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::[01;32m[Koperator-[m[K(const MatExpr&, const MatExpr&)[m[K’
+ 3665 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K - (const MatExpr& e1, const MatExpr& e2);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3665:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::MatExpr&[m[K’
+ 3665 | CV_EXPORTS MatExpr operator - ([01;36m[Kconst MatExpr& e1[m[K, const MatExpr& e2);
+      |                                [01;36m[K~~~~~~~~~~~~~~~^~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3671:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::[01;32m[Koperator-[m[K(const Mat&)[m[K’
+ 3671 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K - (const Mat& m);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3671:20:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3672:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatExpr cv::[01;32m[Koperator-[m[K(const MatExpr&)[m[K’
+ 3672 | CV_EXPORTS MatExpr [01;36m[Koperator[m[K - (const MatExpr& e);
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.hpp:3672:20:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:2428:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kptrdiff_t cv::[01;32m[Koperator-[m[K(const MatConstIterator&, const MatConstIterator&)[m[K’
+ 2428 | ptrdiff_t [01;36m[Koperator[m[K - (const MatConstIterator& b, const MatConstIterator& a)
+      |           [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:2428:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::MatConstIterator&[m[K’
+ 2428 | ptrdiff_t operator - ([01;36m[Kconst MatConstIterator& b[m[K, const MatConstIterator& a)
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:2453:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::MatConstIterator cv::[01;32m[Koperator-[m[K(const MatConstIterator&, ptrdiff_t)[m[K’
+ 2453 | MatConstIterator [01;36m[Koperator[m[K - (const MatConstIterator& a, ptrdiff_t ofs)
+      |                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:2453:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::MatConstIterator&[m[K’
+ 2453 | MatConstIterator operator - ([01;36m[Kconst MatConstIterator& a[m[K, ptrdiff_t ofs)
+      |                              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+In file included from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:59[m[K:
+[01m[K/usr/local/include/opencv4/opencv2/core/persistence.hpp:1261:11:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kptrdiff_t cv::[01;32m[Koperator-[m[K(const FileNodeIterator&, const FileNodeIterator&)[m[K’
+ 1261 | ptrdiff_t [01;36m[Koperator[m[K - (const FileNodeIterator& it1, const FileNodeIterator& it2)
+      |           [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/local/include/opencv4/opencv2/core/persistence.hpp:1261:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Point_<float> >[m[K’ to ‘[01m[Kconst cv::FileNodeIterator&[m[K’
+ 1261 | ptrdiff_t operator - ([01;36m[Kconst FileNodeIterator& it1[m[K, const FileNodeIterator& it2)
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/cam_calibration.dir/build.make:76: CMakeFiles/cam_calibration.dir/src/cam_calibration.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cam_calibration.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,23 @@
+[1.392s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/camera_calibration': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_calibration build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/install.log --single-version-externally-managed install_data
+[1.605s] running egg_info
+[1.621s] writing ../../build/camera_calibration/camera_calibration.egg-info/PKG-INFO
+[1.621s] writing dependency_links to ../../build/camera_calibration/camera_calibration.egg-info/dependency_links.txt
+[1.622s] writing entry points to ../../build/camera_calibration/camera_calibration.egg-info/entry_points.txt
+[1.622s] writing requirements to ../../build/camera_calibration/camera_calibration.egg-info/requires.txt
+[1.622s] writing top-level names to ../../build/camera_calibration/camera_calibration.egg-info/top_level.txt
+[1.656s] reading manifest file '../../build/camera_calibration/camera_calibration.egg-info/SOURCES.txt'
+[1.658s] writing manifest file '../../build/camera_calibration/camera_calibration.egg-info/SOURCES.txt'
+[1.658s] running build
+[1.658s] running build_py
+[1.659s] running install
+[1.666s] running install_lib
+[1.686s] running install_data
+[1.686s] running install_egg_info
+[1.707s] removing '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration-6.0.10-py3.12.egg-info' (and everything under it)
+[1.708s] Copying ../../build/camera_calibration/camera_calibration.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration-6.0.10-py3.12.egg-info
+[1.709s] running install_scripts
+[1.821s] Installing cameracalibrator script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/camera_calibration
+[1.822s] Installing cameracheck script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/camera_calibration
+[1.822s] Installing tarfile_calibration script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/camera_calibration
+[1.822s] writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/install.log'
+[1.852s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/camera_calibration' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_calibration build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/install.log --single-version-externally-managed install_data

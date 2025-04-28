@@ -1,0 +1,11 @@
+[0.007s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration -- -j16 -l16
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/cam_calibration.dir/src/cam_calibration.cpp.o[0m
+[0.412s] In file included from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:1[m[K:
+[0.412s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/include/altair_calibration/cam_calibration.hpp:15:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[0.413s]    15 | #include [01;31m[K<rclcpp/rclcpp.hpp>[m[K
+[0.413s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.413s] compilation terminated.
+[0.417s] gmake[2]: *** [CMakeFiles/cam_calibration.dir/build.make:76: CMakeFiles/cam_calibration.dir/src/cam_calibration.cpp.o] Error 1
+[0.418s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cam_calibration.dir/all] Error 2
+[0.418s] gmake: *** [Makefile:146: all] Error 2
+[0.422s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration -- -j16 -l16
