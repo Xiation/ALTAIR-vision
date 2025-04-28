@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Dusb_cam_EXPORTS
 
-CXX_INCLUDES = -I/home/abyan/Documents/ALTAIR-vision/src/usb_cam/include -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/usb_cam/include -isystem /usr/local/include/opencv4
 
 CXX_FLAGS = -std=gnu++17 -fPIC -Wall -Wextra -Wpedantic -Werror
 

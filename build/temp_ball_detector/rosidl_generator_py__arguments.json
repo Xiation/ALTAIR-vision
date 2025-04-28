@@ -1,9 +1,9 @@
 {
   "package_name": "temp_ball_detector",
-  "output_dir": "/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_py/temp_ball_detector",
+  "output_dir": "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_py/temp_ball_detector",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_adapter/temp_ball_detector:msg/BallDistance.idl"
+    "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_adapter/temp_ball_detector:msg/BallDistance.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
@@ -53,7 +53,7 @@
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_adapter/temp_ball_detector/msg/BallDistance.idl",
+    "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_adapter/temp_ball_detector/msg/BallDistance.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl",

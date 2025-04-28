@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abyan/Documents/ALTAIR-vision/src/usb_cam
+CMAKE_SOURCE_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/usb_cam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abyan/Documents/ALTAIR-vision/build/usb_cam
+CMAKE_BINARY_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/ALTAIR-vision/build/usb_cam/CMakeFiles /home/abyan/Documents/ALTAIR-vision/build/usb_cam//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam/CMakeFiles /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/ALTAIR-vision/build/usb_cam/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

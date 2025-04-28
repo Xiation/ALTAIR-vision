@@ -1,0 +1,22 @@
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In lambda function:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:163:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfo[m[K’ was not declared in this scope; did you mean ‘[01m[Kcinfo[m[K’?
+   35 |     this, "image_raw", [this](const sensor_msgs::msg::Image::ConstSharedPtr& img, const sensor_msgs::msg::CameraInfo::ConstSharedPtr& cinfo) {image_callback(img, [01;31m[Kinfo[m[K);}, "raw", rmw_qos_profile_sensor_data);
+      |                                                                                                                                                                   [01;31m[K^~~~[m[K
+      |                                                                                                                                                                   [32m[Kcinfo[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:35:135:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcinfo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   35 |     this, "image_raw", [this](const sensor_msgs::msg::Image::ConstSharedPtr& img, [01;35m[Kconst sensor_msgs::msg::CameraInfo::ConstSharedPtr& cinfo[m[K) {image_callback(img, info);}, "raw", rmw_qos_profile_sensor_data);
+      |                                                                                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K At global scope:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:362:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid BallDetector::[01;32m[Kimage_callback[m[K(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&)[m[K’
+  362 | void [01;31m[KBallDetector[m[K::image_callback(const sensor_msgs::msg::Image::ConstSharedPtr& img_msg
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:1[m[K:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:40:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid BallDetector::[01;32m[Kimage_callback[m[K(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&, const sensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstSharedPtr&)[m[K’
+   40 |     void [01;36m[Kimage_callback[m[K(
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:24:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass BallDetector[m[K’ defined here
+   24 | class [01;36m[KBallDetector[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ball_det.dir/build.make:76: CMakeFiles/ball_det.dir/src/ball_detect.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ball_det.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

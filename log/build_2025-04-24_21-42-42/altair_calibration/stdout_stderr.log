@@ -1,0 +1,11 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/cam_calibration.dir/src/cam_calibration.cpp.o[0m
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:5:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass CameraCalibrator[m[K’
+    5 | class [01;31m[KCameraCalibrator[m[K : public rclcpp::Node {
+      |       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/src/cam_calibration.cpp:1[m[K:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/include/altair_calibration/cam_calibration.hpp:20:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass CameraCalibrator[m[K’
+   20 | class [01;36m[KCameraCalibrator[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/cam_calibration.dir/build.make:76: CMakeFiles/cam_calibration.dir/src/cam_calibration.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cam_calibration.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

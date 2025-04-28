@@ -53,25 +53,25 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector
+CMAKE_SOURCE_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector
+CMAKE_BINARY_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector
 
 # Utility rule file for temp_ball_detector__py.
 
 # Include any custom commands dependencies for this target.
-include /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/compiler_depend.make
+include /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/compiler_depend.make
 
 # Include the progress variables for this target.
-include /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/progress.make
+include /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/progress.make
 
-/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c
-/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_introspection_c.c
-/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_c.c
-/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/msg/_ball_distance.py
-/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/msg/__init__.py
-/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/msg/_ball_distance_s.c
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_introspection_c.c
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_c.c
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/msg/_ball_distance.py
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/msg/__init__.py
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/msg/_ball_distance_s.c
 
 rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -119,8 +119,8 @@ rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesuppo
 rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_introspection_c.c
@@ -143,19 +143,19 @@ temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/_temp_ball_detect
 temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/msg/__init__.py
 temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/msg/_ball_distance.py
 temp_ball_detector__py: rosidl_generator_py/temp_ball_detector/msg/_ball_distance_s.c
-temp_ball_detector__py: /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py
-temp_ball_detector__py: /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/build.make
+temp_ball_detector__py: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py
+temp_ball_detector__py: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/build.make
 .PHONY : temp_ball_detector__py
 
 # Rule to build all files generated by this target.
-/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/build: temp_ball_detector__py
-.PHONY : /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/build
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/build: temp_ball_detector__py
+.PHONY : /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/build
 
-/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/clean:
-	cd /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py && $(CMAKE_COMMAND) -P CMakeFiles/temp_ball_detector__py.dir/cmake_clean.cmake
-.PHONY : /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/clean
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/clean:
+	cd /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py && $(CMAKE_COMMAND) -P CMakeFiles/temp_ball_detector__py.dir/cmake_clean.cmake
+.PHONY : /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/clean
 
-/home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/depend:
-	cd /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/DependInfo.cmake "--color=$(COLOR)"
-.PHONY : /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/depend
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/depend:
+	cd /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/DependInfo.cmake "--color=$(COLOR)"
+.PHONY : /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/temp_ball_detector__py/CMakeFiles/temp_ball_detector__py.dir/depend
 

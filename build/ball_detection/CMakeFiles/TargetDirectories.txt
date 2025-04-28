@@ -1,0 +1,3 @@
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detection/CMakeFiles/ball_det.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detection/CMakeFiles/edit_cache.dir
+/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detection/CMakeFiles/rebuild_cache.dir

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/abyan/Documents/ALTAIR-vision/src/usb_cam/test/test_usb_cam_utils.cpp" "CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o" "gcc" "CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o.d"
+  "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/usb_cam/test/test_usb_cam_utils.cpp" "CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o" "gcc" "CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

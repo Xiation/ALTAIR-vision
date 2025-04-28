@@ -1,0 +1,217 @@
+[0.374s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector -- -j16 -l16
+[0.395s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.416s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.481s] -- Found rclpy: 7.1.4 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.481s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.484s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.507s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.528s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.530s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.890s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.995s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.117s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.118s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[1.475s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[1.504s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.516s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.516s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.516s] -- Added test 'lint_cmake' to check CMake code style
+[1.518s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.518s] -- Added test 'xmllint' to check XML markup files
+[1.522s] -- Configuring done (1.1s)
+[1.583s] -- Generating done (0.1s)
+[1.599s] -- Build files have been written to: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector
+[1.639s] [  2%] Built target temp_ball_detector__rosidl_generator_type_description
+[1.650s] [  5%] Built target ament_cmake_python_copy_temp_ball_detector
+[1.650s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.667s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.834s] running egg_info
+[1.846s] writing temp_ball_detector.egg-info/PKG-INFO
+[1.846s] writing dependency_links to temp_ball_detector.egg-info/dependency_links.txt
+[1.847s] writing top-level names to temp_ball_detector.egg-info/top_level.txt
+[1.881s] reading manifest file 'temp_ball_detector.egg-info/SOURCES.txt'
+[1.882s] writing manifest file 'temp_ball_detector.egg-info/SOURCES.txt'
+[1.906s] [  8%] Built target temp_ball_detector__cpp
+[1.914s] [  8%] Built target ament_cmake_python_build_temp_ball_detector_egg
+[1.945s] [ 11%] [32mBuilding C object CMakeFiles/temp_ball_detector__rosidl_generator_c.dir/rosidl_generator_c/temp_ball_detector/msg/detail/ball_distance__description.c.o[0m
+[1.945s] [ 14%] [32mBuilding C object CMakeFiles/temp_ball_detector__rosidl_generator_c.dir/rosidl_generator_c/temp_ball_detector/msg/detail/ball_distance__type_support.c.o[0m
+[1.945s] [ 17%] [32mBuilding C object CMakeFiles/temp_ball_detector__rosidl_generator_c.dir/rosidl_generator_c/temp_ball_detector/msg/detail/ball_distance__functions.c.o[0m
+[2.005s] [ 20%] [32m[1mLinking C shared library libtemp_ball_detector__rosidl_generator_c.so[0m
+[2.042s] [ 20%] Built target temp_ball_detector__rosidl_generator_c
+[2.051s] [ 26%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.051s] [ 26%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.052s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.052s] [ 32%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.052s] [ 38%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.052s] [ 38%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.216s] [ 41%] [32mBuilding CXX object CMakeFiles/temp_ball_detector__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/temp_ball_detector/msg/ball_distance__type_support.cpp.o[0m
+[2.252s] [ 44%] [32mBuilding CXX object CMakeFiles/temp_ball_detector__rosidl_typesupport_c.dir/rosidl_typesupport_c/temp_ball_detector/msg/ball_distance__type_support.cpp.o[0m
+[2.279s] [ 47%] [32mBuilding C object CMakeFiles/temp_ball_detector__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/temp_ball_detector/msg/detail/ball_distance__type_support.c.o[0m
+[2.303s] [ 50%] [32m[1mLinking CXX shared library libtemp_ball_detector__rosidl_typesupport_c.so[0m
+[2.319s] [ 52%] [32mBuilding CXX object CMakeFiles/temp_ball_detector__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/temp_ball_detector/msg/detail/ball_distance__type_support.cpp.o[0m
+[2.320s] [ 55%] [32m[1mLinking C shared library libtemp_ball_detector__rosidl_typesupport_introspection_c.so[0m
+[2.324s] [ 58%] [32mBuilding CXX object CMakeFiles/temp_ball_detector__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/temp_ball_detector/msg/detail/ball_distance__type_support_c.cpp.o[0m
+[2.333s] [ 61%] [32mBuilding CXX object CMakeFiles/temp_ball_detector__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/temp_ball_detector/msg/detail/dds_fastrtps/ball_distance__type_support.cpp.o[0m
+[2.352s] [ 61%] Built target temp_ball_detector__rosidl_typesupport_introspection_c
+[2.352s] [ 61%] Built target temp_ball_detector__rosidl_typesupport_c
+[2.458s] [ 64%] [32m[1mLinking CXX shared library libtemp_ball_detector__rosidl_typesupport_cpp.so[0m
+[2.503s] [ 64%] Built target temp_ball_detector__rosidl_typesupport_cpp
+[2.612s] [ 67%] [32m[1mLinking CXX shared library libtemp_ball_detector__rosidl_typesupport_introspection_cpp.so[0m
+[2.653s] [ 67%] Built target temp_ball_detector__rosidl_typesupport_introspection_cpp
+[2.672s] [ 70%] [32m[1mLinking CXX shared library libtemp_ball_detector__rosidl_typesupport_fastrtps_c.so[0m
+[2.697s] [ 73%] [32m[1mLinking CXX shared library libtemp_ball_detector__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.710s] [ 73%] Built target temp_ball_detector__rosidl_typesupport_fastrtps_c
+[2.731s] [ 73%] Built target temp_ball_detector__rosidl_typesupport_fastrtps_cpp
+[2.750s] [ 73%] Built target temp_ball_detector
+[2.767s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.940s] [ 76%] Built target temp_ball_detector__py
+[2.962s] [ 79%] [32mBuilding C object CMakeFiles/temp_ball_detector__rosidl_generator_py.dir/rosidl_generator_py/temp_ball_detector/msg/_ball_distance_s.c.o[0m
+[3.062s] [ 82%] [32m[1mLinking C shared library libtemp_ball_detector__rosidl_generator_py.so[0m
+[3.100s] [ 82%] Built target temp_ball_detector__rosidl_generator_py
+[3.118s] [ 85%] [32mBuilding C object CMakeFiles/temp_ball_detector_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.120s] [ 88%] [32mBuilding C object CMakeFiles/temp_ball_detector_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.121s] [ 91%] [32mBuilding C object CMakeFiles/temp_ball_detector_s__rosidl_typesupport_c.dir/rosidl_generator_py/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_c.c.o[0m
+[3.185s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_fastrtps_c.so[0m
+[3.209s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_c.so[0m
+[3.215s] [ 97%] Built target temp_ball_detector_s__rosidl_typesupport_fastrtps_c
+[3.219s] [100%] [32m[1mLinking C shared module rosidl_generator_py/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_introspection_c.so[0m
+[3.232s] [100%] Built target temp_ball_detector_s__rosidl_typesupport_c
+[3.243s] [100%] Built target temp_ball_detector_s__rosidl_typesupport_introspection_c
+[3.253s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector -- -j16 -l16
+[3.254s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector
+[3.262s] -- Install configuration: ""
+[3.262s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/ament_index/resource_index/rosidl_interfaces/temp_ball_detector
+[3.262s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/msg/BallDistance.json
+[3.262s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector
+[3.262s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg
+[3.262s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail
+[3.263s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__description.c
+[3.263s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__functions.c
+[3.263s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__type_support.h
+[3.263s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__struct.h
+[3.263s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__type_support.c
+[3.263s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__functions.h
+[3.263s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/ball_distance.h
+[3.263s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/rosidl_generator_c__visibility_control.h
+[3.263s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/environment/library_path.sh
+[3.263s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/environment/library_path.dsv
+[3.264s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_generator_c.so
+[3.264s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_generator_c.so" to ""
+[3.264s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector
+[3.264s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg
+[3.264s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail
+[3.264s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__rosidl_typesupport_fastrtps_c.h
+[3.264s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.264s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_fastrtps_c.so
+[3.265s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_fastrtps_c.so" to ""
+[3.265s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector
+[3.265s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg
+[3.265s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.265s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail
+[3.265s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__rosidl_typesupport_introspection_c.h
+[3.265s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__type_support.c
+[3.265s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_introspection_c.so
+[3.265s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_introspection_c.so" to ""
+[3.265s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_c.so
+[3.265s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_c.so" to ""
+[3.266s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector
+[3.266s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg
+[3.266s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail
+[3.266s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__traits.hpp
+[3.266s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__builder.hpp
+[3.266s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__type_support.hpp
+[3.266s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__struct.hpp
+[3.266s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/ball_distance.hpp
+[3.266s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.266s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector
+[3.266s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg
+[3.266s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail
+[3.267s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__rosidl_typesupport_fastrtps_cpp.hpp
+[3.267s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/dds_fastrtps
+[3.267s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.267s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_fastrtps_cpp.so
+[3.267s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.267s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector
+[3.267s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg
+[3.267s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail
+[3.267s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__rosidl_typesupport_introspection_cpp.hpp
+[3.267s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/include/temp_ball_detector/temp_ball_detector/msg/detail/ball_distance__type_support.cpp
+[3.267s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_introspection_cpp.so
+[3.267s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_introspection_cpp.so" to ""
+[3.267s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_cpp.so
+[3.268s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_typesupport_cpp.so" to ""
+[3.268s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/environment/pythonpath.sh
+[3.268s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/environment/pythonpath.dsv
+[3.268s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector-0.0.0-py3.12.egg-info
+[3.268s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector-0.0.0-py3.12.egg-info/SOURCES.txt
+[3.268s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector-0.0.0-py3.12.egg-info/dependency_links.txt
+[3.268s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector-0.0.0-py3.12.egg-info/top_level.txt
+[3.268s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector-0.0.0-py3.12.egg-info/PKG-INFO
+[3.268s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector
+[3.268s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_introspection_c.c
+[3.268s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_c.c
+[3.268s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/msg
+[3.268s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/msg/_ball_distance_s.c
+[3.269s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/msg/_ball_distance.py
+[3.269s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/msg/__init__.py
+[3.269s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_fastrtps_c.so
+[3.269s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/__init__.py
+[3.269s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_c.so
+[3.269s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_introspection_c.so
+[3.269s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/_temp_ball_detector_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.301s] Listing '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector'...
+[3.301s] Compiling '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/__init__.py'...
+[3.302s] Listing '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/msg'...
+[3.302s] Compiling '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/msg/__init__.py'...
+[3.302s] Compiling '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/msg/_ball_distance.py'...
+[3.306s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_fastrtps_c.so
+[3.306s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_fastrtps_c.so" to ""
+[3.307s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_introspection_c.so
+[3.307s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_introspection_c.so" to ""
+[3.307s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_c.so
+[3.307s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages/temp_ball_detector/temp_ball_detector_s__rosidl_typesupport_c.so" to ""
+[3.307s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_generator_py.so
+[3.308s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/libtemp_ball_detector__rosidl_generator_py.so" to ""
+[3.308s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/msg/BallDistance.idl
+[3.308s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/msg/BallDistance.msg
+[3.308s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/temp_ball_detector/ball_detection.py
+[3.308s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/ament_index/resource_index/package_run_dependencies/temp_ball_detector
+[3.308s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/ament_index/resource_index/parent_prefix_path/temp_ball_detector
+[3.308s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/environment/ament_prefix_path.sh
+[3.308s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/environment/ament_prefix_path.dsv
+[3.309s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/environment/path.sh
+[3.309s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/environment/path.dsv
+[3.309s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/local_setup.bash
+[3.309s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/local_setup.sh
+[3.309s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/local_setup.zsh
+[3.309s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/local_setup.dsv
+[3.309s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.dsv
+[3.309s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/ament_index/resource_index/packages/temp_ball_detector
+[3.309s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/export_temp_ball_detector__rosidl_generator_cExport.cmake
+[3.309s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/export_temp_ball_detector__rosidl_generator_cExport-noconfig.cmake
+[3.309s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/export_temp_ball_detector__rosidl_typesupport_fastrtps_cExport.cmake
+[3.310s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/export_temp_ball_detector__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.310s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/temp_ball_detector__rosidl_typesupport_introspection_cExport.cmake
+[3.310s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/temp_ball_detector__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.310s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/temp_ball_detector__rosidl_typesupport_cExport.cmake
+[3.310s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/temp_ball_detector__rosidl_typesupport_cExport-noconfig.cmake
+[3.310s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/export_temp_ball_detector__rosidl_generator_cppExport.cmake
+[3.311s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/export_temp_ball_detector__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.311s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/export_temp_ball_detector__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.311s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/temp_ball_detector__rosidl_typesupport_introspection_cppExport.cmake
+[3.311s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/temp_ball_detector__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.311s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/temp_ball_detector__rosidl_typesupport_cppExport.cmake
+[3.311s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/temp_ball_detector__rosidl_typesupport_cppExport-noconfig.cmake
+[3.311s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/export_temp_ball_detector__rosidl_generator_pyExport.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/export_temp_ball_detector__rosidl_generator_pyExport-noconfig.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/rosidl_cmake-extras.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/ament_cmake_export_libraries-extras.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/ament_cmake_export_targets-extras.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/temp_ball_detectorConfig.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/cmake/temp_ball_detectorConfig-version.cmake
+[3.312s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/share/temp_ball_detector/package.xml
+[3.314s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector

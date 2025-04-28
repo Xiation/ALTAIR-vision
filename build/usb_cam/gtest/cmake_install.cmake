@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/abyan/Documents/ALTAIR-vision/install/usb_cam")
+  set(CMAKE_INSTALL_PREFIX "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

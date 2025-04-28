@@ -1,0 +1,65 @@
+[4.247s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/camera_calibration': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_calibration build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/install.log --single-version-externally-managed install_data
+[4.949s] running egg_info
+[4.951s] creating ../../build/camera_calibration/camera_calibration.egg-info
+[5.000s] writing ../../build/camera_calibration/camera_calibration.egg-info/PKG-INFO
+[5.001s] writing dependency_links to ../../build/camera_calibration/camera_calibration.egg-info/dependency_links.txt
+[5.002s] writing entry points to ../../build/camera_calibration/camera_calibration.egg-info/entry_points.txt
+[5.002s] writing requirements to ../../build/camera_calibration/camera_calibration.egg-info/requires.txt
+[5.003s] writing top-level names to ../../build/camera_calibration/camera_calibration.egg-info/top_level.txt
+[5.004s] writing manifest file '../../build/camera_calibration/camera_calibration.egg-info/SOURCES.txt'
+[5.099s] reading manifest file '../../build/camera_calibration/camera_calibration.egg-info/SOURCES.txt'
+[5.101s] writing manifest file '../../build/camera_calibration/camera_calibration.egg-info/SOURCES.txt'
+[5.102s] running build
+[5.102s] running build_py
+[5.103s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build
+[5.103s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib
+[5.103s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration
+[5.104s] copying src/camera_calibration/mono_calibrator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration
+[5.104s] copying src/camera_calibration/stereo_calibrator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration
+[5.104s] copying src/camera_calibration/camera_checker.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration
+[5.104s] copying src/camera_calibration/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration
+[5.105s] copying src/camera_calibration/calibrator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration
+[5.105s] copying src/camera_calibration/camera_calibrator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration
+[5.105s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/nodes
+[5.106s] copying src/camera_calibration/nodes/cameracheck.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/nodes
+[5.106s] copying src/camera_calibration/nodes/tarfile_calibration.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/nodes
+[5.106s] copying src/camera_calibration/nodes/cameracalibrator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/nodes
+[5.107s] copying src/camera_calibration/nodes/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/nodes
+[5.107s] running install
+[5.126s] running install_lib
+[5.170s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration
+[5.171s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/mono_calibrator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration
+[5.171s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/stereo_calibrator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration
+[5.171s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/camera_checker.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration
+[5.172s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration
+[5.172s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/calibrator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration
+[5.173s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/camera_calibrator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration
+[5.173s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/nodes
+[5.173s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/nodes/cameracheck.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/nodes
+[5.174s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/nodes/tarfile_calibration.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/nodes
+[5.174s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/nodes/cameracalibrator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/nodes
+[5.174s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build/lib/camera_calibration/nodes/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/nodes
+[5.175s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/mono_calibrator.py to mono_calibrator.cpython-312.pyc
+[5.185s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/stereo_calibrator.py to stereo_calibrator.cpython-312.pyc
+[5.198s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/camera_checker.py to camera_checker.cpython-312.pyc
+[5.203s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/__init__.py to __init__.cpython-312.pyc
+[5.203s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/calibrator.py to calibrator.cpython-312.pyc
+[5.221s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/camera_calibrator.py to camera_calibrator.cpython-312.pyc
+[5.231s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/nodes/cameracheck.py to cameracheck.cpython-312.pyc
+[5.232s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/nodes/tarfile_calibration.py to tarfile_calibration.cpython-312.pyc
+[5.237s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/nodes/cameracalibrator.py to cameracalibrator.cpython-312.pyc
+[5.242s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration/nodes/__init__.py to __init__.cpython-312.pyc
+[5.242s] running install_data
+[5.243s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/share/ament_index
+[5.243s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/share/ament_index/resource_index
+[5.243s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/share/ament_index/resource_index/packages
+[5.244s] copying resource/camera_calibration -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/share/ament_index/resource_index/packages
+[5.244s] copying package.xml -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/share/camera_calibration
+[5.244s] running install_egg_info
+[5.291s] Copying ../../build/camera_calibration/camera_calibration.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration-6.0.10-py3.12.egg-info
+[5.293s] running install_scripts
+[5.605s] Installing cameracalibrator script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/camera_calibration
+[5.605s] Installing cameracheck script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/camera_calibration
+[5.606s] Installing tarfile_calibration script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/camera_calibration
+[5.607s] writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/install.log'
+[5.705s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/camera_calibration' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_calibration build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/install.log --single-version-externally-managed install_data

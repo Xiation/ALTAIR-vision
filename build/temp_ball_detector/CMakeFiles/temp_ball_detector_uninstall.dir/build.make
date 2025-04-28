@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector
+CMAKE_SOURCE_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector
+CMAKE_BINARY_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector
 
 # Utility rule file for temp_ball_detector_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/temp_ball_detector_uninstall.dir/compiler_depend.make
 include CMakeFiles/temp_ball_detector_uninstall.dir/progress.make
 
 CMakeFiles/temp_ball_detector_uninstall:
-	/usr/bin/cmake -P /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 temp_ball_detector_uninstall: CMakeFiles/temp_ball_detector_uninstall
 temp_ball_detector_uninstall: CMakeFiles/temp_ball_detector_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/temp_ball_detector_uninstall.dir/clean:
 .PHONY : CMakeFiles/temp_ball_detector_uninstall.dir/clean
 
 CMakeFiles/temp_ball_detector_uninstall.dir/depend:
-	cd /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/ALTAIR-vision/build/temp_ball_detector/CMakeFiles/temp_ball_detector_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector/CMakeFiles/temp_ball_detector_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/temp_ball_detector_uninstall.dir/depend
 

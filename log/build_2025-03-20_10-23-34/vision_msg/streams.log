@@ -1,2 +1,0 @@
-[0.573s] Invoking command in '/home/abyan/Documents/ALTAIR-vision/build/vision_msg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/ALTAIR-vision/build/vision_msg -- -j16 -l16
-[0.607s] Invoked command in '/home/abyan/Documents/ALTAIR-vision/build/vision_msg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/ALTAIR-vision/build/vision_msg -- -j16 -l16
