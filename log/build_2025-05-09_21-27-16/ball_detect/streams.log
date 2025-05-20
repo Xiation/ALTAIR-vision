@@ -1,0 +1,54 @@
+[0.012s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect -- -j16 -l16
+[0.093s] [  2%] Built target ball_detect__rosidl_generator_type_description
+[0.118s] [  2%] Built target ament_cmake_python_copy_ball_detect
+[0.156s] [ 16%] Built target ball_detect__rosidl_generator_c
+[0.157s] [ 18%] Built target ball_detect__cpp
+[0.219s] [ 27%] Built target ball_detect__rosidl_typesupport_c
+[0.220s] [ 35%] Built target ball_detect__rosidl_typesupport_fastrtps_c
+[0.221s] [ 43%] Built target ball_detect__rosidl_typesupport_introspection_cpp
+[0.226s] [ 51%] Built target ball_detect__rosidl_typesupport_introspection_c
+[0.284s] [ 59%] Built target ball_detect__rosidl_typesupport_cpp
+[0.287s] [ 67%] Built target ball_detect__rosidl_typesupport_fastrtps_cpp
+[0.346s] [ 67%] Built target ball_detect
+[0.376s] [ 70%] [32mBuilding CXX object CMakeFiles/ball_det.dir/src/ball_detect.cpp.o[0m
+[0.412s] [ 72%] Built target ball_detect__py
+[0.481s] [ 78%] Built target ball_detect__rosidl_generator_py
+[0.543s] [ 83%] Built target ball_detect_s__rosidl_typesupport_introspection_c
+[0.546s] [ 89%] Built target ball_detect_s__rosidl_typesupport_c
+[0.548s] [ 94%] Built target ball_detect_s__rosidl_typesupport_fastrtps_c
+[0.787s] running egg_info
+[0.843s] writing ball_detect.egg-info/PKG-INFO
+[0.844s] writing dependency_links to ball_detect.egg-info/dependency_links.txt
+[0.845s] writing top-level names to ball_detect.egg-info/top_level.txt
+[0.997s] reading manifest file 'ball_detect.egg-info/SOURCES.txt'
+[0.999s] writing manifest file 'ball_detect.egg-info/SOURCES.txt'
+[1.075s] [ 94%] Built target ament_cmake_python_build_ball_detect_egg
+[7.524s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.524s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[7.525s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[7.525s]                  from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:17[m[K,
+[7.525s]                  from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:1[m[K:
+[7.525s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In member function ‘[01m[Kcv::Mat BallDetector::[01;32m[Kdetect[m[K(const cv::Mat&, const cv::Mat&, cv::Mat, std::vector<double, std::allocator<double> >&)[m[K’:
+[7.525s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:306:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistance[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::distance[m[K’?
+[7.525s]   306 |                   x_new, y_new, r_new, [01;31m[Kdistance[m[K);
+[7.525s]       |                                        [01;31m[K^~~~~~~~[m[K
+[7.525s] In file included from [01m[K/usr/include/c++/13/bits/stl_algobase.h:66[m[K,
+[7.525s]                  from [01m[K/usr/include/c++/13/vector:62[m[K,
+[7.525s]                  from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:5[m[K:
+[7.525s] [01m[K/usr/include/c++/13/bits/stl_iterator_base_funcs.h:148:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::distance[m[K’ declared here
+[7.525s]   148 |     [01;36m[Kdistance[m[K(_InputIterator __first, _InputIterator __last)
+[7.525s]       |     [01;36m[K^~~~~~~~[m[K
+[7.532s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In member function ‘[01m[Kvoid BallDetector::[01;32m[Kimage_callback[m[K(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&, const sensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstSharedPtr&)[m[K’:
+[7.532s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:389:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[7.533s]   389 |     double [01;35m[Kfy[m[K = cinfo_msg->k[4];  // Focal length in y
+[7.533s]       |            [01;35m[K^~[m[K
+[7.533s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:390:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[7.533s]   390 |     double [01;35m[Kcx[m[K = cinfo_msg->k[2];  // Principal point x
+[7.533s]       |            [01;35m[K^~[m[K
+[7.533s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:391:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[7.533s]   391 |     double [01;35m[Kcy[m[K = cinfo_msg->k[5];  // Principal point y
+[7.533s]       |            [01;35m[K^~[m[K
+[10.476s] gmake[2]: *** [CMakeFiles/ball_det.dir/build.make:76: CMakeFiles/ball_det.dir/src/ball_detect.cpp.o] Error 1
+[10.476s] gmake[1]: *** [CMakeFiles/Makefile2:185: CMakeFiles/ball_det.dir/all] Error 2
+[10.477s] gmake: *** [Makefile:146: all] Error 2
+[10.481s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect -- -j16 -l16

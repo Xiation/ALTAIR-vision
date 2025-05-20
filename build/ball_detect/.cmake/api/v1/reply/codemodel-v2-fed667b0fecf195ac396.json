@@ -1,0 +1,251 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-178f5a28bb2fa7618186.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "ball_detect__py",
+					"jsonFile" : "directory-ball_detect__py-5892c348b87839152db8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/ball_detect__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ball_detect",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ball_detect_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ball_detect_egg-9b878cddaf72017881e0.json",
+					"name" : "ament_cmake_python_build_ball_detect_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ball_detect::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ball_detect-e25b5fef91971958034d.json",
+					"name" : "ament_cmake_python_copy_ball_detect",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_det::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_det-47eac4bae44a0010a6ca.json",
+					"name" : "ball_det",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect-003c95ece429b6a3e797.json",
+					"name" : "ball_detect",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect__cpp-37edfd0f56bdf616f732.json",
+					"name" : "ball_detect__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ball_detect__py::@d1e02ed5f36c37017330",
+					"jsonFile" : "target-ball_detect__py-eb232152631ba2b53549.json",
+					"name" : "ball_detect__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect__rosidl_generator_c-a7e0a66ea6c50f72d75c.json",
+					"name" : "ball_detect__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect__rosidl_generator_py-94c8ca7e56a5e697c924.json",
+					"name" : "ball_detect__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect__rosidl_generator_type_description-aba256df16cdd3f0bfb0.json",
+					"name" : "ball_detect__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect__rosidl_typesupport_c-458cec20f54b938a4e13.json",
+					"name" : "ball_detect__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect__rosidl_typesupport_cpp-176dc9b65d04bb078e5d.json",
+					"name" : "ball_detect__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect__rosidl_typesupport_fastrtps_c-0d43361a6155e31deb35.json",
+					"name" : "ball_detect__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect__rosidl_typesupport_fastrtps_cpp-d36f9eaf424b2d23eedf.json",
+					"name" : "ball_detect__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect__rosidl_typesupport_introspection_c-8cf08152da38f28f26eb.json",
+					"name" : "ball_detect__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect__rosidl_typesupport_introspection_cpp-2f9ba9512ba8d83b7a66.json",
+					"name" : "ball_detect__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect_s__rosidl_typesupport_c-07b9aeba73f212919fe0.json",
+					"name" : "ball_detect_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect_s__rosidl_typesupport_fastrtps_c-aa0bb9ef00418e516a42.json",
+					"name" : "ball_detect_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect_s__rosidl_typesupport_introspection_c-48b266d416acca4775ee.json",
+					"name" : "ball_detect_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ball_detect_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ball_detect_uninstall-e4a7e578eff50cc20756.json",
+					"name" : "ball_detect_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b27de2dcef69af6081d2.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect",
+		"source" : "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

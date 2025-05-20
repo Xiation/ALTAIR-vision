@@ -20,6 +20,7 @@
 #include "std_msgs/msg/float64_multi_array.hpp"
 #include "cv_bridge/cv_bridge.hpp"
 #include "image_transport/image_transport.hpp"
+#include "ball_detect/msg/ball_info.hpp"
 
 class BallDetector : public rclcpp::Node
 {
@@ -53,8 +54,13 @@ private:
     // Subscribers and publishers
     image_transport::CameraSubscriber image_sub_; ///< Subscribes to the input image topic.
 
+    rclcpp::TimerBase::SharedPtr status_timer_;
+
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr ball_image_pub_; //< published bounded ball images
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr ball_distance_pub_; ///< Publishes distance results.
+
+    // change publisher definition with new message
+    rclcpp::Publisher<ball_detect::msg::BallInfo>::SharedPtr ball_info_pub_; ///< Publishes ball information.
 
     // Distance history for smoothing
     std::vector<double> distanceHistory;

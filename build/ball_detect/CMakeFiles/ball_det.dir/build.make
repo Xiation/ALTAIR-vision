@@ -147,6 +147,7 @@ ball_det: /usr/local/lib/libopencv_xfeatures2d.so.4.12.0
 ball_det: /usr/local/lib/libopencv_xobjdetect.so.4.12.0
 ball_det: /usr/local/lib/libopencv_xphoto.so.4.12.0
 ball_det: /opt/ros/jazzy/lib/libcv_bridge.so
+ball_det: libball_detect__rosidl_typesupport_cpp.so
 ball_det: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 ball_det: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 ball_det: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
@@ -213,7 +214,6 @@ ball_det: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 ball_det: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 ball_det: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 ball_det: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-ball_det: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 ball_det: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so
 ball_det: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 ball_det: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
@@ -226,17 +226,9 @@ ball_det: /opt/ros/jazzy/lib/libfastcdr.so.2.2.5
 ball_det: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 ball_det: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so
 ball_det: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so
-ball_det: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
-ball_det: /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so
 ball_det: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_py.so
 ball_det: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
 ball_det: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-ball_det: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
-ball_det: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
-ball_det: /opt/ros/jazzy/lib/librosidl_typesupport_c.so
-ball_det: /opt/ros/jazzy/lib/librcpputils.so
-ball_det: /opt/ros/jazzy/lib/librosidl_runtime_c.so
-ball_det: /opt/ros/jazzy/lib/librcutils.so
 ball_det: /usr/local/lib/libopencv_shape.so.4.12.0
 ball_det: /usr/local/lib/libopencv_highgui.so.4.12.0
 ball_det: /usr/local/lib/libopencv_datasets.so.4.12.0
@@ -257,6 +249,16 @@ ball_det: /usr/local/lib/libopencv_flann.so.4.12.0
 ball_det: /usr/local/lib/libopencv_photo.so.4.12.0
 ball_det: /usr/local/lib/libopencv_imgproc.so.4.12.0
 ball_det: /usr/local/lib/libopencv_core.so.4.12.0
+ball_det: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+ball_det: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+ball_det: /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so
+ball_det: libball_detect__rosidl_generator_c.so
+ball_det: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
+ball_det: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
+ball_det: /opt/ros/jazzy/lib/librosidl_typesupport_c.so
+ball_det: /opt/ros/jazzy/lib/librcpputils.so
+ball_det: /opt/ros/jazzy/lib/librosidl_runtime_c.so
+ball_det: /opt/ros/jazzy/lib/librcutils.so
 ball_det: CMakeFiles/ball_det.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ball_det"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ball_det.dir/link.txt --verbose=$(VERBOSE)

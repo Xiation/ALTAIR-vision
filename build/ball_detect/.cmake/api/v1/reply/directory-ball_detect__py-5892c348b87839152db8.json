@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ball_detect__py",
+		"source" : "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/ball_detect__py"
+	}
+}

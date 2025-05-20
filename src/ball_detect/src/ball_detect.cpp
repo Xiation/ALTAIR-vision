@@ -43,7 +43,18 @@ BallDetector::BallDetector():Node("ball_detector")
   // initialize publisher
   ball_distance_pub_ = create_publisher<std_msgs::msg::Float64MultiArray>("ball_distances", 10);
   ball_image_pub_ = create_publisher<sensor_msgs::msg::Image>("ball_image", 10);
+  ball_info_pub_ = create_publisher<ball_detect::msg::BallInfo>("ball_info", 10);
   RCLCPP_INFO(this->get_logger(), "Ball Detector Node Initialized");
+    // RCLCPP_INFO(this->get_logger(), "Focal Length: %.2f, Actual Diameter: %.2f, Moving Average Window: %d", 
+    //     focal_length_, actual_diameter_, moving_average_window_);
+    // Add a periodic status message every 5 seconds
+    status_timer_ = this->create_wall_timer(
+        std::chrono::seconds(1),
+        [this]() {
+            RCLCPP_INFO(this->get_logger(), "Ball Detector Node is running...");
+        }
+    );
+
 }
 
 cv::Mat BallDetector::ball(const cv::Mat &frame) {
@@ -167,7 +178,7 @@ std::pair<int, int>BallDetector::find_top_bottom_orange(const cv::Mat &column_da
 // function for moving average
 std::vector<double> BallDetector::movingAverage(const std::vector<double>& data, int windowSize) {
   std::vector<double> smoothedData;
-  if (data.empty() || windowSize <- 0) {
+  if (data.empty() || windowSize <= 0) {
       return smoothedData; // return empty for invalid input
   }
   for (size_t i = 0; i < data.size(); ++i) {
@@ -194,7 +205,9 @@ cv::Mat BallDetector::detect(const cv::Mat &mask_ball, const cv::Mat &mask_field
   cv::HoughCircles(blurred_ball_mask, circles, cv::HOUGH_GRADIENT, 1.2, 50, 50, 30, 1, 1000);
 
   if (!circles.empty()) {
-      // Convert circle parameters to integer values (the rounding is achieved by casting after rounding)
+    RCLCPP_INFO(this->get_logger(), "Found %zu potential circles", circles.size());
+  
+    // Convert circle parameters to integer values (the rounding is achieved by casting after rounding)
       for (size_t i = 0; i < circles.size(); i++) {
           int x = cvRound(circles[i][0]);
           int y = cvRound(circles[i][1]);
@@ -299,19 +312,32 @@ cv::Mat BallDetector::detect(const cv::Mat &mask_ball, const cv::Mat &mask_field
               cv::line(frame, cv::Point(x_new - r_new, y_new), cv::Point(x_new + r_new, y_new), cv::Scalar(0, 255, 0), 2);
               cv::circle(frame, cv::Point(x_new, y_new), r_new, cv::Scalar(0, 255, 0), 2);
           } else {
-              continue;
+            RCLCPP_WARN(this->get_logger(), "Circle failed ratio test: field_ratio=%.2f, ball_ratio=%.2f", 
+                field_ratio, ball_ratio);
+            continue;
           }
 
         int detected_diameter=total_x_pixel; 
-        double distance=0;
+        double distance = 0;
 
         if(detected_diameter==0){
             distance=0 ;
         } else {
             distance=(actual_diameter_ * focal_length_) / detected_diameter ;
+            RCLCPP_INFO(this->get_logger(), "Ball detected! Position: (%d, %d), Radius: %d, Distance: %.2f m", 
+                  x_new, y_new, r_new, distance);
         }
 
         distanceHistory.push_back(distance);
+
+        ball_detect::msg::BallInfo ball_info_msg;
+        ball_info_msg.header.stamp = this->now();
+        ball_info_msg.header.frame_id = "camera_frame";
+
+        ball_info_msg.x_pixel = x_new;
+        ball_info_msg.y_pixel = y_new;
+        ball_info_msg.radius_pixel = r_new;
+        ball_info_msg.distance = distance;
 
         // Distance prediction
         // Apply moving average if we have enough data points
@@ -329,42 +355,60 @@ cv::Mat BallDetector::detect(const cv::Mat &mask_ball, const cv::Mat &mask_field
                 double trend=currentSmoothed-previousSmoothed; 
                 predictedDistance = currentSmoothed+trend; 
             }
+            
+            // set the ball distance
+            ball_info_msg.distance = predictedDistance;
+            ball_info_msg.confidence = 1.0 - ball_ratio; // higher confidence when ball_ratio is lower
 
+            // publish ball info
+            ball_info_pub_ ->publish(ball_info_msg);
+
+            // CLI debugging
+            RCLCPP_INFO(this->get_logger(), "Predicted Distance: %.2f m", predictedDistance);
+            std::cout << "Ball Ratio: " << ball_ratio << std::endl;
+            
             // publishing distance data
             std_msgs::msg::Float64MultiArray distance_msg;
             distance_msg.data.push_back(predictedDistance);
             ball_distance_pub_ ->publish(distance_msg);
 
-            // distance prediction
-
-            // char text[200]; 
-            // sprintf(text,"Distance: %.2f m (Smoothed: %.2f m Predicted: %.2f m)",distance ,smoothedDistance,predictedDistance); 
-            // cv::putText(frame,text ,cv::Point(0,40),cv::FONT_HERSHEY_SIMPLEX ,0.6 ,cv::Scalar(255 ,255 ,255),2 ); 
-
-            // printf( "Distance: %.2f m (Smoothed: %.2f m Predicted: %.2f m)\n",distance ,smoothedDistance,predictedDistance);
         } else { 
-            // char text[100]; 
-            // sprintf(text,"Distance: %.2f m",distance ); 
-            // cv::putText(frame,text ,cv::Point(x_new-r_new,y_new+r_new+40),cv::FONT_HERSHEY_SIMPLEX ,0.6 ,cv::Scalar(255 ,255 ,255),2 ); 
+            // If not enough data points, use the current distance
+            ball_info_msg.distance = distance;
+            ball_info_msg.confidence = 1.0 - ball_ratio; // higher confidence when ball_ratio is lower
+
+            // publish ball info
+            ball_info_pub_ ->publish(ball_info_msg);
+
+            // publishing distance data
             std_msgs::msg::Float64MultiArray distance_msg;
             distance_msg.data.push_back(distance);
             ball_distance_pub_ ->publish(distance_msg);
         }
-
-      //  cv::line(frame ,cv::Point(center_x,center_y),cv::Point(x_new ,y_new),cv::Scalar(255 ,255 ,255),2 );
-
        break ; 
     } 
+ } else if (circles.empty()) {
+    RCLCPP_WARN(this->get_logger(), "No circles detected in this frame");
  } 
 
  return frame ; 
 }
 
 void BallDetector::image_callback(const sensor_msgs::msg::Image::ConstSharedPtr& img_msg, 
-  [[maybe_unused]] const sensor_msgs::msg::CameraInfo::ConstSharedPtr& cinfo_msg
-  )
-{
+   const sensor_msgs::msg::CameraInfo::ConstSharedPtr& cinfo_msg) {
   try{
+    RCLCPP_INFO(this->get_logger(), "Image converted, calling detect()");
+    // convert ros image to opencv
+    double fx = cinfo_msg->k[0];  // Focal length in x
+    double fy = cinfo_msg->k[4];  // Focal length in y
+    double cx = cinfo_msg->k[2];  // Principal point x 
+    double cy = cinfo_msg->k[5];  // Principal point y
+
+    // Use camera calibration instead of parameter if available
+    if (fx > 0) {
+        focal_length_ = fx;
+    }
+
     // convert ros image to opencv
     cv::Mat frame = cv_bridge::toCvShare(img_msg, "bgr8") -> image;
 
@@ -377,8 +421,8 @@ void BallDetector::image_callback(const sensor_msgs::msg::Image::ConstSharedPtr&
     if(!final_frame.empty()){
       sensor_msgs::msg::Image::SharedPtr ball_img_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", final_frame).toImageMsg();
 
-      ball_image_pub_ -> publish(*ball_img_msg.get());
-
+    //   ball_image_pub_ -> publish(*ball_img_msg.get());
+        ball_image_pub_ -> publish(*ball_img_msg);
     }
     
   } catch(cv_bridge::Exception &e) {

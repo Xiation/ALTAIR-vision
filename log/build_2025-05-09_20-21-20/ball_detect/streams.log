@@ -1,0 +1,79 @@
+[0.114s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect -- -j16 -l16
+[2.868s] -- CMAKE_CURRENT_SOURCE_DIR: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect
+[2.868s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.868s] -- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.869s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.869s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.869s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.869s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.869s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.870s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.870s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.870s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.870s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[2.872s] -- Found image_transport: 5.1.6 (/opt/ros/jazzy/share/image_transport/cmake)
+[2.874s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.874s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.875s] -- OpenCV library status:
+[2.876s] --   version: 4.12.0
+[2.877s] --   libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_viz;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto;opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_viz;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+[2.877s] --   include path: /usr/local/include/opencv4
+[4.726s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[8.045s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.148s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.157s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[9.611s] -- Found PythonExtra: /usr/bin/python3  
+[11.139s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[11.291s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[11.318s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.321s] -- Configured cppcheck include dirs: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include
+[11.321s] -- Configured cppcheck exclude dirs and/or files: 
+[11.322s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.322s] -- Configured 'flake8' exclude dirs and/or files: 
+[11.323s] -- Added test 'lint_cmake' to check CMake code style
+[11.324s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[11.326s] -- Added test 'uncrustify' to check C / C++ code style
+[11.327s] -- Configured uncrustify additional arguments: 
+[11.328s] -- Added test 'xmllint' to check XML markup files
+[11.334s] -- Configuring done (11.1s)
+[11.485s] -- Generating done (0.1s)
+[11.528s] -- Build files have been written to: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect
+[11.640s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[11.667s] [  2%] Built target ament_cmake_python_copy_ball_detect
+[11.697s] [  5%] [32mBuilding CXX object CMakeFiles/ball_det.dir/src/ball_detector_node.cpp.o[0m
+[11.699s] [  8%] [32mBuilding CXX object CMakeFiles/ball_det.dir/src/ball_detect.cpp.o[0m
+[12.402s] running egg_info
+[12.406s] creating ball_detect.egg-info
+[12.462s] writing ball_detect.egg-info/PKG-INFO
+[12.463s] writing dependency_links to ball_detect.egg-info/dependency_links.txt
+[12.463s] writing top-level names to ball_detect.egg-info/top_level.txt
+[12.464s] writing manifest file 'ball_detect.egg-info/SOURCES.txt'
+[12.542s] [  8%] Built target ball_detect__rosidl_generator_type_description
+[12.578s] [ 10%] [34m[1mGenerating C code for ROS interfaces[0m
+[12.603s] [ 13%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[12.632s] reading manifest file 'ball_detect.egg-info/SOURCES.txt'
+[12.634s] writing manifest file 'ball_detect.egg-info/SOURCES.txt'
+[12.715s] [ 13%] Built target ament_cmake_python_build_ball_detect_egg
+[12.901s] In file included from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:1[m[K:
+[12.902s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:23:10:[m[K [01;31m[Kfatal error: [m[Kball_detect/msg/ball_info.hpp: No such file or directory
+[12.902s]    23 | #include [01;31m[K"ball_detect/msg/ball_info.hpp"[m[K
+[12.903s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.903s] compilation terminated.
+[12.913s] gmake[2]: *** [CMakeFiles/ball_det.dir/build.make:76: CMakeFiles/ball_det.dir/src/ball_detect.cpp.o] Error 1
+[12.913s] gmake[2]: *** Waiting for unfinished jobs....
+[12.950s] In file included from [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detector_node.cpp:1[m[K:
+[12.951s] [01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/include/ball_detect/ball_detect.hpp:23:10:[m[K [01;31m[Kfatal error: [m[Kball_detect/msg/ball_info.hpp: No such file or directory
+[12.951s]    23 | #include [01;31m[K"ball_detect/msg/ball_info.hpp"[m[K
+[12.952s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.952s] compilation terminated.
+[12.962s] gmake[2]: *** [CMakeFiles/ball_det.dir/build.make:90: CMakeFiles/ball_det.dir/src/ball_detector_node.cpp.o] Error 1
+[12.962s] gmake[1]: *** [CMakeFiles/Makefile2:183: CMakeFiles/ball_det.dir/all] Error 2
+[12.963s] gmake[1]: *** Waiting for unfinished jobs....
+[13.541s] [ 13%] Built target ball_detect__cpp
+[13.639s] [ 16%] [32mBuilding C object CMakeFiles/ball_detect__rosidl_generator_c.dir/rosidl_generator_c/ball_detect/msg/detail/ball_info__functions.c.o[0m
+[13.640s] [ 18%] [32mBuilding C object CMakeFiles/ball_detect__rosidl_generator_c.dir/rosidl_generator_c/ball_detect/msg/detail/ball_info__type_support.c.o[0m
+[13.640s] [ 21%] [32mBuilding C object CMakeFiles/ball_detect__rosidl_generator_c.dir/rosidl_generator_c/ball_detect/msg/detail/ball_info__description.c.o[0m
+[13.801s] [ 24%] [32m[1mLinking C shared library libball_detect__rosidl_generator_c.so[0m
+[13.910s] [ 24%] Built target ball_detect__rosidl_generator_c
+[13.914s] gmake: *** [Makefile:146: all] Error 2
+[13.919s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect -- -j16 -l16

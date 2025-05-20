@@ -1,0 +1,6 @@
+{
+  "package_name": "ball_detect",
+  "non_idl_tuples": [
+    "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect:msg/BallInfo.msg"
+  ]
+}

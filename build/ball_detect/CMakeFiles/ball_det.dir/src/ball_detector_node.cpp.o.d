@@ -878,4 +878,10 @@ CMakeFiles/ball_det.dir/src/ball_detector_node.cpp.o: \
  /opt/ros/jazzy/include/image_transport/image_transport/exception.hpp \
  /opt/ros/jazzy/include/image_transport/image_transport/loader_fwds.hpp \
  /opt/ros/jazzy/include/image_transport/image_transport/subscriber.hpp \
- /opt/ros/jazzy/include/image_transport/image_transport/transport_hints.hpp
+ /opt/ros/jazzy/include/image_transport/image_transport/transport_hints.hpp \
+ /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/rosidl_generator_cpp/ball_detect/msg/ball_info.hpp \
+ /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/rosidl_generator_cpp/ball_detect/msg/detail/ball_info__struct.hpp \
+ /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/rosidl_generator_cpp/ball_detect/msg/detail/ball_info__builder.hpp \
+ /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/rosidl_generator_cpp/ball_detect/msg/detail/ball_info__traits.hpp \
+ /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/rosidl_generator_cpp/ball_detect/msg/detail/ball_info__type_support.hpp \
+ /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/rosidl_generator_cpp/ball_detect/msg/rosidl_generator_cpp__visibility_control.hpp

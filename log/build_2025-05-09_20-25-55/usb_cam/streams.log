@@ -1,0 +1,8 @@
+[1.605s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam -- -j16 -l16
+[1.731s] [ 14%] Built target usb_cam
+[1.732s] [ 28%] Built target gtest_main
+[1.733s] [ 42%] Built target gtest
+[1.745s] [ 57%] Built target usb_cam_node_exe
+[1.793s] [ 71%] Built target test_pixel_formats
+[1.797s] [ 85%] Built target test_usb_cam_utils
+[1.809s] [100%] Built target usb_cam_node

@@ -1,0 +1,23 @@
+[4.158s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/camera_calibration': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_calibration build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/install.log --single-version-externally-managed install_data
+[4.951s] running egg_info
+[5.011s] writing ../../build/camera_calibration/camera_calibration.egg-info/PKG-INFO
+[5.011s] writing dependency_links to ../../build/camera_calibration/camera_calibration.egg-info/dependency_links.txt
+[5.012s] writing entry points to ../../build/camera_calibration/camera_calibration.egg-info/entry_points.txt
+[5.013s] writing requirements to ../../build/camera_calibration/camera_calibration.egg-info/requires.txt
+[5.013s] writing top-level names to ../../build/camera_calibration/camera_calibration.egg-info/top_level.txt
+[5.120s] reading manifest file '../../build/camera_calibration/camera_calibration.egg-info/SOURCES.txt'
+[5.123s] writing manifest file '../../build/camera_calibration/camera_calibration.egg-info/SOURCES.txt'
+[5.124s] running build
+[5.124s] running build_py
+[5.127s] running install
+[5.147s] running install_lib
+[5.196s] running install_data
+[5.196s] running install_egg_info
+[5.249s] removing '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration-6.0.10-py3.12.egg-info' (and everything under it)
+[5.250s] Copying ../../build/camera_calibration/camera_calibration.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages/camera_calibration-6.0.10-py3.12.egg-info
+[5.252s] running install_scripts
+[5.612s] Installing cameracalibrator script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/camera_calibration
+[5.614s] Installing cameracheck script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/camera_calibration
+[5.618s] Installing tarfile_calibration script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/camera_calibration
+[5.619s] writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/install.log'
+[5.714s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/camera_calibration' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_calibration build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/camera_calibration/install.log --single-version-externally-managed install_data

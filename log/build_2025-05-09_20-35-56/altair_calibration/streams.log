@@ -1,0 +1,24 @@
+[0.092s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration -- -j16 -l16
+[2.494s] [100%] Built target cam_calibration
+[2.511s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration -- -j16 -l16
+[2.537s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration
+[2.569s] -- Install configuration: ""
+[2.570s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/launch
+[2.570s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/launch/cam_calibration.launch.py
+[2.570s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/lib/altair_calibration/cam_calibration
+[2.571s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/ament_index/resource_index/package_run_dependencies/altair_calibration
+[2.571s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/ament_index/resource_index/parent_prefix_path/altair_calibration
+[2.574s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/ament_prefix_path.sh
+[2.574s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/ament_prefix_path.dsv
+[2.575s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/path.sh
+[2.575s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/path.dsv
+[2.575s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.bash
+[2.577s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.sh
+[2.577s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.zsh
+[2.577s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.dsv
+[2.578s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/package.dsv
+[2.578s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/ament_index/resource_index/packages/altair_calibration
+[2.580s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/cmake/altair_calibrationConfig.cmake
+[2.581s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/cmake/altair_calibrationConfig-version.cmake
+[2.582s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/package.xml
+[2.628s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration

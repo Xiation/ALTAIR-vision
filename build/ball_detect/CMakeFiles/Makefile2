@@ -64,17 +64,63 @@ CMAKE_BINARY_DIR = /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_det
 
 # The main recursive "all" target.
 all: CMakeFiles/ball_det.dir/all
+all: CMakeFiles/ball_detect.dir/all
+all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+all: CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/all
+all: CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/all
+all: CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/all
+all: CMakeFiles/ball_detect__rosidl_typesupport_c.dir/all
+all: CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/all
+all: CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/all
+all: CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/all
+all: CMakeFiles/ball_detect__rosidl_generator_py.dir/all
+all: CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/all
+all: CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/all
+all: CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/all
+all: ball_detect__py/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: ball_detect__py/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/ball_detect_uninstall.dir/clean
 clean: CMakeFiles/ball_det.dir/clean
+clean: CMakeFiles/ball_detect.dir/clean
+clean: CMakeFiles/ball_detect__rosidl_generator_type_description.dir/clean
+clean: CMakeFiles/ball_detect__rosidl_generator_c.dir/clean
+clean: CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/clean
+clean: CMakeFiles/ball_detect__cpp.dir/clean
+clean: CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/clean
+clean: CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/clean
+clean: CMakeFiles/ball_detect__rosidl_typesupport_c.dir/clean
+clean: CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/clean
+clean: CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/clean
+clean: CMakeFiles/ament_cmake_python_copy_ball_detect.dir/clean
+clean: CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/clean
+clean: CMakeFiles/ball_detect__rosidl_generator_py.dir/clean
+clean: CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/clean
+clean: CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/clean
+clean: CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/clean
+clean: ball_detect__py/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory ball_detect__py
+
+# Recursive "all" directory target.
+ball_detect__py/all:
+.PHONY : ball_detect__py/all
+
+# Recursive "preinstall" directory target.
+ball_detect__py/preinstall:
+.PHONY : ball_detect__py/preinstall
+
+# Recursive "clean" directory target.
+ball_detect__py/clean: ball_detect__py/CMakeFiles/ball_detect__py.dir/clean
+.PHONY : ball_detect__py/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/uninstall.dir
@@ -132,7 +178,9 @@ CMakeFiles/ball_detect_uninstall.dir/clean:
 # Target rules for target CMakeFiles/ball_det.dir
 
 # All Build rule for target.
-CMakeFiles/ball_det.dir/all:
+CMakeFiles/ball_det.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+CMakeFiles/ball_det.dir/all: CMakeFiles/ball_detect__cpp.dir/all
+CMakeFiles/ball_det.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_det.dir/build.make CMakeFiles/ball_det.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_det.dir/build.make CMakeFiles/ball_det.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=1,2,3 "Built target ball_det"
@@ -140,7 +188,7 @@ CMakeFiles/ball_det.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ball_det.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_det.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
 .PHONY : CMakeFiles/ball_det.dir/rule
@@ -153,6 +201,472 @@ ball_det: CMakeFiles/ball_det.dir/rule
 CMakeFiles/ball_det.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_det.dir/build.make CMakeFiles/ball_det.dir/clean
 .PHONY : CMakeFiles/ball_det.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect.dir/all: CMakeFiles/ball_detect__rosidl_generator_type_description.dir/all
+CMakeFiles/ball_detect.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+CMakeFiles/ball_detect.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/all
+CMakeFiles/ball_detect.dir/all: CMakeFiles/ball_detect__cpp.dir/all
+CMakeFiles/ball_detect.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/all
+CMakeFiles/ball_detect.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/all
+CMakeFiles/ball_detect.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_c.dir/all
+CMakeFiles/ball_detect.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/all
+CMakeFiles/ball_detect.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect.dir/build.make CMakeFiles/ball_detect.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect.dir/build.make CMakeFiles/ball_detect.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num= "Built target ball_detect"
+.PHONY : CMakeFiles/ball_detect.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 25
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect.dir/rule
+
+# Convenience name for target.
+ball_detect: CMakeFiles/ball_detect.dir/rule
+.PHONY : ball_detect
+
+# clean rule for target.
+CMakeFiles/ball_detect.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect.dir/build.make CMakeFiles/ball_detect.dir/clean
+.PHONY : CMakeFiles/ball_detect.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect__rosidl_generator_type_description.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect__rosidl_generator_type_description.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_generator_type_description.dir/build.make CMakeFiles/ball_detect__rosidl_generator_type_description.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_generator_type_description.dir/build.make CMakeFiles/ball_detect__rosidl_generator_type_description.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=13 "Built target ball_detect__rosidl_generator_type_description"
+.PHONY : CMakeFiles/ball_detect__rosidl_generator_type_description.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect__rosidl_generator_type_description.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect__rosidl_generator_type_description.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect__rosidl_generator_type_description.dir/rule
+
+# Convenience name for target.
+ball_detect__rosidl_generator_type_description: CMakeFiles/ball_detect__rosidl_generator_type_description.dir/rule
+.PHONY : ball_detect__rosidl_generator_type_description
+
+# clean rule for target.
+CMakeFiles/ball_detect__rosidl_generator_type_description.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_generator_type_description.dir/build.make CMakeFiles/ball_detect__rosidl_generator_type_description.dir/clean
+.PHONY : CMakeFiles/ball_detect__rosidl_generator_type_description.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect__rosidl_generator_c.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect__rosidl_generator_c.dir/all: CMakeFiles/ball_detect__rosidl_generator_type_description.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_generator_c.dir/build.make CMakeFiles/ball_detect__rosidl_generator_c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_generator_c.dir/build.make CMakeFiles/ball_detect__rosidl_generator_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=6,7,8,9,10 "Built target ball_detect__rosidl_generator_c"
+.PHONY : CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect__rosidl_generator_c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect__rosidl_generator_c.dir/rule
+
+# Convenience name for target.
+ball_detect__rosidl_generator_c: CMakeFiles/ball_detect__rosidl_generator_c.dir/rule
+.PHONY : ball_detect__rosidl_generator_c
+
+# clean rule for target.
+CMakeFiles/ball_detect__rosidl_generator_c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_generator_c.dir/build.make CMakeFiles/ball_detect__rosidl_generator_c.dir/clean
+.PHONY : CMakeFiles/ball_detect__rosidl_generator_c.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=20,21,22 "Built target ball_detect__rosidl_typesupport_fastrtps_c"
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/rule
+
+# Convenience name for target.
+ball_detect__rosidl_typesupport_fastrtps_c: CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/rule
+.PHONY : ball_detect__rosidl_typesupport_fastrtps_c
+
+# clean rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/clean
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect__cpp.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect__cpp.dir/all: CMakeFiles/ball_detect__rosidl_generator_type_description.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__cpp.dir/build.make CMakeFiles/ball_detect__cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__cpp.dir/build.make CMakeFiles/ball_detect__cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=4 "Built target ball_detect__cpp"
+.PHONY : CMakeFiles/ball_detect__cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect__cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect__cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect__cpp.dir/rule
+
+# Convenience name for target.
+ball_detect__cpp: CMakeFiles/ball_detect__cpp.dir/rule
+.PHONY : ball_detect__cpp
+
+# clean rule for target.
+CMakeFiles/ball_detect__cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__cpp.dir/build.make CMakeFiles/ball_detect__cpp.dir/clean
+.PHONY : CMakeFiles/ball_detect__cpp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/all: CMakeFiles/ball_detect__cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=23,24,25 "Built target ball_detect__rosidl_typesupport_fastrtps_cpp"
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/rule
+
+# Convenience name for target.
+ball_detect__rosidl_typesupport_fastrtps_cpp: CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/rule
+.PHONY : ball_detect__rosidl_typesupport_fastrtps_cpp
+
+# clean rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/clean
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=26,27,28 "Built target ball_detect__rosidl_typesupport_introspection_c"
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/rule
+
+# Convenience name for target.
+ball_detect__rosidl_typesupport_introspection_c: CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/rule
+.PHONY : ball_detect__rosidl_typesupport_introspection_c
+
+# clean rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/clean
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect__rosidl_typesupport_c.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_c.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_c.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_c.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=14,15,16 "Built target ball_detect__rosidl_typesupport_c"
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect__rosidl_typesupport_c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect__rosidl_typesupport_c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_c.dir/rule
+
+# Convenience name for target.
+ball_detect__rosidl_typesupport_c: CMakeFiles/ball_detect__rosidl_typesupport_c.dir/rule
+.PHONY : ball_detect__rosidl_typesupport_c
+
+# clean rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_c.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_c.dir/clean
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_c.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/all: CMakeFiles/ball_detect__cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=29,30,31 "Built target ball_detect__rosidl_typesupport_introspection_cpp"
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/rule
+
+# Convenience name for target.
+ball_detect__rosidl_typesupport_introspection_cpp: CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/rule
+.PHONY : ball_detect__rosidl_typesupport_introspection_cpp
+
+# clean rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/clean
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_introspection_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/all: CMakeFiles/ball_detect__cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=17,18,19 "Built target ball_detect__rosidl_typesupport_cpp"
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/rule
+
+# Convenience name for target.
+ball_detect__rosidl_typesupport_cpp: CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/rule
+.PHONY : ball_detect__rosidl_typesupport_cpp
+
+# clean rule for target.
+CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/build.make CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/clean
+.PHONY : CMakeFiles/ball_detect__rosidl_typesupport_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ament_cmake_python_copy_ball_detect.dir
+
+# All Build rule for target.
+CMakeFiles/ament_cmake_python_copy_ball_detect.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_ball_detect.dir/build.make CMakeFiles/ament_cmake_python_copy_ball_detect.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_ball_detect.dir/build.make CMakeFiles/ament_cmake_python_copy_ball_detect.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num= "Built target ament_cmake_python_copy_ball_detect"
+.PHONY : CMakeFiles/ament_cmake_python_copy_ball_detect.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ament_cmake_python_copy_ball_detect.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_copy_ball_detect.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ament_cmake_python_copy_ball_detect.dir/rule
+
+# Convenience name for target.
+ament_cmake_python_copy_ball_detect: CMakeFiles/ament_cmake_python_copy_ball_detect.dir/rule
+.PHONY : ament_cmake_python_copy_ball_detect
+
+# clean rule for target.
+CMakeFiles/ament_cmake_python_copy_ball_detect.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_ball_detect.dir/build.make CMakeFiles/ament_cmake_python_copy_ball_detect.dir/clean
+.PHONY : CMakeFiles/ament_cmake_python_copy_ball_detect.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir
+
+# All Build rule for target.
+CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/all: CMakeFiles/ament_cmake_python_copy_ball_detect.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/build.make CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/build.make CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num= "Built target ament_cmake_python_build_ball_detect_egg"
+.PHONY : CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/rule
+
+# Convenience name for target.
+ament_cmake_python_build_ball_detect_egg: CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/rule
+.PHONY : ament_cmake_python_build_ball_detect_egg
+
+# clean rule for target.
+CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/build.make CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/clean
+.PHONY : CMakeFiles/ament_cmake_python_build_ball_detect_egg.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect__rosidl_generator_py.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect__rosidl_generator_py.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+CMakeFiles/ball_detect__rosidl_generator_py.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_c.dir/all
+CMakeFiles/ball_detect__rosidl_generator_py.dir/all: ball_detect__py/CMakeFiles/ball_detect__py.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_generator_py.dir/build.make CMakeFiles/ball_detect__rosidl_generator_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_generator_py.dir/build.make CMakeFiles/ball_detect__rosidl_generator_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=11,12 "Built target ball_detect__rosidl_generator_py"
+.PHONY : CMakeFiles/ball_detect__rosidl_generator_py.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect__rosidl_generator_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 28
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect__rosidl_generator_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect__rosidl_generator_py.dir/rule
+
+# Convenience name for target.
+ball_detect__rosidl_generator_py: CMakeFiles/ball_detect__rosidl_generator_py.dir/rule
+.PHONY : ball_detect__rosidl_generator_py
+
+# clean rule for target.
+CMakeFiles/ball_detect__rosidl_generator_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect__rosidl_generator_py.dir/build.make CMakeFiles/ball_detect__rosidl_generator_py.dir/clean
+.PHONY : CMakeFiles/ball_detect__rosidl_generator_py.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_fastrtps_c.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_c.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/ball_detect__rosidl_generator_py.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/all: ball_detect__py/CMakeFiles/ball_detect__py.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=34,35 "Built target ball_detect_s__rosidl_typesupport_fastrtps_c"
+.PHONY : CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 30
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/rule
+
+# Convenience name for target.
+ball_detect_s__rosidl_typesupport_fastrtps_c: CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/rule
+.PHONY : ball_detect_s__rosidl_typesupport_fastrtps_c
+
+# clean rule for target.
+CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/clean
+.PHONY : CMakeFiles/ball_detect_s__rosidl_typesupport_fastrtps_c.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_introspection_c.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_c.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/ball_detect__rosidl_generator_py.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/all: ball_detect__py/CMakeFiles/ball_detect__py.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=36,37 "Built target ball_detect_s__rosidl_typesupport_introspection_c"
+.PHONY : CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 30
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/rule
+
+# Convenience name for target.
+ball_detect_s__rosidl_typesupport_introspection_c: CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/rule
+.PHONY : ball_detect_s__rosidl_typesupport_introspection_c
+
+# clean rule for target.
+CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/clean
+.PHONY : CMakeFiles/ball_detect_s__rosidl_typesupport_introspection_c.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir
+
+# All Build rule for target.
+CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/all: CMakeFiles/ball_detect__rosidl_generator_c.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/all: CMakeFiles/ball_detect__rosidl_typesupport_c.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/all: CMakeFiles/ball_detect__rosidl_generator_py.dir/all
+CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/all: ball_detect__py/CMakeFiles/ball_detect__py.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/build.make CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/build.make CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=32,33 "Built target ball_detect_s__rosidl_typesupport_c"
+.PHONY : CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 30
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/rule
+
+# Convenience name for target.
+ball_detect_s__rosidl_typesupport_c: CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/rule
+.PHONY : ball_detect_s__rosidl_typesupport_c
+
+# clean rule for target.
+CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/build.make CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/clean
+.PHONY : CMakeFiles/ball_detect_s__rosidl_typesupport_c.dir/clean
+
+#=============================================================================
+# Target rules for target /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/ball_detect__py/CMakeFiles/ball_detect__py.dir
+
+# All Build rule for target.
+ball_detect__py/CMakeFiles/ball_detect__py.dir/all: CMakeFiles/ball_detect.dir/all
+	$(MAKE) $(MAKESILENT) -f /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/ball_detect__py/CMakeFiles/ball_detect__py.dir/build.make /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/ball_detect__py/CMakeFiles/ball_detect__py.dir/depend
+	$(MAKE) $(MAKESILENT) -f /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/ball_detect__py/CMakeFiles/ball_detect__py.dir/build.make /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/ball_detect__py/CMakeFiles/ball_detect__py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles --progress-num=5 "Built target ball_detect__py"
+.PHONY : ball_detect__py/CMakeFiles/ball_detect__py.dir/all
+
+# Build rule for subdir invocation for target.
+ball_detect__py/CMakeFiles/ball_detect__py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 26
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/ball_detect__py/CMakeFiles/ball_detect__py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/CMakeFiles 0
+.PHONY : ball_detect__py/CMakeFiles/ball_detect__py.dir/rule
+
+# Convenience name for target.
+ball_detect__py: ball_detect__py/CMakeFiles/ball_detect__py.dir/rule
+.PHONY : ball_detect__py
+
+# clean rule for target.
+ball_detect__py/CMakeFiles/ball_detect__py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/ball_detect__py/CMakeFiles/ball_detect__py.dir/build.make /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect/ball_detect__py/CMakeFiles/ball_detect__py.dir/clean
+.PHONY : ball_detect__py/CMakeFiles/ball_detect__py.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
