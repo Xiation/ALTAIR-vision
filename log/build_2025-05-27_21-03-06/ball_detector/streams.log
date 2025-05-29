@@ -1,0 +1,37 @@
+[6.086s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detector': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_detector build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/install.log --single-version-externally-managed install_data
+[7.937s] running egg_info
+[7.947s] creating ../../build/ball_detector/ball_detector.egg-info
+[8.042s] writing ../../build/ball_detector/ball_detector.egg-info/PKG-INFO
+[8.043s] writing dependency_links to ../../build/ball_detector/ball_detector.egg-info/dependency_links.txt
+[8.045s] writing entry points to ../../build/ball_detector/ball_detector.egg-info/entry_points.txt
+[8.045s] writing requirements to ../../build/ball_detector/ball_detector.egg-info/requires.txt
+[8.049s] writing top-level names to ../../build/ball_detector/ball_detector.egg-info/top_level.txt
+[8.054s] writing manifest file '../../build/ball_detector/ball_detector.egg-info/SOURCES.txt'
+[8.253s] reading manifest file '../../build/ball_detector/ball_detector.egg-info/SOURCES.txt'
+[8.255s] writing manifest file '../../build/ball_detector/ball_detector.egg-info/SOURCES.txt'
+[8.263s] running build
+[8.263s] running build_py
+[8.264s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/build
+[8.264s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/build/lib
+[8.264s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/build/lib/ball_detector
+[8.265s] copying ball_detector/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/build/lib/ball_detector
+[8.265s] copying ball_detector/ball_detector.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/build/lib/ball_detector
+[8.265s] running install
+[8.302s] running install_lib
+[8.386s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector
+[8.387s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/build/lib/ball_detector/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector
+[8.387s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/build/lib/ball_detector/ball_detector.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector
+[8.389s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/__init__.py to __init__.cpython-312.pyc
+[8.393s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector/ball_detector.py to ball_detector.cpython-312.pyc
+[8.398s] running install_data
+[8.398s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/share/ament_index
+[8.399s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index
+[8.399s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/packages
+[8.400s] copying resource/ball_detector -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/share/ament_index/resource_index/packages
+[8.400s] copying package.xml -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/share/ball_detector
+[8.400s] running install_egg_info
+[8.493s] Copying ../../build/ball_detector/ball_detector.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages/ball_detector-0.0.0-py3.12.egg-info
+[8.497s] running install_scripts
+[9.217s] Installing ball_detector script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/ball_detector
+[9.217s] writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/install.log'
+[9.337s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detector' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ball_detector build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detector/install.log --single-version-externally-managed install_data

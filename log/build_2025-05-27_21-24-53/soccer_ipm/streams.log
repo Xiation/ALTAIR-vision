@@ -1,0 +1,21 @@
+[0.703s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/soccer_ipm': AMENT_PREFIX_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/soccer_ipm build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/install.log --single-version-externally-managed install_data
+[0.969s] running egg_info
+[0.984s] writing ../../build/soccer_ipm/soccer_ipm.egg-info/PKG-INFO
+[0.984s] writing dependency_links to ../../build/soccer_ipm/soccer_ipm.egg-info/dependency_links.txt
+[0.984s] writing entry points to ../../build/soccer_ipm/soccer_ipm.egg-info/entry_points.txt
+[0.985s] writing requirements to ../../build/soccer_ipm/soccer_ipm.egg-info/requires.txt
+[0.985s] writing top-level names to ../../build/soccer_ipm/soccer_ipm.egg-info/top_level.txt
+[1.014s] reading manifest file '../../build/soccer_ipm/soccer_ipm.egg-info/SOURCES.txt'
+[1.015s] writing manifest file '../../build/soccer_ipm/soccer_ipm.egg-info/SOURCES.txt'
+[1.015s] running build
+[1.015s] running build_py
+[1.015s] running install
+[1.022s] running install_lib
+[1.037s] running install_data
+[1.037s] running install_egg_info
+[1.054s] removing '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm-0.0.0-py3.12.egg-info' (and everything under it)
+[1.054s] Copying ../../build/soccer_ipm/soccer_ipm.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm-0.0.0-py3.12.egg-info
+[1.054s] running install_scripts
+[1.161s] Installing ipm script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/soccer_ipm
+[1.162s] writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/install.log'
+[1.188s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/soccer_ipm' returned '0': AMENT_PREFIX_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/soccer_ipm build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/install.log --single-version-externally-managed install_data

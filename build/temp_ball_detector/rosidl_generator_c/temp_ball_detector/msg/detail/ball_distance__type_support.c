@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "temp_ball_detector/msg/detail/ball_distance__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "temp_ball_detector/msg/detail/ball_distance__struct.h"
 #include "temp_ball_detector/msg/detail/ball_distance__type_support.h"
+#include "temp_ball_detector/msg/detail/ball_distance__struct.h"
+#include "temp_ball_detector/msg/detail/ball_distance__functions.h"
 
 #ifdef __cplusplus
 extern "C"

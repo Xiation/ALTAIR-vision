@@ -1,0 +1,47 @@
+[5.826s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/soccer_field_map_generator/soccer_field_map_generator': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/soccer_field_map_generator build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/install.log --single-version-externally-managed install_data
+[7.648s] running egg_info
+[7.651s] creating ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info
+[7.764s] writing ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/PKG-INFO
+[7.764s] writing dependency_links to ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/dependency_links.txt
+[7.769s] writing entry points to ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/entry_points.txt
+[7.773s] writing requirements to ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/requires.txt
+[7.774s] writing top-level names to ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/top_level.txt
+[7.774s] writing manifest file '../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/SOURCES.txt'
+[7.978s] reading manifest file '../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/SOURCES.txt'
+[7.980s] writing manifest file '../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/SOURCES.txt'
+[7.981s] running build
+[7.984s] running build_py
+[7.986s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build
+[7.991s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib
+[8.001s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator
+[8.001s] copying soccer_field_map_generator/generator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator
+[8.002s] copying soccer_field_map_generator/tooltip.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator
+[8.002s] copying soccer_field_map_generator/cli.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator
+[8.002s] copying soccer_field_map_generator/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator
+[8.002s] copying soccer_field_map_generator/gui.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator
+[8.003s] running install
+[8.034s] running install_lib
+[8.206s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator
+[8.207s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator/generator.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator
+[8.207s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator/tooltip.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator
+[8.211s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator/cli.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator
+[8.215s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator
+[8.215s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build/lib/soccer_field_map_generator/gui.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator
+[8.216s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator/generator.py to generator.cpython-312.pyc
+[8.248s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator/tooltip.py to tooltip.cpython-312.pyc
+[8.258s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator/cli.py to cli.cpython-312.pyc
+[8.260s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator/__init__.py to __init__.cpython-312.pyc
+[8.267s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator/gui.py to gui.cpython-312.pyc
+[8.275s] running install_data
+[8.276s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/share/ament_index
+[8.278s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/share/ament_index/resource_index
+[8.278s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/share/ament_index/resource_index/packages
+[8.279s] copying resource/soccer_field_map_generator -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/share/ament_index/resource_index/packages
+[8.279s] copying package.xml -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/share/soccer_field_map_generator
+[8.279s] running install_egg_info
+[8.367s] Copying ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator-0.0.0-py3.12.egg-info
+[8.371s] running install_scripts
+[8.988s] Installing cli script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/soccer_field_map_generator
+[8.990s] Installing gui script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/soccer_field_map_generator
+[8.991s] writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/install.log'
+[9.123s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/soccer_field_map_generator/soccer_field_map_generator' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/soccer_field_map_generator build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/install.log --single-version-externally-managed install_data

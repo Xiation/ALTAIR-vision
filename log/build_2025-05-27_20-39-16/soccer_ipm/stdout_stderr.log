@@ -1,0 +1,63 @@
+running egg_info
+creating ../../build/soccer_ipm/soccer_ipm.egg-info
+writing ../../build/soccer_ipm/soccer_ipm.egg-info/PKG-INFO
+writing dependency_links to ../../build/soccer_ipm/soccer_ipm.egg-info/dependency_links.txt
+writing entry points to ../../build/soccer_ipm/soccer_ipm.egg-info/entry_points.txt
+writing requirements to ../../build/soccer_ipm/soccer_ipm.egg-info/requires.txt
+writing top-level names to ../../build/soccer_ipm/soccer_ipm.egg-info/top_level.txt
+writing manifest file '../../build/soccer_ipm/soccer_ipm.egg-info/SOURCES.txt'
+reading manifest file '../../build/soccer_ipm/soccer_ipm.egg-info/SOURCES.txt'
+writing manifest file '../../build/soccer_ipm/soccer_ipm.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm
+copying soccer_ipm/soccer_ipm.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm
+copying soccer_ipm/utils.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm
+copying soccer_ipm/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs
+copying soccer_ipm/msgs/ball.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs
+copying soccer_ipm/msgs/obstacles.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs
+copying soccer_ipm/msgs/markings.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs
+copying soccer_ipm/msgs/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs
+copying soccer_ipm/msgs/goalpost.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs
+copying soccer_ipm/msgs/robots.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs
+copying soccer_ipm/msgs/field_boundary.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs
+running install
+running install_lib
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/soccer_ipm.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/utils.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs/ball.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs/obstacles.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs/markings.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs/goalpost.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs/robots.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/build/lib/soccer_ipm/msgs/field_boundary.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/soccer_ipm.py to soccer_ipm.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/utils.py to utils.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs/ball.py to ball.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs/obstacles.py to obstacles.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs/markings.py to markings.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs/goalpost.py to goalpost.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs/robots.py to robots.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm/msgs/field_boundary.py to field_boundary.cpython-312.pyc
+running install_data
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/share/ament_index
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/share/ament_index/resource_index
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/share/ament_index/resource_index/packages
+copying resource/soccer_ipm -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/share/ament_index/resource_index/packages
+copying package.xml -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/share/soccer_ipm
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/share/soccer_ipm/config
+copying config/hl_kid.yaml -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/share/soccer_ipm/config
+running install_egg_info
+Copying ../../build/soccer_ipm/soccer_ipm.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages/soccer_ipm-0.0.0-py3.12.egg-info
+running install_scripts
+Installing ipm script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/soccer_ipm
+writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_ipm/install.log'

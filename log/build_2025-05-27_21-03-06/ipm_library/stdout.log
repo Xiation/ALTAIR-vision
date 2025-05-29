@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/ipm_library/ipm_library.egg-info
+writing ../../build/ipm_library/ipm_library.egg-info/PKG-INFO
+writing dependency_links to ../../build/ipm_library/ipm_library.egg-info/dependency_links.txt
+writing requirements to ../../build/ipm_library/ipm_library.egg-info/requires.txt
+writing top-level names to ../../build/ipm_library/ipm_library.egg-info/top_level.txt
+writing manifest file '../../build/ipm_library/ipm_library.egg-info/SOURCES.txt'
+reading manifest file '../../build/ipm_library/ipm_library.egg-info/SOURCES.txt'
+writing manifest file '../../build/ipm_library/ipm_library.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build/lib
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build/lib/ipm_library
+copying ipm_library/utils.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build/lib/ipm_library
+copying ipm_library/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build/lib/ipm_library
+copying ipm_library/exceptions.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build/lib/ipm_library
+copying ipm_library/ipm.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build/lib/ipm_library
+running install
+running install_lib
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build/lib/ipm_library/utils.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build/lib/ipm_library/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build/lib/ipm_library/exceptions.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library
+copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build/lib/ipm_library/ipm.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library/utils.py to utils.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library/exceptions.py to exceptions.cpython-312.pyc
+byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library/ipm.py to ipm.cpython-312.pyc
+running install_data
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/share/ament_index
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/share/ament_index/resource_index
+creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/share/ament_index/resource_index/packages
+copying resource/ipm_library -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/share/ament_index/resource_index/packages
+copying package.xml -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/share/ipm_library
+running install_egg_info
+Copying ../../build/ipm_library/ipm_library.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/install.log'

@@ -1,0 +1,80 @@
+[1.889s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam -- -j16 -l16
+[2.026s] [  7%] [32mBuilding CXX object CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o[0m
+[2.026s] [ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.034s] [ 21%] [32mBuilding CXX object CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o[0m
+[2.034s] [ 28%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[7.214s] [ 35%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[7.662s] [ 35%] Built target gtest_main
+[10.964s] [ 42%] [32m[1mLinking CXX shared library libusb_cam.so[0m
+[11.528s] [ 42%] Built target usb_cam
+[11.582s] [ 50%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[14.845s] [ 57%] [32m[1mLinking CXX executable usb_cam_node_exe[0m
+[15.687s] [ 57%] Built target usb_cam_node_exe
+[17.701s] [ 64%] [32m[1mLinking CXX static library libgtest.a[0m
+[18.044s] [ 64%] Built target gtest
+[18.117s] [ 71%] [32mBuilding CXX object CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o[0m
+[18.118s] [ 78%] [32mBuilding CXX object CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o[0m
+[23.038s] [ 85%] [32m[1mLinking CXX executable test_usb_cam_utils[0m
+[23.394s] [ 92%] [32m[1mLinking CXX executable test_pixel_formats[0m
+[23.697s] [ 92%] Built target test_usb_cam_utils
+[24.129s] [ 92%] Built target test_pixel_formats
+[34.066s] [100%] [32m[1mLinking CXX shared library libusb_cam_node.so[0m
+[34.611s] [100%] Built target usb_cam_node
+[34.636s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam -- -j16 -l16
+[34.639s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam
+[34.659s] -- Install configuration: ""
+[34.659s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/library_path.sh
+[34.660s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/library_path.dsv
+[34.660s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+[34.661s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/usb_cam/usb_cam_node_exe" to ""
+[34.662s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/usb_cam/show_image.py
+[34.662s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/libusb_cam.so
+[34.663s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/libusb_cam.so" to ""
+[34.664s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/libusb_cam_node.so
+[34.671s] -- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/libusb_cam_node.so" to ""
+[34.672s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include
+[34.672s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam
+[34.672s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+[34.673s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/constants.hpp
+[34.673s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats
+[34.673s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/yuyv.hpp
+[34.674s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/mjpeg.hpp
+[34.674s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/uyvy.hpp
+[34.674s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/m420.hpp
+[34.675s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp
+[34.675s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp
+[34.675s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/mono.hpp
+[34.676s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/rgb.hpp
+[34.676s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/formats/utils.hpp
+[34.676s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/usb_cam.hpp
+[34.677s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/conversions.hpp
+[34.677s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/include/usb_cam/utils.hpp
+[34.677s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib/libusb_cam_node.so
+[34.677s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/launch
+[34.678s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/launch/camera.launch.py
+[34.678s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/launch/camera_config.py
+[34.678s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/launch/__init__.py
+[34.678s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/config
+[34.679s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/config/camera_info.yaml
+[34.680s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/config/params_1.yaml
+[34.681s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/config/params_2.yaml
+[34.681s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+[34.682s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+[34.683s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+[34.683s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+[34.684s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/path.sh
+[34.684s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/environment/path.dsv
+[34.684s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/local_setup.bash
+[34.685s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/local_setup.sh
+[34.685s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/local_setup.zsh
+[34.686s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/local_setup.dsv
+[34.686s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/package.dsv
+[34.686s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+[34.687s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+[34.687s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+[34.687s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+[34.688s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+[34.688s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+[34.688s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+[34.689s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/share/usb_cam/package.xml
+[34.692s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam

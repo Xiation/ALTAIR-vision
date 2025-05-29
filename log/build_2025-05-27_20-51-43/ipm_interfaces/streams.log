@@ -1,0 +1,31 @@
+[0.015s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ipm_interfaces -DCMAKE_INSTALL_PREFIX=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces
+[0.044s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.675s] -- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[0.742s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.767s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.793s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.831s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.863s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.945s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.963s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.966s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.063s] -- Found shape_msgs: 5.3.6 (/opt/ros/jazzy/share/shape_msgs/cmake)
+[1.095s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.162s] Traceback (most recent call last):
+[1.162s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[1.162s]     from catkin_pkg.package import parse_package_string
+[1.162s] ModuleNotFoundError: No module named 'catkin_pkg'
+[1.170s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[1.170s]   execute_process(/home/abyan/anaconda3/bin/python3
+[1.170s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.171s]   /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ipm_interfaces/package.xml
+[1.171s]   /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_interfaces/ament_cmake_core/package.cmake)
+[1.171s]   returned error code 1
+[1.171s] Call Stack (most recent call first):
+[1.171s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.171s]   /opt/ros/jazzy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.171s]   CMakeLists.txt:19 (ament_lint_auto_find_test_dependencies)
+[1.172s] 
+[1.172s] [0m
+[1.174s] -- Configuring incomplete, errors occurred!
+[1.259s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ipm_interfaces -DCMAKE_INSTALL_PREFIX=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces

@@ -196,203 +196,177 @@ std::vector<double> BallDetector::movingAverage(const std::vector<double>& data,
   return smoothedData;
 }
 
-cv::Mat BallDetector::detect(const cv::Mat &mask_ball, const cv::Mat &mask_field, cv::Mat frame, std::vector<double>& distanceHistory ) {
-  cv::Mat blurred_ball_mask;
-  cv::GaussianBlur(mask_ball, blurred_ball_mask, cv::Size(9, 9), 2);
-
-  // Detect circles using HoughCircles
-  std::vector<cv::Vec3f> circles;
-  cv::HoughCircles(blurred_ball_mask, circles, cv::HOUGH_GRADIENT, 1.2, 50, 50, 30, 1, 1000);
-
-  if (!circles.empty()) {
-    RCLCPP_INFO(this->get_logger(), "Found %zu potential circles", circles.size());
+cv::Mat BallDetector::detect(const cv::Mat &mask_ball, const cv::Mat &mask_field, cv::Mat frame, std::vector<double>& distanceHistory) {
+    cv::Mat blurred_ball_mask;
+    cv::GaussianBlur(mask_ball, blurred_ball_mask, cv::Size(9, 9), 2);
   
-    // Convert circle parameters to integer values (the rounding is achieved by casting after rounding)
-      for (size_t i = 0; i < circles.size(); i++) {
-          int x = cvRound(circles[i][0]);
-          int y = cvRound(circles[i][1]);
-          int r = cvRound(circles[i][2]);
-          int stroke = static_cast<int>(1.1 * r);
+    // STEP 1: DETECT - Find circles using HoughCircles
+    std::vector<cv::Vec3f> circles;
+    cv::HoughCircles(blurred_ball_mask, circles, cv::HOUGH_GRADIENT, 1.2, 50, 50, 30, 1, 1000);
+  
+    if (circles.empty()) {
+      RCLCPP_WARN(this->get_logger(), "No circles detected in this frame");
+      return frame;
+    }
+  
+    RCLCPP_INFO(this->get_logger(), "Found %zu potential circles", circles.size());
+    
+    // Process only the first valid circle
+    for (size_t i = 0; i < circles.size(); i++) {
+      int x = cvRound(circles[i][0]);
+      int y = cvRound(circles[i][1]);
+      int r = cvRound(circles[i][2]);
+      int stroke = static_cast<int>(1.1 * r);
+      
+      // STEP 2: REFINE - Improve position with horizontal/vertical analysis
+      // Horizontal refinement
+      int line_y = y;
+      int line_x_start = std::max(0, x - stroke);
+      int line_x_end = std::min(mask_ball.cols - 1, x + stroke);
+      
+      cv::Rect hRect(line_x_start, line_y, line_x_end - line_x_start, 1);
+      if (hRect.width <= 0) continue;
+      
+      cv::Mat orange_hline = mask_ball(hRect).clone();
+      orange_hline = orange_hline.reshape(0, 1);
+      
+      auto first_last = find_first_last_orange(orange_hline, line_x_start);
+      int first_orange = first_last.first;
+      int last_orange = first_last.second;
+      
+      if (first_orange == -1 || last_orange == -1) continue;
+      
+      int total_x_pixel = last_orange - first_orange;
+      int r_new = total_x_pixel / 2;
+      int x_new = first_orange + r_new;
+      
+      // Vertical refinement
+      int line_x = x_new;
+      int line_y_start = std::max(0, y - stroke);
+      int line_y_end = std::min(mask_ball.rows - 1, y + stroke);
+      
+      if (line_y_end - line_y_start <= 0) continue;
+      
+      cv::Rect vRect(line_x, line_y_start, 1, line_y_end - line_y_start);
+      cv::Mat orange_vline = mask_ball(vRect).clone();
+      orange_vline = orange_vline.reshape(0, orange_vline.rows);
+      
+      auto top_bot = find_top_bottom_orange(orange_vline, line_y_start);
+      int top_orange = top_bot.first;
+      int bot_orange = top_bot.second;
+      
+      if (top_orange == -1 || bot_orange == -1) continue;
+      
+      int total_y_pixel = abs(top_orange - bot_orange);
+      int y_new = bot_orange - (total_y_pixel / 2);
+      
+      // Second horizontal pass if needed
+      if (y_new != y) {
+        line_y = y_new;
+        cv::Rect hRect2(line_x_start, line_y, line_x_end - line_x_start, 1);
+        if (hRect2.width <= 0) continue;
+        
+        cv::Mat orange_hline2 = mask_ball(hRect2).clone();
+        orange_hline2 = orange_hline2.reshape(0, 1);
+        
+        auto first_last2 = find_first_last_orange(orange_hline2, line_x_start);
+        first_orange = first_last2.first;
+        last_orange = first_last2.second;
+        
+        if (first_orange == -1 || last_orange == -1) continue;
+        
+        total_x_pixel = last_orange - first_orange;
+        r_new = total_x_pixel / 2;
+        x_new = first_orange + r_new;
+      }
+      
+      // STEP 3: VALIDATE - Check field and ball ratios
+      int R = static_cast<int>(r_new * 1.5);
+      
+      int x1 = std::max(x_new - R, 0);
+      int y1 = std::max(y_new - R, 0);
+      int x2 = std::min(x_new + R, frame.cols);
+      int y2 = std::min(y_new + R, frame.rows);
+      
+      cv::Rect surroundingRect(x1, y1, x2 - x1, y2 - y1);
+      cv::Mat surrounding_field = mask_field(surroundingRect);
+      double field_pixels = cv::countNonZero(surrounding_field);
+      double field_ratio = field_pixels / (surrounding_field.size().area());
+  
+      cv::Mat surrounding_ball = mask_ball(surroundingRect);
+      double ball_pixels = cv::countNonZero(surrounding_ball);
+      double ball_ratio = ball_pixels / (surrounding_ball.size().area());
+  
+      if (!((field_ratio > 0.16) && (ball_ratio < 0.47))) {
+        RCLCPP_WARN(this->get_logger(), "Circle failed ratio test: field_ratio=%.2f, ball_ratio=%.2f", 
+            field_ratio, ball_ratio);
+        continue;
+      }
+      
+      // STEP 4: CALCULATE - Determine ball diameter and distance
+      int detected_diameter = total_x_pixel;
+      double distance = 0;
+  
+      if (detected_diameter != 0) {
+        distance = (actual_diameter_ * focal_length_) / detected_diameter;
+        RCLCPP_INFO(this->get_logger(), "Ball detected! Position: (%d, %d), Radius: %d, Distance: %.2f m", 
+              x_new, y_new, r_new, distance);
+      }
+  
+      // Add to distance history
+      distanceHistory.push_back(distance);
+      
+      // STEP 5: PROCESS - Apply moving average/prediction
+      double predictedDistance = distance;
+      if (distanceHistory.size() >= static_cast<size_t>(moving_average_window_)) { 
+        std::vector<double> smoothedDistances = movingAverage(distanceHistory, moving_average_window_); 
+  
+        if (smoothedDistances.size() >= 2) { 
+          double currentSmoothed = smoothedDistances.back(); 
+          double previousSmoothed = smoothedDistances[smoothedDistances.size()-2]; 
+          double trend = currentSmoothed - previousSmoothed; 
+          predictedDistance = currentSmoothed + trend; 
           
-          // Horizontal line processing
-          int line_y = y;
-          int line_x_start = std::max(0, x - stroke);
-          int line_x_end = std::min(mask_ball.cols - 1, x + stroke);
-          // Get a horizontal slice (row) from mask_ball with proper range
-          cv::Rect hRect(line_x_start, line_y, line_x_end - line_x_start, 1);
-          if (hRect.width <= 0) {
-              continue;
-          }
-          cv::Mat orange_hline = mask_ball(hRect).clone();
-          // Reshape to 1 row for processingdouble
-          orange_hline = orange_hline.reshape(0, 1);
-          
-          std::pair<int, int> first_last = find_first_last_orange(orange_hline, line_x_start);
-          int first_orange = first_last.first;
-          int last_orange = first_last.second;
-          
-          if (first_orange == -1 || last_orange == -1) {
-              continue;
-          }
-          
-          int total_x_pixel = last_orange - first_orange;
-          int r_new = total_x_pixel / 2;
-          int x_new = first_orange + r_new;
-          
-          // Vertical line processing
-          int line_x = x_new;
-          int line_y_start = y - stroke;
-          int line_y_end = y + stroke;
-
-          // Clamp vertical boundaries
-          line_y_start = std::max(0, line_y_start);
-          line_y_end = std::min(mask_ball.rows - 1, line_y_end);
-          if (line_y_end - line_y_start <= 0) {
-              continue;
-          }
-          cv::Rect vRect(line_x, line_y_start, 1, line_y_end - line_y_start);
-          cv::Mat orange_vline = mask_ball(vRect).clone();
-
-          // Reshape to single column
-          orange_vline = orange_vline.reshape(0, orange_vline.rows);
-          
-          std::pair<int, int> top_bot = find_top_bottom_orange(orange_vline, line_y_start);
-          int top_orange = top_bot.first;
-          int bot_orange = top_bot.second;
-          
-          if (top_orange == -1 || bot_orange == -1) {
-              continue;
-          }
-          
-          int total_y_pixel = abs(top_orange - bot_orange);
-          int y_new = bot_orange - (total_y_pixel / 2);
-          
-          if (y_new != y) {
-              line_y = y_new;
-              cv::Rect hRect2(line_x_start, line_y, line_x_end - line_x_start, 1);
-              if (hRect2.width <= 0) {
-                  continue;
-              }
-              cv::Mat orange_hline2 = mask_ball(hRect2).clone();
-              orange_hline2 = orange_hline2.reshape(0, 1);
-              std::pair<int, int> first_last2 = find_first_last_orange(orange_hline2, line_x_start);
-              first_orange = first_last2.first;
-              last_orange = first_last2.second;
-              
-              if (first_orange == -1 || last_orange == -1) {
-                  continue;
-              }
-              
-              total_x_pixel = last_orange - first_orange;
-              r_new = total_x_pixel / 2;
-              x_new = first_orange + r_new;
-          }
-          
-          int R = static_cast<int>(r_new * 1.5);  // jarak deteksi
-          
-          int x1 = std::max(x_new - R, 0);
-          int y1 = std::max(y_new - R, 0);
-          int x2 = std::min(x_new + R, frame.cols);
-          int y2 = std::min(y_new + R, frame.rows);
-          // cv::rectangle(frame, Point(x1, y1), Point(x2, y2), Scalar(0, 255, 0), 2);
-
-          // Compute the ratio of green in the surrounding field area
-          cv::Rect surroundingRect(x1, y1, x2 - x1, y2 - y1);
-          cv::Mat surrounding_field = mask_field(surroundingRect);
-          double field_pixels = cv::countNonZero(surrounding_field);
-          double field_ratio = field_pixels / (surrounding_field.size().area());
-
-          // Compute the ratio of orange in the surrounding ball area
-          cv::Mat surrounding_ball = mask_ball(surroundingRect);
-          double ball_pixels = cv::countNonZero(surrounding_ball);
-          double ball_ratio = ball_pixels / (surrounding_ball.size().area());
-
-          if ((field_ratio > 0.16) && (ball_ratio < 0.47)) {
-              cv::line(frame, cv::Point(x_new, y_new + r_new), cv::Point(x_new, y_new - r_new), cv::Scalar(0, 255, 0), 2);
-              cv::line(frame, cv::Point(x_new - r_new, y_new), cv::Point(x_new + r_new, y_new), cv::Scalar(0, 255, 0), 2);
-              cv::circle(frame, cv::Point(x_new, y_new), r_new, cv::Scalar(0, 255, 0), 2);
-          } else {
-            RCLCPP_WARN(this->get_logger(), "Circle failed ratio test: field_ratio=%.2f, ball_ratio=%.2f", 
-                field_ratio, ball_ratio);
-            continue;
-          }
-
-        int detected_diameter=total_x_pixel; 
-        double distance = 0;
-
-        if(detected_diameter==0){
-            distance=0 ;
-        } else {
-            distance=(actual_diameter_ * focal_length_) / detected_diameter ;
-            RCLCPP_INFO(this->get_logger(), "Ball detected! Position: (%d, %d), Radius: %d, Distance: %.2f m", 
-                  x_new, y_new, r_new, distance);
+          // CLI debugging for predicted distance
+          RCLCPP_INFO(this->get_logger(), "Predicted Distance: %.2f m", predictedDistance);
         }
-
-        distanceHistory.push_back(distance);
-
-        ball_detect::msg::BallInfo ball_info_msg;
-        ball_info_msg.header.stamp = this->now();
-        ball_info_msg.header.frame_id = "camera_frame";
-
-        ball_info_msg.x_pixel = x_new;
-        ball_info_msg.y_pixel = y_new;
-        ball_info_msg.radius_pixel = r_new;
-        ball_info_msg.distance = distance;
-
-        // Distance prediction
-        // Apply moving average if we have enough data points
-        if(distanceHistory.size() >= static_cast<size_t> (moving_average_window_)) { 
-            std::vector<double> smoothedDistances= movingAverage(distanceHistory,moving_average_window_); 
-
-            // The latest smoothed distance is at the end of the vector
-            // double smoothedDistance = smoothedDistances.back(); 
-
-            // Trend Analysis (Linear Extrapolation)
-            double predictedDistance=0; 
-            if(smoothedDistances.size() >= 2){ 
-                double currentSmoothed=smoothedDistances.back(); 
-                double previousSmoothed=smoothedDistances[smoothedDistances.size()-2]; 
-                double trend=currentSmoothed-previousSmoothed; 
-                predictedDistance = currentSmoothed+trend; 
-            }
-            
-            // set the ball distance
-            ball_info_msg.distance = predictedDistance;
-            ball_info_msg.confidence = 1.0 - ball_ratio; // higher confidence when ball_ratio is lower
-
-            // publish ball info
-            ball_info_pub_ ->publish(ball_info_msg);
-
-            // CLI debugging
-            RCLCPP_INFO(this->get_logger(), "Predicted Distance: %.2f m", predictedDistance);
-            std::cout << "Ball Ratio: " << ball_ratio << std::endl;
-            
-            // publishing distance data
-            std_msgs::msg::Float64MultiArray distance_msg;
-            distance_msg.data.push_back(predictedDistance);
-            ball_distance_pub_ ->publish(distance_msg);
-
-        } else { 
-            // If not enough data points, use the current distance
-            ball_info_msg.distance = distance;
-            ball_info_msg.confidence = 1.0 - ball_ratio; // higher confidence when ball_ratio is lower
-
-            // publish ball info
-            ball_info_pub_ ->publish(ball_info_msg);
-
-            // publishing distance data
-            std_msgs::msg::Float64MultiArray distance_msg;
-            distance_msg.data.push_back(distance);
-            ball_distance_pub_ ->publish(distance_msg);
-        }
-       break ; 
-    } 
- } else if (circles.empty()) {
-    RCLCPP_WARN(this->get_logger(), "No circles detected in this frame");
- } 
-
- return frame ; 
-}
+      }
+      
+      // STEP 6: PUBLISH - Send all messages
+      // Create and populate ball_info message
+      ball_detect::msg::BallInfo ball_info_msg;
+      ball_info_msg.header.stamp = this->now();
+      ball_info_msg.header.frame_id = "camera_frame";
+      ball_info_msg.x_pixel = x_new;
+      ball_info_msg.y_pixel = y_new;
+      ball_info_msg.radius_pixel = r_new;
+      ball_info_msg.distance = predictedDistance;
+      ball_info_msg.confidence = 1.0 - ball_ratio;
+  
+      // Publish ball info
+      ball_info_pub_->publish(ball_info_msg);
+      
+      // Publish distance data
+      std_msgs::msg::Float64MultiArray distance_msg;
+      distance_msg.data.push_back(predictedDistance);
+      ball_distance_pub_->publish(distance_msg);
+      
+      // STEP 7: VISUALIZE - Draw indicators on the frame
+      cv::line(frame, cv::Point(x_new, y_new + r_new), cv::Point(x_new, y_new - r_new), cv::Scalar(0, 255, 0), 2);
+      cv::line(frame, cv::Point(x_new - r_new, y_new), cv::Point(x_new + r_new, y_new), cv::Scalar(0, 255, 0), 2);
+      cv::circle(frame, cv::Point(x_new, y_new), r_new, cv::Scalar(0, 255, 0), 2);
+      
+      // Add text showing the distance
+      cv::putText(frame, cv::format("%.2f m", predictedDistance), 
+                  cv::Point(x_new - r_new, y_new - r_new - 10), 
+                  cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 255, 0), 2);
+      
+      // We found a valid ball, no need to process other circles
+      break;
+    }
+    
+    return frame;
+  }
 
 void BallDetector::image_callback(const sensor_msgs::msg::Image::ConstSharedPtr& img_msg, 
    const sensor_msgs::msg::CameraInfo::ConstSharedPtr& cinfo_msg) {

@@ -4,5 +4,3 @@ temp_ball_detector.egg-info/PKG-INFO
 temp_ball_detector.egg-info/SOURCES.txt
 temp_ball_detector.egg-info/dependency_links.txt
 temp_ball_detector.egg-info/top_level.txt
-temp_ball_detector/msg/__init__.py
-temp_ball_detector/msg/_ball_distance.py

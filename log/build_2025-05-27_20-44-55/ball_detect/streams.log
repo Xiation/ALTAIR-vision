@@ -1,0 +1,151 @@
+[0.013s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect -- -j16 -l16
+[0.114s] [  2%] Built target ball_detect__rosidl_generator_type_description
+[0.139s] [  2%] Built target ament_cmake_python_copy_ball_detect
+[0.165s] [  5%] Built target ball_detect__cpp
+[0.170s] [ 18%] Built target ball_detect__rosidl_generator_c
+[0.226s] [ 27%] Built target ball_detect__rosidl_typesupport_introspection_c
+[0.227s] [ 35%] Built target ball_detect__rosidl_typesupport_cpp
+[0.228s] [ 43%] Built target ball_detect__rosidl_typesupport_c
+[0.232s] [ 51%] Built target ball_detect__rosidl_typesupport_fastrtps_c
+[0.237s] [ 59%] Built target ball_detect__rosidl_typesupport_introspection_cpp
+[0.239s] [ 67%] Built target ball_detect__rosidl_typesupport_fastrtps_cpp
+[0.291s] [ 67%] Built target ball_detect
+[0.303s] [ 75%] Built target ball_det
+[0.342s] [ 78%] Built target ball_detect__py
+[0.396s] [ 83%] Built target ball_detect__rosidl_generator_py
+[0.454s] [ 89%] Built target ball_detect_s__rosidl_typesupport_c
+[0.454s] [ 94%] Built target ball_detect_s__rosidl_typesupport_introspection_c
+[0.457s] [100%] Built target ball_detect_s__rosidl_typesupport_fastrtps_c
+[0.743s] running egg_info
+[0.785s] writing ball_detect.egg-info/PKG-INFO
+[0.786s] writing dependency_links to ball_detect.egg-info/dependency_links.txt
+[0.787s] writing top-level names to ball_detect.egg-info/top_level.txt
+[0.897s] reading manifest file 'ball_detect.egg-info/SOURCES.txt'
+[0.898s] writing manifest file 'ball_detect.egg-info/SOURCES.txt'
+[0.965s] [100%] Built target ament_cmake_python_build_ball_detect_egg
+[0.992s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect -- -j16 -l16
+[1.019s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect
+[1.042s] -- Install configuration: ""
+[1.042s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ament_index/resource_index/rosidl_interfaces/ball_detect
+[1.043s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/msg/BallInfo.json
+[1.043s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect
+[1.044s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg
+[1.044s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail
+[1.044s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__functions.c
+[1.045s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__functions.h
+[1.045s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__description.c
+[1.046s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__type_support.h
+[1.046s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__struct.h
+[1.047s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__type_support.c
+[1.047s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/ball_info.h
+[1.047s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/rosidl_generator_c__visibility_control.h
+[1.047s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/library_path.sh
+[1.047s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/library_path.dsv
+[1.048s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/libball_detect__rosidl_generator_c.so
+[1.048s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect
+[1.048s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg
+[1.048s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail
+[1.048s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__rosidl_typesupport_fastrtps_c.h
+[1.049s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.049s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/libball_detect__rosidl_typesupport_fastrtps_c.so
+[1.049s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect
+[1.049s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg
+[1.049s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail
+[1.049s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__type_support.hpp
+[1.049s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__traits.hpp
+[1.050s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__struct.hpp
+[1.050s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__builder.hpp
+[1.050s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/ball_info.hpp
+[1.050s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.050s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect
+[1.050s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg
+[1.050s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail
+[1.051s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/dds_fastrtps
+[1.051s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__rosidl_typesupport_fastrtps_cpp.hpp
+[1.051s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.051s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/libball_detect__rosidl_typesupport_fastrtps_cpp.so
+[1.051s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect
+[1.051s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg
+[1.051s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.052s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail
+[1.052s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__rosidl_typesupport_introspection_c.h
+[1.052s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__type_support.c
+[1.052s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/libball_detect__rosidl_typesupport_introspection_c.so
+[1.052s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/libball_detect__rosidl_typesupport_c.so
+[1.052s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect
+[1.052s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg
+[1.053s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail
+[1.053s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__type_support.cpp
+[1.053s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/include/ball_detect/ball_detect/msg/detail/ball_info__rosidl_typesupport_introspection_cpp.hpp
+[1.053s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/libball_detect__rosidl_typesupport_introspection_cpp.so
+[1.053s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/libball_detect__rosidl_typesupport_cpp.so
+[1.053s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/pythonpath.sh
+[1.053s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/pythonpath.dsv
+[1.053s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect-0.0.0-py3.12.egg-info
+[1.054s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect-0.0.0-py3.12.egg-info/SOURCES.txt
+[1.054s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect-0.0.0-py3.12.egg-info/dependency_links.txt
+[1.054s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect-0.0.0-py3.12.egg-info/top_level.txt
+[1.054s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect-0.0.0-py3.12.egg-info/PKG-INFO
+[1.054s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect
+[1.054s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/_ball_detect_s.ep.rosidl_typesupport_c.c
+[1.054s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/ball_detect_s__rosidl_typesupport_introspection_c.so
+[1.054s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/ball_detect_s__rosidl_typesupport_c.so
+[1.055s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/ball_detect_s__rosidl_typesupport_fastrtps_c.so
+[1.055s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/msg
+[1.055s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/msg/_ball_info.py
+[1.055s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/msg/__init__.py
+[1.055s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/msg/_ball_info_s.c
+[1.055s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/_ball_detect_s.ep.rosidl_typesupport_introspection_c.c
+[1.055s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/_ball_detect_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.055s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/__init__.py
+[1.138s] Listing '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect'...
+[1.138s] Listing '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/msg'...
+[1.150s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/ball_detect_s__rosidl_typesupport_fastrtps_c.so
+[1.150s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/ball_detect_s__rosidl_typesupport_introspection_c.so
+[1.151s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages/ball_detect/ball_detect_s__rosidl_typesupport_c.so
+[1.151s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/libball_detect__rosidl_generator_py.so
+[1.151s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/msg/BallInfo.idl
+[1.152s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/msg/BallInfo.msg
+[1.152s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/ball_detect/ball_det
+[1.152s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect//launch
+[1.152s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect//launch/ball_detect.launch.py
+[1.152s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ament_index/resource_index/package_run_dependencies/ball_detect
+[1.152s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ament_index/resource_index/parent_prefix_path/ball_detect
+[1.153s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/ament_prefix_path.sh
+[1.153s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/ament_prefix_path.dsv
+[1.153s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/path.sh
+[1.153s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/environment/path.dsv
+[1.153s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/local_setup.bash
+[1.153s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/local_setup.sh
+[1.153s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/local_setup.zsh
+[1.153s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/local_setup.dsv
+[1.154s] -- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/package.dsv
+[1.154s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ament_index/resource_index/packages/ball_detect
+[1.154s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/export_ball_detect__rosidl_generator_cExport.cmake
+[1.154s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/export_ball_detect__rosidl_generator_cExport-noconfig.cmake
+[1.154s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/export_ball_detect__rosidl_typesupport_fastrtps_cExport.cmake
+[1.154s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/export_ball_detect__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.154s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/export_ball_detect__rosidl_generator_cppExport.cmake
+[1.155s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/export_ball_detect__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.155s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/export_ball_detect__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.155s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detect__rosidl_typesupport_introspection_cExport.cmake
+[1.155s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detect__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.155s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detect__rosidl_typesupport_cExport.cmake
+[1.155s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detect__rosidl_typesupport_cExport-noconfig.cmake
+[1.155s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detect__rosidl_typesupport_introspection_cppExport.cmake
+[1.156s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detect__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.156s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detect__rosidl_typesupport_cppExport.cmake
+[1.156s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detect__rosidl_typesupport_cppExport-noconfig.cmake
+[1.156s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/export_ball_detect__rosidl_generator_pyExport.cmake
+[1.157s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/export_ball_detect__rosidl_generator_pyExport-noconfig.cmake
+[1.157s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/rosidl_cmake-extras.cmake
+[1.157s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.157s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.157s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ament_cmake_export_libraries-extras.cmake
+[1.157s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ament_cmake_export_targets-extras.cmake
+[1.157s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.157s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.158s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detectConfig.cmake
+[1.158s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/cmake/ball_detectConfig-version.cmake
+[1.158s] -- Up-to-date: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/share/ball_detect/package.xml
+[1.161s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect

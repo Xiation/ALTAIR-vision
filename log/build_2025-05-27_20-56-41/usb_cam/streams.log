@@ -1,0 +1,55 @@
+[2.218s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/usb_cam -DCMAKE_INSTALL_PREFIX=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam
+[2.430s] -- The C compiler identification is GNU 13.3.0
+[2.613s] -- The CXX compiler identification is GNU 13.3.0
+[2.671s] -- Detecting C compiler ABI info
+[2.945s] -- Detecting C compiler ABI info - done
+[2.984s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.984s] -- Detecting C compile features
+[2.986s] -- Detecting C compile features - done
+[3.018s] -- Detecting CXX compiler ABI info
+[3.409s] -- Detecting CXX compiler ABI info - done
+[3.461s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.462s] -- Detecting CXX compile features
+[3.462s] -- Detecting CXX compile features - done
+[3.471s] -- Found ament_cmake_auto: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[4.124s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[5.139s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[5.195s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[5.253s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.327s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.618s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[5.629s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[5.886s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[5.957s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[6.044s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.830s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[7.194s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[7.215s] -- Found OpenCV: /usr/local (found version "4.12.0") 
+[7.228s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[7.231s] -- Checking for module 'libavcodec'
+[7.281s] --   Found libavcodec, version 60.31.102
+[7.383s] -- Checking for module 'libavutil'
+[7.430s] --   Found libavutil, version 58.29.100
+[7.527s] -- Checking for module 'libswscale'
+[7.574s] --   Found libswscale, version 7.5.100
+[7.701s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[7.780s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[7.804s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.112s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.117s] -- Found Threads: TRUE  
+[8.146s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.156s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.157s] -- Configured cppcheck include dirs: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/usb_cam/include
+[8.157s] -- Configured cppcheck exclude dirs and/or files: 
+[8.170s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[8.170s] -- Configured cpplint exclude dirs and/or files: 
+[8.175s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.175s] -- Configured 'flake8' exclude dirs and/or files: 
+[8.179s] -- Added test 'lint_cmake' to check CMake code style
+[8.183s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.192s] -- Added test 'uncrustify' to check C / C++ code style
+[8.192s] -- Configured uncrustify additional arguments: 
+[8.195s] -- Added test 'xmllint' to check XML markup files
+[8.207s] -- Configuring done (6.0s)
+[8.314s] -- Generating done (0.1s)
+[8.344s] -- Build files have been written to: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/usb_cam

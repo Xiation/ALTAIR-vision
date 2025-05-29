@@ -1,0 +1,37 @@
+[6.446s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/video_subscriber': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/video_subscriber build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/install.log --single-version-externally-managed install_data
+[7.855s] running egg_info
+[7.858s] creating ../../build/video_subscriber/video_subscriber.egg-info
+[7.997s] writing ../../build/video_subscriber/video_subscriber.egg-info/PKG-INFO
+[7.997s] writing dependency_links to ../../build/video_subscriber/video_subscriber.egg-info/dependency_links.txt
+[8.000s] writing entry points to ../../build/video_subscriber/video_subscriber.egg-info/entry_points.txt
+[8.006s] writing requirements to ../../build/video_subscriber/video_subscriber.egg-info/requires.txt
+[8.007s] writing top-level names to ../../build/video_subscriber/video_subscriber.egg-info/top_level.txt
+[8.008s] writing manifest file '../../build/video_subscriber/video_subscriber.egg-info/SOURCES.txt'
+[8.271s] reading manifest file '../../build/video_subscriber/video_subscriber.egg-info/SOURCES.txt'
+[8.274s] writing manifest file '../../build/video_subscriber/video_subscriber.egg-info/SOURCES.txt'
+[8.275s] running build
+[8.275s] running build_py
+[8.277s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build
+[8.277s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build/lib
+[8.278s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build/lib/video_subscriber
+[8.278s] copying video_subscriber/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build/lib/video_subscriber
+[8.281s] copying video_subscriber/vid_subscriber.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build/lib/video_subscriber
+[8.282s] running install
+[8.301s] running install_lib
+[8.385s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber
+[8.385s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build/lib/video_subscriber/__init__.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber
+[8.389s] copying /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build/lib/video_subscriber/vid_subscriber.py -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber
+[8.390s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber/__init__.py to __init__.cpython-312.pyc
+[8.390s] byte-compiling /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber/vid_subscriber.py to vid_subscriber.cpython-312.pyc
+[8.391s] running install_data
+[8.391s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/share/ament_index
+[8.391s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/share/ament_index/resource_index
+[8.392s] creating /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/share/ament_index/resource_index/packages
+[8.392s] copying resource/video_subscriber -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/share/ament_index/resource_index/packages
+[8.397s] copying package.xml -> /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/share/video_subscriber
+[8.397s] running install_egg_info
+[8.485s] Copying ../../build/video_subscriber/video_subscriber.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages/video_subscriber-0.0.0-py3.12.egg-info
+[8.489s] running install_scripts
+[9.209s] Installing gui_subscriber script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/video_subscriber
+[9.209s] writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/install.log'
+[9.323s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/video_subscriber' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/video_subscriber build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/video_subscriber/install.log --single-version-externally-managed install_data

@@ -1,0 +1,39 @@
+[  2%] Built target ball_detect__rosidl_generator_type_description
+[  2%] Built target ament_cmake_python_copy_ball_detect
+[  5%] Built target ball_detect__cpp
+[ 18%] Built target ball_detect__rosidl_generator_c
+[ 27%] Built target ball_detect__rosidl_typesupport_introspection_c
+[ 35%] Built target ball_detect__rosidl_typesupport_fastrtps_cpp
+[ 43%] Built target ball_detect__rosidl_typesupport_cpp
+[ 51%] Built target ball_detect__rosidl_typesupport_fastrtps_c
+[ 59%] Built target ball_detect__rosidl_typesupport_introspection_cpp
+[ 67%] Built target ball_detect__rosidl_typesupport_c
+[ 67%] Built target ball_detect
+[ 70%] [32mBuilding CXX object CMakeFiles/ball_det.dir/src/ball_detect.cpp.o[0m
+[ 72%] Built target ball_detect__py
+[ 78%] Built target ball_detect__rosidl_generator_py
+[ 83%] Built target ball_detect_s__rosidl_typesupport_c
+[ 89%] Built target ball_detect_s__rosidl_typesupport_fastrtps_c
+[ 94%] Built target ball_detect_s__rosidl_typesupport_introspection_c
+running egg_info
+writing ball_detect.egg-info/PKG-INFO
+writing dependency_links to ball_detect.egg-info/dependency_links.txt
+writing top-level names to ball_detect.egg-info/top_level.txt
+reading manifest file 'ball_detect.egg-info/SOURCES.txt'
+writing manifest file 'ball_detect.egg-info/SOURCES.txt'
+[ 94%] Built target ament_cmake_python_build_ball_detect_egg
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:[m[K In member function ‘[01m[Kvoid BallDetector::[01;32m[Kimage_callback[m[K(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&, const sensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstSharedPtr&)[m[K’:
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:377:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kfy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  377 |     double [01;35m[Kfy[m[K = cinfo_msg->k[4];  // Focal length in y
+      |            [01;35m[K^~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:378:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  378 |     double [01;35m[Kcx[m[K = cinfo_msg->k[2];  // Principal point x
+      |            [01;35m[K^~[m[K
+[01m[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:379:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  379 |     double [01;35m[Kcy[m[K = cinfo_msg->k[5];  // Principal point y
+      |            [01;35m[K^~[m[K
+[ 97%] [32m[1mLinking CXX executable ball_det[0m
+/usr/bin/ld: warning: libopencv_imgcodecs.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.412
+/usr/bin/ld: warning: libopencv_imgproc.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.412
+/usr/bin/ld: warning: libopencv_core.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_core.so.412
+[100%] Built target ball_det

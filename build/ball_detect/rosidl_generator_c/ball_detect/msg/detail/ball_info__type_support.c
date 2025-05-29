@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "ball_detect/msg/detail/ball_info__struct.h"
-#include "ball_detect/msg/detail/ball_info__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "ball_detect/msg/detail/ball_info__functions.h"
+#include "ball_detect/msg/detail/ball_info__type_support.h"
+#include "ball_detect/msg/detail/ball_info__struct.h"
 
 #ifdef __cplusplus
 extern "C"

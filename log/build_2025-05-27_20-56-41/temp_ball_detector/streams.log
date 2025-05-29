@@ -1,0 +1,36 @@
+[2.224s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/temp_ball_detector -DCMAKE_INSTALL_PREFIX=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector
+[2.410s] -- The C compiler identification is GNU 13.3.0
+[2.607s] -- The CXX compiler identification is GNU 13.3.0
+[2.668s] -- Detecting C compiler ABI info
+[2.955s] -- Detecting C compiler ABI info - done
+[2.991s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.993s] -- Detecting C compile features
+[2.993s] -- Detecting C compile features - done
+[3.030s] -- Detecting CXX compiler ABI info
+[3.423s] -- Detecting CXX compiler ABI info - done
+[3.475s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.476s] -- Detecting CXX compile features
+[3.478s] -- Detecting CXX compile features - done
+[3.489s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.142s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.613s] -- Found rclpy: 7.1.4 (/opt/ros/jazzy/share/rclpy/cmake)
+[4.621s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[4.651s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.901s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.088s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[5.100s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[7.331s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[8.996s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.171s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.180s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[11.644s] -- Found PythonExtra: /usr/bin/python3  
+[13.119s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[13.278s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[13.337s] -- Added test 'flake8' to check Python code syntax and style conventions
+[13.338s] -- Configured 'flake8' exclude dirs and/or files: 
+[13.339s] -- Added test 'lint_cmake' to check CMake code style
+[13.342s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[13.346s] -- Added test 'xmllint' to check XML markup files
+[13.354s] -- Configuring done (11.1s)
+[13.462s] -- Generating done (0.1s)
+[13.505s] -- Build files have been written to: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/temp_ball_detector

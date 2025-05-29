@@ -1,0 +1,23 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/cam_calibration.dir/src/cam_calibration.cpp.o[0m
+[100%] [32m[1mLinking CXX executable cam_calibration[0m
+[100%] Built target cam_calibration
+-- Install configuration: ""
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/launch
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/launch/cam_calibration.launch.py
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/lib/altair_calibration/cam_calibration
+-- Set non-toolchain portion of runtime path of "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/lib/altair_calibration/cam_calibration" to ""
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/ament_index/resource_index/package_run_dependencies/altair_calibration
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/ament_index/resource_index/parent_prefix_path/altair_calibration
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/ament_prefix_path.sh
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/ament_prefix_path.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/path.sh
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/environment/path.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.bash
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.sh
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.zsh
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/local_setup.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/package.dsv
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/ament_index/resource_index/packages/altair_calibration
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/cmake/altair_calibrationConfig.cmake
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/cmake/altair_calibrationConfig-version.cmake
+-- Installing: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration/share/altair_calibration/package.xml

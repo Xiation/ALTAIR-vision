@@ -1,0 +1,22 @@
+[0.129s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detection': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/sample_program/ball_detection -DCMAKE_INSTALL_PREFIX=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detection
+[2.321s] -- The C compiler identification is GNU 13.3.0
+[2.321s] -- The CXX compiler identification is GNU 13.3.0
+[2.322s] -- Detecting C compiler ABI info
+[2.322s] -- Detecting C compiler ABI info - done
+[2.322s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.322s] -- Detecting C compile features
+[2.323s] -- Detecting C compile features - done
+[2.323s] -- Detecting CXX compiler ABI info
+[2.323s] -- Detecting CXX compiler ABI info - done
+[2.323s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.324s] -- Detecting CXX compile features
+[2.324s] -- Detecting CXX compile features - done
+[2.324s] -- Found OpenCV: /usr/local (found version "4.12.0") 
+[2.324s] -- Configuring done (1.2s)
+[2.325s] -- Generating done (0.0s)
+[2.325s] -- Build files have been written to: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detection
+[3.021s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detection' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/sample_program/ball_detection -DCMAKE_INSTALL_PREFIX=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detection
+[3.025s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detection': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detection -- -j16 -l16
+[3.190s] [ 50%] [32mBuilding CXX object CMakeFiles/ball_det.dir/ball.cpp.o[0m
+[9.298s] [100%] [32m[1mLinking CXX executable ball_det[0m
+[10.418s] [100%] Built target ball_det

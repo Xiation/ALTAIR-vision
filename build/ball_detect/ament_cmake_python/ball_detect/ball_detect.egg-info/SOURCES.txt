@@ -4,5 +4,3 @@ ball_detect.egg-info/PKG-INFO
 ball_detect.egg-info/SOURCES.txt
 ball_detect.egg-info/dependency_links.txt
 ball_detect.egg-info/top_level.txt
-ball_detect/msg/__init__.py
-ball_detect/msg/_ball_info.py

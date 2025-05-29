@@ -1,0 +1,46 @@
+[0.136s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration -DCMAKE_INSTALL_PREFIX=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration
+[2.329s] -- The C compiler identification is GNU 13.3.0
+[2.330s] -- The CXX compiler identification is GNU 13.3.0
+[2.330s] -- Detecting C compiler ABI info
+[2.331s] -- Detecting C compiler ABI info - done
+[2.331s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.332s] -- Detecting C compile features
+[2.332s] -- Detecting C compile features - done
+[2.333s] -- Detecting CXX compiler ABI info
+[2.333s] -- Detecting CXX compiler ABI info - done
+[2.333s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.334s] -- Detecting CXX compile features
+[2.334s] -- Detecting CXX compile features - done
+[2.334s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.335s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.335s] -- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.390s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.438s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.493s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.562s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.914s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.929s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.321s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.441s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.567s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.028s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[4.316s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[4.404s] -- Found OpenCV: /usr/local (found version "4.12.0") 
+[4.404s] -- OpenCV library status:
+[4.404s] --   version: 4.12.0
+[4.405s] --   libraries: opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_viz;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto;opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio;opencv_alphamat;opencv_aruco;opencv_bgsegm;opencv_bioinspired;opencv_ccalib;opencv_cvv;opencv_datasets;opencv_dnn_objdetect;opencv_dnn_superres;opencv_dpm;opencv_face;opencv_freetype;opencv_fuzzy;opencv_hdf;opencv_hfs;opencv_img_hash;opencv_intensity_transform;opencv_line_descriptor;opencv_mcc;opencv_optflow;opencv_phase_unwrapping;opencv_plot;opencv_quality;opencv_rapid;opencv_reg;opencv_rgbd;opencv_saliency;opencv_shape;opencv_signal;opencv_stereo;opencv_structured_light;opencv_superres;opencv_surface_matching;opencv_text;opencv_tracking;opencv_videostab;opencv_viz;opencv_wechat_qrcode;opencv_xfeatures2d;opencv_ximgproc;opencv_xobjdetect;opencv_xphoto
+[4.406s] --   include path: /usr/local/include/opencv4
+[4.426s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.888s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.889s] -- Configured cppcheck include dirs: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/include;$<BUILD_INTERFACE:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/altair_calibration/include>
+[4.890s] -- Configured cppcheck exclude dirs and/or files: 
+[4.894s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.894s] -- Configured 'flake8' exclude dirs and/or files: 
+[4.899s] -- Added test 'lint_cmake' to check CMake code style
+[4.903s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.906s] -- Added test 'uncrustify' to check C / C++ code style
+[4.907s] -- Configured uncrustify additional arguments: 
+[4.910s] -- Added test 'xmllint' to check XML markup files
+[4.916s] -- Configuring done (4.8s)
+[4.983s] -- Generating done (0.0s)
+[5.001s] -- Build files have been written to: /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/altair_calibration

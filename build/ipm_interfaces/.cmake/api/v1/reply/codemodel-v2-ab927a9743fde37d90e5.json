@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-903ca67895c6f187543a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "ipm_interfaces__py",
+					"jsonFile" : "directory-ipm_interfaces__py-6c68baa992b795fd74bf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_interfaces/ipm_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ipm_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ipm_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ipm_interfaces_egg-0aa8723d207bb3847235.json",
+					"name" : "ament_cmake_python_build_ipm_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ipm_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ipm_interfaces-706c73b804f1e2544fae.json",
+					"name" : "ament_cmake_python_copy_ipm_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces-81544e5d86310aafe77a.json",
+					"name" : "ipm_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces__cpp-cd61ab9e6f78c6f1fa1b.json",
+					"name" : "ipm_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ipm_interfaces__py::@848992192e4cac75882e",
+					"jsonFile" : "target-ipm_interfaces__py-cd4874690d90051ec60d.json",
+					"name" : "ipm_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces__rosidl_generator_c-1e09ec745ff23469c6b2.json",
+					"name" : "ipm_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces__rosidl_generator_py-ad39d09866b2ab9627d0.json",
+					"name" : "ipm_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces__rosidl_generator_type_description-6d9e13aa12c251a5c963.json",
+					"name" : "ipm_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces__rosidl_typesupport_c-f3572e94d23df01ace9b.json",
+					"name" : "ipm_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces__rosidl_typesupport_cpp-f69e0b6b716e2a759d44.json",
+					"name" : "ipm_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces__rosidl_typesupport_fastrtps_c-7dc98a776f6d46857a26.json",
+					"name" : "ipm_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces__rosidl_typesupport_fastrtps_cpp-fa5d18196c84e0f6ec0a.json",
+					"name" : "ipm_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces__rosidl_typesupport_introspection_c-4b183e4e4322c55ffd53.json",
+					"name" : "ipm_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces__rosidl_typesupport_introspection_cpp-e9cf4f6c073b0d14341b.json",
+					"name" : "ipm_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces_s__rosidl_typesupport_c-6815fecef036445d7e09.json",
+					"name" : "ipm_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces_s__rosidl_typesupport_fastrtps_c-d869d735f4b4ebe1428b.json",
+					"name" : "ipm_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces_s__rosidl_typesupport_introspection_c-128f34a56ec56597071b.json",
+					"name" : "ipm_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ipm_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ipm_interfaces_uninstall-c6229bc632f98d350126.json",
+					"name" : "ipm_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f7535da424e7c0889778.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_interfaces",
+		"source" : "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ipm_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

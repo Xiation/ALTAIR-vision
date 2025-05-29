@@ -1,0 +1,262 @@
+[0.000000] (-) TimerEvent: {}
+[0.000317] (-) JobUnselected: {'identifier': 'altair_calibration'}
+[0.000348] (-) JobUnselected: {'identifier': 'ball_detection'}
+[0.000365] (-) JobUnselected: {'identifier': 'ball_detector'}
+[0.000376] (-) JobUnselected: {'identifier': 'camera_calibration'}
+[0.000386] (-) JobUnselected: {'identifier': 'soccer_field_map_generator'}
+[0.000395] (-) JobUnselected: {'identifier': 'temp_ball_detector'}
+[0.000404] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.000412] (-) JobUnselected: {'identifier': 'video_subscriber'}
+[0.000425] (ball_detect) JobQueued: {'identifier': 'ball_detect', 'dependencies': OrderedDict()}
+[0.000439] (ipm_interfaces) JobQueued: {'identifier': 'ipm_interfaces', 'dependencies': OrderedDict()}
+[0.000450] (ipm_library) JobQueued: {'identifier': 'ipm_library', 'dependencies': OrderedDict({'ipm_interfaces': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces'})}
+[0.000470] (soccer_ipm) JobQueued: {'identifier': 'soccer_ipm', 'dependencies': OrderedDict({'ipm_interfaces': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces', 'ipm_library': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library'})}
+[0.000484] (ipm_interfaces) JobStarted: {'identifier': 'ipm_interfaces'}
+[0.005572] (ball_detect) JobStarted: {'identifier': 'ball_detect'}
+[0.009382] (ipm_interfaces) JobProgress: {'identifier': 'ipm_interfaces', 'progress': 'cmake'}
+[0.009943] (ipm_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ipm_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces'], 'cwd': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'abyan', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/abyan', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/abyan/Documents', 'TERM_PROGRAM_VERSION': '1.99.3', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/abyan/.nvm/versions/node/v22.14.0/bin', 'NVM_INC': '/home/abyan/.nvm/versions/node/v22.14.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '3266', 'BUNDLED_DEBUGPY_PATH': '/home/abyan/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/abyan/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'abyan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'abyan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/home/abyan/anaconda3/condabin:/opt/ros/jazzy/bin:/home/abyan/.nvm/versions/node/v22.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/abyan/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/abyan/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/abyan-LOQ:@/tmp/.ICE-unix/3125,unix/abyan-LOQ:/tmp/.ICE-unix/3125', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/81717c5b_bfb0_471a_9a3f_b495200089f5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/abyan/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-1c0dc951045d266a.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4dc287ffc9.sock', 'GNOME_TERMINAL_SERVICE': ':1.125', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/abyan/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'NO_AT_BRIDGE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_interfaces', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/abyan/anaconda3/bin/conda', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'OPENCV_EXTRA_MODULES_PATH': '/home/abyan/opencv/contrib/opencv_contrib-4.x/modules', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy'}), 'shell': False}
+[0.013760] (ball_detect) JobProgress: {'identifier': 'ball_detect', 'progress': 'cmake'}
+[0.014249] (ball_detect) JobProgress: {'identifier': 'ball_detect', 'progress': 'build'}
+[0.014940] (ball_detect) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect', '--', '-j16', '-l16'], 'cwd': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'abyan', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam/lib:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/abyan', 'CHROME_DESKTOP': 'code.desktop', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/abyan/Documents', 'TERM_PROGRAM_VERSION': '1.99.3', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/abyan/.nvm/versions/node/v22.14.0/bin', 'NVM_INC': '/home/abyan/.nvm/versions/node/v22.14.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '3266', 'BUNDLED_DEBUGPY_PATH': '/home/abyan/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/abyan/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'abyan', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'abyan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'PATH': '/home/abyan/anaconda3/condabin:/opt/ros/jazzy/bin:/home/abyan/.nvm/versions/node/v22.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/abyan/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/abyan/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/abyan-LOQ:@/tmp/.ICE-unix/3125,unix/abyan-LOQ:/tmp/.ICE-unix/3125', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/81717c5b_bfb0_471a_9a3f_b495200089f5', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/abyan/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-1c0dc951045d266a.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4dc287ffc9.sock', 'GNOME_TERMINAL_SERVICE': ':1.125', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/abyan/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'NO_AT_BRIDGE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ball_detect', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/abyan/anaconda3/bin/conda', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'OPENCV_EXTRA_MODULES_PATH': '/home/abyan/opencv/contrib/opencv_contrib-4.x/modules', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/usb_cam:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/temp_ball_detector:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detect:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/altair_calibration:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_ipm:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/video_subscriber:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/camera_calibration:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ball_detector:/opt/ros/jazzy'}), 'shell': False}
+[0.027961] (ipm_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099470] (-) TimerEvent: {}
+[0.103798] (ball_detect) StdoutLine: {'line': b'[  2%] Built target ball_detect__rosidl_generator_type_description\n'}
+[0.128604] (ball_detect) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_ball_detect\n'}
+[0.154833] (ball_detect) StdoutLine: {'line': b'[  5%] Built target ball_detect__cpp\n'}
+[0.161022] (ball_detect) StdoutLine: {'line': b'[ 18%] Built target ball_detect__rosidl_generator_c\n'}
+[0.199632] (-) TimerEvent: {}
+[0.214398] (ball_detect) StdoutLine: {'line': b'[ 27%] Built target ball_detect__rosidl_typesupport_introspection_c\n'}
+[0.217487] (ball_detect) StdoutLine: {'line': b'[ 35%] Built target ball_detect__rosidl_typesupport_fastrtps_cpp\n'}
+[0.218903] (ball_detect) StdoutLine: {'line': b'[ 43%] Built target ball_detect__rosidl_typesupport_cpp\n'}
+[0.222559] (ball_detect) StdoutLine: {'line': b'[ 51%] Built target ball_detect__rosidl_typesupport_fastrtps_c\n'}
+[0.223218] (ball_detect) StdoutLine: {'line': b'[ 59%] Built target ball_detect__rosidl_typesupport_introspection_cpp\n'}
+[0.227768] (ball_detect) StdoutLine: {'line': b'[ 67%] Built target ball_detect__rosidl_typesupport_c\n'}
+[0.291289] (ball_detect) StdoutLine: {'line': b'[ 67%] Built target ball_detect\n'}
+[0.299812] (-) TimerEvent: {}
+[0.307171] (ball_detect) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/ball_det.dir/src/ball_detect.cpp.o\x1b[0m\n'}
+[0.351663] (ball_detect) StdoutLine: {'line': b'[ 72%] Built target ball_detect__py\n'}
+[0.399955] (-) TimerEvent: {}
+[0.423714] (ball_detect) StdoutLine: {'line': b'[ 78%] Built target ball_detect__rosidl_generator_py\n'}
+[0.491916] (ball_detect) StdoutLine: {'line': b'[ 83%] Built target ball_detect_s__rosidl_typesupport_c\n'}
+[0.494194] (ball_detect) StdoutLine: {'line': b'[ 89%] Built target ball_detect_s__rosidl_typesupport_fastrtps_c\n'}
+[0.500152] (-) TimerEvent: {}
+[0.501431] (ball_detect) StdoutLine: {'line': b'[ 94%] Built target ball_detect_s__rosidl_typesupport_introspection_c\n'}
+[0.600389] (-) TimerEvent: {}
+[0.701039] (-) TimerEvent: {}
+[0.733220] (ipm_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[0.801272] (-) TimerEvent: {}
+[0.815519] (ipm_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.835456] (ball_detect) StdoutLine: {'line': b'running egg_info\n'}
+[0.845424] (ipm_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.888016] (ipm_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.894434] (ball_detect) StdoutLine: {'line': b'writing ball_detect.egg-info/PKG-INFO\n'}
+[0.895318] (ball_detect) StdoutLine: {'line': b'writing dependency_links to ball_detect.egg-info/dependency_links.txt\n'}
+[0.896232] (ball_detect) StdoutLine: {'line': b'writing top-level names to ball_detect.egg-info/top_level.txt\n'}
+[0.901396] (-) TimerEvent: {}
+[0.948119] (ipm_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.990287] (ipm_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.001611] (-) TimerEvent: {}
+[1.047559] (ball_detect) StdoutLine: {'line': b"reading manifest file 'ball_detect.egg-info/SOURCES.txt'\n"}
+[1.049207] (ball_detect) StdoutLine: {'line': b"writing manifest file 'ball_detect.egg-info/SOURCES.txt'\n"}
+[1.099774] (ipm_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.101751] (-) TimerEvent: {}
+[1.129415] (ipm_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.131557] (ball_detect) StdoutLine: {'line': b'[ 94%] Built target ament_cmake_python_build_ball_detect_egg\n'}
+[1.135636] (ipm_interfaces) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[1.201950] (-) TimerEvent: {}
+[1.257316] (ipm_interfaces) StdoutLine: {'line': b'-- Found shape_msgs: 5.3.6 (/opt/ros/jazzy/share/shape_msgs/cmake)\n'}
+[1.302127] (-) TimerEvent: {}
+[1.312133] (ipm_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.389273] (ipm_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.389777] (ipm_interfaces) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>\n'}
+[1.390018] (ipm_interfaces) StderrLine: {'line': b'    from catkin_pkg.package import parse_package_string\n'}
+[1.390199] (ipm_interfaces) StderrLine: {'line': b"ModuleNotFoundError: No module named 'catkin_pkg'\n"}
+[1.400196] (ipm_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[1.400851] (ipm_interfaces) StderrLine: {'line': b'  execute_process(/home/abyan/anaconda3/bin/python3\n'}
+[1.401212] (ipm_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[1.401839] (ipm_interfaces) StderrLine: {'line': b'  /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ipm_interfaces/package.xml\n'}
+[1.402181] (-) TimerEvent: {}
+[1.402517] (ipm_interfaces) StderrLine: {'line': b'  /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_interfaces/ament_cmake_core/package.cmake)\n'}
+[1.402906] (ipm_interfaces) StderrLine: {'line': b'  returned error code 1\n'}
+[1.403219] (ipm_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.403552] (ipm_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[1.403863] (ipm_interfaces) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)\n'}
+[1.404165] (ipm_interfaces) StderrLine: {'line': b'  CMakeLists.txt:19 (ament_lint_auto_find_test_dependencies)\n'}
+[1.404513] (ipm_interfaces) StderrLine: {'line': b'\n'}
+[1.404820] (ipm_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.405122] (ipm_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.417555] (ipm_interfaces) CommandEnded: {'returncode': 1}
+[1.474976] (ipm_interfaces) JobEnded: {'identifier': 'ipm_interfaces', 'rc': 1}
+[1.502407] (-) TimerEvent: {}
+[1.602969] (-) TimerEvent: {}
+[1.703635] (-) TimerEvent: {}
+[1.804315] (-) TimerEvent: {}
+[1.905103] (-) TimerEvent: {}
+[2.005663] (-) TimerEvent: {}
+[2.106268] (-) TimerEvent: {}
+[2.206797] (-) TimerEvent: {}
+[2.307362] (-) TimerEvent: {}
+[2.407875] (-) TimerEvent: {}
+[2.508451] (-) TimerEvent: {}
+[2.609030] (-) TimerEvent: {}
+[2.709584] (-) TimerEvent: {}
+[2.810198] (-) TimerEvent: {}
+[2.910893] (-) TimerEvent: {}
+[3.011587] (-) TimerEvent: {}
+[3.112151] (-) TimerEvent: {}
+[3.212704] (-) TimerEvent: {}
+[3.313306] (-) TimerEvent: {}
+[3.413819] (-) TimerEvent: {}
+[3.514339] (-) TimerEvent: {}
+[3.614932] (-) TimerEvent: {}
+[3.715479] (-) TimerEvent: {}
+[3.815959] (-) TimerEvent: {}
+[3.916503] (-) TimerEvent: {}
+[4.017024] (-) TimerEvent: {}
+[4.117530] (-) TimerEvent: {}
+[4.218099] (-) TimerEvent: {}
+[4.318688] (-) TimerEvent: {}
+[4.419290] (-) TimerEvent: {}
+[4.519783] (-) TimerEvent: {}
+[4.620529] (-) TimerEvent: {}
+[4.721116] (-) TimerEvent: {}
+[4.821640] (-) TimerEvent: {}
+[4.922139] (-) TimerEvent: {}
+[5.022638] (-) TimerEvent: {}
+[5.123113] (-) TimerEvent: {}
+[5.223664] (-) TimerEvent: {}
+[5.324186] (-) TimerEvent: {}
+[5.424726] (-) TimerEvent: {}
+[5.525227] (-) TimerEvent: {}
+[5.625821] (-) TimerEvent: {}
+[5.726397] (-) TimerEvent: {}
+[5.827061] (-) TimerEvent: {}
+[5.927852] (-) TimerEvent: {}
+[6.028446] (-) TimerEvent: {}
+[6.129008] (-) TimerEvent: {}
+[6.229572] (-) TimerEvent: {}
+[6.330083] (-) TimerEvent: {}
+[6.430715] (-) TimerEvent: {}
+[6.531512] (-) TimerEvent: {}
+[6.632112] (-) TimerEvent: {}
+[6.732772] (-) TimerEvent: {}
+[6.833375] (-) TimerEvent: {}
+[6.933873] (-) TimerEvent: {}
+[7.034401] (-) TimerEvent: {}
+[7.134898] (-) TimerEvent: {}
+[7.235349] (-) TimerEvent: {}
+[7.335849] (-) TimerEvent: {}
+[7.436309] (-) TimerEvent: {}
+[7.536574] (-) TimerEvent: {}
+[7.636966] (-) TimerEvent: {}
+[7.737472] (-) TimerEvent: {}
+[7.837890] (-) TimerEvent: {}
+[7.938322] (-) TimerEvent: {}
+[8.038809] (-) TimerEvent: {}
+[8.139153] (-) TimerEvent: {}
+[8.239486] (-) TimerEvent: {}
+[8.260066] (ball_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BallDetector::\x1b[01;32m\x1b[Kimage_callback\x1b[m\x1b[K(const sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr&, const sensor_msgs::msg::CameraInfo_<std::allocator<void> >::ConstSharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.260637] (ball_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:377:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kfy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.260855] (ball_detect) StderrLine: {'line': b'  377 |     double \x1b[01;35m\x1b[Kfy\x1b[m\x1b[K = cinfo_msg->k[4];  // Focal length in y\n'}
+[8.261043] (ball_detect) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.261225] (ball_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:378:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.261425] (ball_detect) StderrLine: {'line': b'  378 |     double \x1b[01;35m\x1b[Kcx\x1b[m\x1b[K = cinfo_msg->k[2];  // Principal point x\n'}
+[8.261589] (ball_detect) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.261753] (ball_detect) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ball_detect/src/ball_detect.cpp:379:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.261932] (ball_detect) StderrLine: {'line': b'  379 |     double \x1b[01;35m\x1b[Kcy\x1b[m\x1b[K = cinfo_msg->k[5];  // Principal point y\n'}
+[8.262099] (ball_detect) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.339687] (-) TimerEvent: {}
+[8.440112] (-) TimerEvent: {}
+[8.540557] (-) TimerEvent: {}
+[8.641088] (-) TimerEvent: {}
+[8.741471] (-) TimerEvent: {}
+[8.841837] (-) TimerEvent: {}
+[8.942253] (-) TimerEvent: {}
+[9.042599] (-) TimerEvent: {}
+[9.143163] (-) TimerEvent: {}
+[9.243697] (-) TimerEvent: {}
+[9.344120] (-) TimerEvent: {}
+[9.444614] (-) TimerEvent: {}
+[9.545158] (-) TimerEvent: {}
+[9.645563] (-) TimerEvent: {}
+[9.745947] (-) TimerEvent: {}
+[9.846480] (-) TimerEvent: {}
+[9.946922] (-) TimerEvent: {}
+[10.047212] (-) TimerEvent: {}
+[10.147488] (-) TimerEvent: {}
+[10.247768] (-) TimerEvent: {}
+[10.348144] (-) TimerEvent: {}
+[10.448528] (-) TimerEvent: {}
+[10.548865] (-) TimerEvent: {}
+[10.649316] (-) TimerEvent: {}
+[10.749711] (-) TimerEvent: {}
+[10.850125] (-) TimerEvent: {}
+[10.950440] (-) TimerEvent: {}
+[11.050818] (-) TimerEvent: {}
+[11.151150] (-) TimerEvent: {}
+[11.251434] (-) TimerEvent: {}
+[11.351701] (-) TimerEvent: {}
+[11.452004] (-) TimerEvent: {}
+[11.552424] (-) TimerEvent: {}
+[11.652790] (-) TimerEvent: {}
+[11.753189] (-) TimerEvent: {}
+[11.853583] (-) TimerEvent: {}
+[11.953863] (-) TimerEvent: {}
+[12.054227] (-) TimerEvent: {}
+[12.154562] (-) TimerEvent: {}
+[12.254932] (-) TimerEvent: {}
+[12.355330] (-) TimerEvent: {}
+[12.455578] (-) TimerEvent: {}
+[12.555839] (-) TimerEvent: {}
+[12.656120] (-) TimerEvent: {}
+[12.756387] (-) TimerEvent: {}
+[12.856731] (-) TimerEvent: {}
+[12.957320] (-) TimerEvent: {}
+[13.057840] (-) TimerEvent: {}
+[13.158355] (-) TimerEvent: {}
+[13.258774] (-) TimerEvent: {}
+[13.359100] (-) TimerEvent: {}
+[13.459446] (-) TimerEvent: {}
+[13.559739] (-) TimerEvent: {}
+[13.660119] (-) TimerEvent: {}
+[13.760401] (-) TimerEvent: {}
+[13.860674] (-) TimerEvent: {}
+[13.960999] (-) TimerEvent: {}
+[14.061341] (-) TimerEvent: {}
+[14.161581] (-) TimerEvent: {}
+[14.261851] (-) TimerEvent: {}
+[14.362168] (-) TimerEvent: {}
+[14.462434] (-) TimerEvent: {}
+[14.562713] (-) TimerEvent: {}
+[14.663058] (-) TimerEvent: {}
+[14.763408] (-) TimerEvent: {}
+[14.863701] (-) TimerEvent: {}
+[14.963984] (-) TimerEvent: {}
+[15.064293] (-) TimerEvent: {}
+[15.149961] (ball_detect) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable ball_det\x1b[0m\n'}
+[15.164434] (-) TimerEvent: {}
+[15.264890] (-) TimerEvent: {}
+[15.365432] (-) TimerEvent: {}
+[15.465957] (-) TimerEvent: {}
+[15.566596] (-) TimerEvent: {}
+[15.667286] (-) TimerEvent: {}
+[15.767888] (-) TimerEvent: {}
+[15.868502] (-) TimerEvent: {}
+[15.956000] (ball_detect) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.412\n'}
+[15.957660] (ball_detect) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.412\n'}
+[15.958941] (ball_detect) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.406, needed by /opt/ros/jazzy/lib/libcv_bridge.so, may conflict with libopencv_core.so.412\n'}
+[15.968652] (-) TimerEvent: {}
+[16.069157] (-) TimerEvent: {}
+[16.169641] (-) TimerEvent: {}
+[16.270120] (-) TimerEvent: {}
+[16.370640] (-) TimerEvent: {}
+[16.471293] (-) TimerEvent: {}
+[16.571902] (-) TimerEvent: {}
+[16.672477] (-) TimerEvent: {}
+[16.772980] (-) TimerEvent: {}
+[16.832322] (ball_detect) StdoutLine: {'line': b'[100%] Built target ball_det\n'}
+[16.862526] (ball_detect) JobEnded: {'identifier': 'ball_detect', 'rc': 'SIGINT'}
+[16.873623] (ipm_library) JobSkipped: {'identifier': 'ipm_library'}
+[16.873767] (-) TimerEvent: {}
+[16.874194] (soccer_ipm) JobSkipped: {'identifier': 'soccer_ipm'}
+[16.874322] (-) EventReactorShutdown: {}

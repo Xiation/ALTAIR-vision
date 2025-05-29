@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ipm_interfaces__py",
+		"source" : "/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_interfaces/ipm_interfaces__py"
+	}
+}

@@ -1,0 +1,6 @@
+source;share/soccer_ipm/hook/pythonpath.ps1
+source;share/soccer_ipm/hook/pythonpath.dsv
+source;share/soccer_ipm/hook/pythonpath.sh
+source;share/soccer_ipm/hook/ament_prefix_path.ps1
+source;share/soccer_ipm/hook/ament_prefix_path.dsv
+source;share/soccer_ipm/hook/ament_prefix_path.sh
