@@ -1,0 +1,22 @@
+[5.169s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/soccer_field_map_generator/soccer_field_map_generator': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/soccer_field_map_generator build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/install.log --single-version-externally-managed install_data
+[6.049s] running egg_info
+[6.104s] writing ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/PKG-INFO
+[6.105s] writing dependency_links to ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/dependency_links.txt
+[6.105s] writing entry points to ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/entry_points.txt
+[6.106s] writing requirements to ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/requires.txt
+[6.107s] writing top-level names to ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/top_level.txt
+[6.237s] reading manifest file '../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/SOURCES.txt'
+[6.243s] writing manifest file '../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info/SOURCES.txt'
+[6.244s] running build
+[6.244s] running build_py
+[6.246s] running install
+[6.268s] running install_lib
+[6.344s] running install_data
+[6.344s] running install_egg_info
+[6.430s] removing '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator-0.0.0-py3.12.egg-info' (and everything under it)
+[6.431s] Copying ../../../build/soccer_field_map_generator/soccer_field_map_generator.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages/soccer_field_map_generator-0.0.0-py3.12.egg-info
+[6.437s] running install_scripts
+[6.880s] Installing cli script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/soccer_field_map_generator
+[6.880s] Installing gui script to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/soccer_field_map_generator
+[6.881s] writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/install.log'
+[6.959s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/soccer_field_map_generator/soccer_field_map_generator' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/soccer_field_map_generator/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/soccer_field_map_generator build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/soccer_field_map_generator/install.log --single-version-externally-managed install_data

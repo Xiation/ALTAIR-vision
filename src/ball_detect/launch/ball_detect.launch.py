@@ -14,7 +14,7 @@ def generate_launch_description():
                 'image_width': 640,
                 'image_height': 480,
                 'framerate': 30.0,
-                'pixel_format': 'mjpeg', # yuyv
+                'pixel_format': 'yuyv', # yuyv
                 'camera_name': 'usb_cam',
                 'camera_info_url': 'file:///home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/camera_calibration.yaml',
             }],

@@ -1,0 +1,19 @@
+[2.507s] Invoking command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ipm_library': AMENT_PREFIX_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ipm_library build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/install.log --single-version-externally-managed install_data
+[3.318s] running egg_info
+[3.367s] writing ../../build/ipm_library/ipm_library.egg-info/PKG-INFO
+[3.372s] writing dependency_links to ../../build/ipm_library/ipm_library.egg-info/dependency_links.txt
+[3.373s] writing requirements to ../../build/ipm_library/ipm_library.egg-info/requires.txt
+[3.373s] writing top-level names to ../../build/ipm_library/ipm_library.egg-info/top_level.txt
+[3.469s] reading manifest file '../../build/ipm_library/ipm_library.egg-info/SOURCES.txt'
+[3.472s] writing manifest file '../../build/ipm_library/ipm_library.egg-info/SOURCES.txt'
+[3.472s] running build
+[3.472s] running build_py
+[3.474s] running install
+[3.492s] running install_lib
+[3.544s] running install_data
+[3.544s] running install_egg_info
+[3.592s] removing '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library-0.0.0-py3.12.egg-info' (and everything under it)
+[3.592s] Copying ../../build/ipm_library/ipm_library.egg-info to /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages/ipm_library-0.0.0-py3.12.egg-info
+[3.594s] running install_scripts
+[3.919s] writing list of installed files to '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/install.log'
+[3.982s] Invoked command in '/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/src/ipm_library' returned '0': AMENT_PREFIX_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_library/lib/python3.12/site-packages:/home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/install/ipm_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ipm_library build --build-base /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/build install --record /home/abyan/Documents/FOR_ALTAIR/ALTAIR-vision/build/ipm_library/install.log --single-version-externally-managed install_data
